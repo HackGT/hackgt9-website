@@ -1,0 +1,31 @@
+@import "../styles/variables.scss";
+
+/* swap out image, it's obviously a decoy */
+.title_box {
+    background-image: url('/img/retro_arcade.jpg');
+    background-size: cover;
+    color: whitesmoke;
+}
+
+.title {
+    font-size: $t;
+}
+
+.description {
+    font-style: italic;
+    .coming_soon {
+        font-size: $p;
+    }
+    .register_button {
+        color: black;
+        font-size: $p;
+        // button things
+    }
+}
+
+/* add some intermediaries */
+@media (max-width: 700px) {
+    .title {
+        font-size: $tMobile;
+    }
+}
