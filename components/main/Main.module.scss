@@ -1,0 +1,33 @@
+@import "../styles/variables.scss";
+
+.title_box {
+    background-image: url('/img/retro_arcade.jpg');
+    background-size: cover;
+    color: whitesmoke;
+    align-items: center;
+
+    .title {
+            font-size: $t;
+        }
+}
+
+.description {
+    font-style: italic;
+    .coming_soon {
+        font-size: $p;
+    }
+    .register_button {
+        color: black;
+        font-size: $p;
+        // button things
+    }
+}
+
+/* add some intermediaries */
+@media (max-width: 700px) {
+    .title_box {
+        .title {
+            font-size: $tMobile;
+        }
+    }
+}

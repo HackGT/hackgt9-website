@@ -1,11 +1,19 @@
+/* theme colors */
+$black: #1a1a1a;
+$gray: #808080;
+$light: #f2f2f2;
+$white: #ffffff;
 
-// taken from the Horizons Sass folder. Adjust as needed
+/* HTML tag fonts */
+$t: 200px;
 $h1: 36px;
-$p: 16px;
+$p: 20px;
 
+$tMobile: 50px;
 $h1Mobile: 36px;
 $pMobile: 16px;
 
+/* margins */
 $mNav: 16.389vw;
 $m6: 0.417vw;
 $m12: 0.833vw;
@@ -27,6 +35,7 @@ $m48Mobile: 12.8vw;
 $m64Mobile: 17.067vw;
 $m96Mobile: 25.6vw;
 
+/* widths */
 $w1: 5.347vw;
 $w2: 12.292vw;
 $w3: 19.306vw;
@@ -45,3 +54,6 @@ $w1Mobile: 19.733vw;
 $w2Mobile: 43.733vw;
 $w3Mobile: 67.467vw;
 $w4Mobile: 91.467vw;
+
+/* padding - need to be adjusted */
+$p1: 10vh;
