@@ -1,14 +1,14 @@
 @import "../styles/variables.scss";
 
+/* swap out image, it's obviously a decoy */
 .title_box {
     background-image: url('/img/retro_arcade.jpg');
     background-size: cover;
     color: whitesmoke;
-    align-items: center;
+}
 
-    .title {
-            font-size: $t;
-        }
+.title {
+    font-size: $t;
 }
 
 .description {
@@ -25,9 +25,7 @@
 
 /* add some intermediaries */
 @media (max-width: 700px) {
-    .title_box {
-        .title {
-            font-size: $tMobile;
-        }
+    .title {
+        font-size: $tMobile;
     }
 }
