@@ -1,4 +1,5 @@
-import { Text, VStack } from "@chakra-ui/react";
+import { VStack } from "@chakra-ui/react";
+import { useState } from "react";
 import Answer from "./Answer";
 import Question from "./Question";
 
@@ -8,11 +9,18 @@ interface QAProps {
 }
 
 const QA = (QAProps: any) => {
+  const [questionClicked, setQuestionClicked] = useState(false);
+
   return (
     <div>
       <VStack>
-        <Question question={QAProps.question} />
-        <Answer answer={QAProps.answer} />
+        <Question
+          onClick={() => {
+            setQuestionClicked(!questionClicked);
+          }}
+          question={QAProps.question}
+        />
+        {questionClicked ? <Answer answer={QAProps.answer} /> : null}
       </VStack>
     </div>
   );
