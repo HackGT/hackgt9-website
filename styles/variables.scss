@@ -6,10 +6,12 @@ $white: #ffffff;
 
 /* HTML tag fonts */
 $t: 200px;
+$subt: 50px;
 $h1: 36px;
 $p: 20px;
 
 $tMobile: 100px;
+$subtMobile: 25px;
 $h1Mobile: 36px;
 $pMobile: 16px;
 
@@ -56,5 +58,9 @@ $w3Mobile: 67.467vw;
 $w4Mobile: 91.467vw;
 
 /* padding - need to be adjusted */
-$p1: 10vh;
-$p2: 20vh;
+$p1: 3vh;
+$p2: 10vh;
+$p3: 20vh;
+
+/* widths */
+$faq: 80vw;

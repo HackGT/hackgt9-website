@@ -16,7 +16,7 @@ const Faq = () => {
   return (
     <div className={styles.container}>
       <Center>
-        <Text>Frequently Asked Questions</Text>
+        <Text className={styles.title}>Frequently Asked Questions</Text>
       </Center>
       <VStack>
         {faqs.map((entry) => (
