@@ -1,0 +1,48 @@
+@import "../styles/variables.scss";
+
+.container {
+    background-color: blueviolet;
+    color:whitesmoke;
+}
+
+.title {
+    font-size: $subt;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-top: $p1;
+    padding-bottom: $p1;
+}
+
+.qa_shape {
+    font-size: $p;
+    font-family: 'Courier New', Courier, monospace;
+
+    .question {    
+            border: solid black 1px;
+            background-color: teal;
+            z-index: 2;
+        }
+
+    .answer {
+        border: solid black 1px;
+        background-color: pink;
+        color: black;
+        position: relative;
+        top: -1.0vh;
+        z-index: 1;
+    }
+
+    .both {
+        /* why did I put this here? cause why not. */
+        -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+        width: $faq;
+        border-radius: 10px;
+        text-align: center;
+        opacity: 90%;
+    }
+}
