@@ -4,7 +4,9 @@
 .title_box {
     background-image: url('/img/retro_arcade.jpg');
     background-repeat: repeat;
+    height: 100vh;
     color: whitesmoke;
+    padding-top: $p2;
 }
 
 .title {
