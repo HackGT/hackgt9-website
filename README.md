@@ -1,3 +1,9 @@
+## Event Site Template
+
+The goal of this repo is to minimize the amount of work it takes to develop an event site. That is, this repo is meant to present a template such that all that's needed to be done is styling and the addition of assets. Moreover, it will minimize the work needed to change descriptions and repetitive information such like schedules and FAQs to merely adjusting a JSON file, or even generating a new one and replacing the one in the repository.
+
+To make another site from this site, fork this repository and build off the forked repository.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
