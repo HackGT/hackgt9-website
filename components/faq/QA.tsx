@@ -1,4 +1,4 @@
-import { VStack } from "@chakra-ui/react";
+import { Collapse, VStack } from "@chakra-ui/react";
 import { useState } from "react";
 import Answer from "./Answer";
 import Question from "./Question";
@@ -20,7 +20,9 @@ const QA = (QAProps: any) => {
         }}
         question={QAProps.question}
       />
-      {questionClicked ? <Answer answer={QAProps.answer} /> : null}
+      <Collapse in={questionClicked} animateOpacity>
+        <Answer answer={QAProps.answer} />
+      </Collapse>
     </VStack>
   );
 };
