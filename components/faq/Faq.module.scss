@@ -3,6 +3,8 @@
 .container {
     background-color: blueviolet;
     color:whitesmoke;
+    padding-bottom: $p3;
+    padding-top: $p3/2;
 }
 
 .title {
@@ -10,6 +12,12 @@
     font-family:Georgia, 'Times New Roman', Times, serif;
     padding-top: $p1;
     padding-bottom: $p1;
+}
+
+@media (max-width: 850px) {
+    .title {
+        width: $faq;
+    }
 }
 
 .qa_shape {
@@ -26,8 +34,6 @@
         border: solid black 1px;
         background-color: pink;
         color: black;
-        position: relative;
-        top: -1.0vh;
         z-index: 1;
     }
 
@@ -42,7 +48,11 @@
 
         width: $faq;
         border-radius: 10px;
-        text-align: center;
+        text-align: left;
+        padding-left: $p1;
+        padding-top: $p1/3;
+        padding-bottom: $p1/3;
+        padding-right: $p1;
         opacity: 90%;
     }
 }

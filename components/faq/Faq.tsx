@@ -2,6 +2,8 @@ import { Center, Text, VStack } from "@chakra-ui/react";
 import QA from "./QA";
 import styles from "./Faq.module.scss";
 
+import qas from "./FAQ.json";
+
 const Faq = () => {
   /* eventually get these from a json */
   const faqs = [
@@ -18,9 +20,9 @@ const Faq = () => {
       <Center>
         <Text className={styles.title}>Frequently Asked Questions</Text>
       </Center>
-      <VStack>
-        {faqs.map((entry) => (
-          <QA key={entry} question={entry[0]} answer={entry[1]} />
+      <VStack spacing={"20px"}>
+        {qas.qas.map((entry) => (
+          <QA key={entry} question={entry.question} answer={entry.answer} />
         ))}
       </VStack>
     </div>
