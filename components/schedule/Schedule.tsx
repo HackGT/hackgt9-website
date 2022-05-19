@@ -1,11 +1,12 @@
-import { Text } from "@chakra-ui/react";
+import { Center } from "@chakra-ui/react";
+import { useState } from "react";
+import ComingSoon from "./ComingSoon";
+import ScheduleTable from "./ScheduleTable";
 
 const Schedule = () => {
-  return (
-    <div>
-      <Text>Where the schedule should be</Text>
-    </div>
-  );
+  const [comingSoon] = useState(false);
+
+  return <Center>{comingSoon ? <ComingSoon /> : <ScheduleTable />}</Center>;
 };
 
 export default Schedule;

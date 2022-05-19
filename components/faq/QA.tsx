@@ -5,11 +5,12 @@ import Question from "./Question";
 import styles from "./Faq.module.scss";
 
 interface QAProps {
+  key: string;
   question: string;
   answer: string;
 }
 
-const QA = (QAProps: any) => {
+const QA = (qap: QAProps) => {
   const [questionClicked, setQuestionClicked] = useState(false);
 
   return (
@@ -18,10 +19,10 @@ const QA = (QAProps: any) => {
         onClick={() => {
           setQuestionClicked(!questionClicked);
         }}
-        question={QAProps.question}
+        question={qap.question}
       />
       <Collapse in={questionClicked} animateOpacity>
-        <Answer answer={QAProps.answer} />
+        <Answer answer={qap.answer} />
       </Collapse>
     </VStack>
   );

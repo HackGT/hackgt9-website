@@ -5,8 +5,8 @@ interface AnswerProps {
   answer: string;
 }
 
-const Answer = (AnswerProps: any) => {
-  return <Text className={`${styles.answer} ${styles.both}`}>{AnswerProps.answer}</Text>;
+const Answer = (ap: AnswerProps) => {
+  return <Text className={`${styles.answer} ${styles.both}`}>{ap.answer}</Text>;
 };
 
 export default Answer;
