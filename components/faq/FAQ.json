@@ -1,0 +1,60 @@
+{
+   "qas": [
+       {
+           "question": "Who is eligible to participate?",
+           "answer": "Any student over the age of 18 enrolled in any college or university is allowed to participate. If you are younger than 18, but a Georgia Tech student, you can still participate."
+       },
+        {
+           "question": "Who is eliglble to mentor/volunteer?",
+           "answer": "Anyone can mentor or volunteer. If you are interested in helping participants through their projects, then apply as a mentor. If you are interested in helping us run the event, then apply as a volunteer."
+       },
+        {
+           "question": "Do I need any experience to apply?",
+           "answer": "No! Experience is not required. Hackathons are open environments for everyone. If you are new to hackathons, the Emerging Hacker track may be for you!"
+       },
+        {
+           "question": "How does the admissions process work?",
+           "answer": "That's a secret :)"
+       },
+        {
+           "question": "Are there any costs?",
+           "answer": "No! HackGT # is completely free to participants and mentors thanks to our sponsors."
+       },
+        {
+           "question": "Is there an admissions puzzle?",
+           "answer": "Perhaps... take a look around and you may find the way. 👀"
+       },
+        {
+           "question": "Will hardware be provided?",
+           "answer": "We will provide hardware through our hardware desk!"
+       },
+        {
+           "question": "What do I need for the event",
+           "answer": "we recommend bringing a laptop, charger, headphones, water bottle, and anything else you'll need over the weekend. We'll provide hardware, meals, and snacks."
+       },
+        {
+           "question": "Can I use past projects?",
+           "answer": "In general, no — true to the spirit of hackathons, you may not submit your past projects to HackGT."
+       },
+        {
+           "question": "What if I don't have a team?",
+           "answer": "No worries! We will help you find your team based on your skills and interests through our team formation tool."
+       },
+        {
+           "question": "Do projects need to be themed?",
+           "answer": "No, you can make anything you want! If you want more direction, we will also have sponsor challenges and HackGT 9 awards, which will be released before the event."
+       },
+        {
+           "question": "What are the prizes?",
+           "answer": "We'll announce more info on prizes soon!"
+       },
+        {
+           "question": "Will there be swag?",
+           "answer": "Yes :)"
+       },
+        {
+           "question": "I have more questions!",
+           "answer": "Contact us at hello@hexlabs.org"
+       }
+   ] 
+}

@@ -3,6 +3,8 @@
 .container {
     background-color: blueviolet;
     color:whitesmoke;
+    padding-bottom: $p3;
+    padding-top: $p3/2;
 }
 
 .title {
@@ -40,7 +42,10 @@
 
         width: $faq;
         border-radius: 10px;
-        text-align: center;
+        text-align: left;
+        padding-left: $p1;
+        padding-top: $p1/3;
+        padding-bottom: $p1/3;
         opacity: 90%;
     }
 }
