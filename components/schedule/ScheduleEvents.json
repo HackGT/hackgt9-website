@@ -1,0 +1,10 @@
+{
+    "events": [
+        {
+            "day": 4,
+            "name":"Hacking starts",
+            "startTime":"5:00 PM",
+            "endTime":"6:00 PM"
+        }
+    ]
+}
