@@ -1,10 +1,28 @@
 {
     "events": [
         {
-            "day": 4,
+            "day": "Friday",
             "name":"Hacking starts",
             "startTime":"5:00 PM",
             "endTime":"6:00 PM"
+        },
+        {
+            "day": "Friday",
+            "name":"Opening Ceremony",
+            "startTime":"6:00 PM",
+            "endTime":"7:00 PM"
+        },
+        {
+            "day": "Saturday",
+            "name":"Hacking all Day",
+            "startTime":"12:00 AM",
+            "endTime":"11:59 PM"
+        },
+        {
+            "day": "Sunday",
+            "name":"Hacking done, go get sleep",
+            "startTime":"12:00 AM",
+            "endTime":"10:00 PM"
         }
     ]
 }
