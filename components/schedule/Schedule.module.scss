@@ -1,0 +1,24 @@
+@import "../styles/variables.scss";
+
+.comingSoon {
+    font-size: $t;
+}
+
+.schedule {
+    font-size: $tMobile/3;
+    .dayHeader {
+        padding-bottom: $p1;
+        padding-top: $p1;
+        font-size: $tMobile/2;
+    }
+    padding-bottom: $p3;
+}
+
+.title {
+    font-size: $tMobile;
+}
+
+.component {
+    background-color: aquamarine;
+    padding-top: $p2;
+}

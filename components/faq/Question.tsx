@@ -6,10 +6,10 @@ interface QuestionProps {
   onClick: any;
 }
 
-const Question = (QuestionProps: any) => {
+const Question = (qp: QuestionProps) => {
   return (
-    <Text onClick={QuestionProps.onClick} className={`${styles.question} ${styles.both}`}>
-      {QuestionProps.question}
+    <Text onClick={qp.onClick} className={`${styles.question} ${styles.both}`}>
+      {qp.question}
     </Text>
   );
 };
