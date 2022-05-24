@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import About from "../components/about/About";
+import Embed from "../components/embeds/Embed";
 import Faq from "../components/faq/Faq";
 import Main from "../components/main/Main";
 import Schedule from "../components/schedule/Schedule";
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Main />
+      <Embed src="/pdf/sample.pdf" title="charlie" maxW="800px" ratio={1} />
       <About />
       <Tracks />
       <Challenges />
