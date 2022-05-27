@@ -1,0 +1,20 @@
+@import "../styles/variables.scss";
+
+.container {
+    position:fixed;
+    right: 0vw;
+    top: 20vh;
+
+    .component {
+            font-size: $p/1.5;
+            color: purple;
+            background-color: white;
+            transform: rotate(-45deg);
+            padding: 5px;
+            border-width: 2px;
+            border-color: orange;
+        }
+}
+
+
+

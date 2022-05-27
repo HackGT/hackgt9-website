@@ -1,5 +1,7 @@
-import { Text } from "@chakra-ui/react";
 import NavbarComponent from "./NavBarComponent";
+
+import styles from "./Navbar.module.scss";
+import { VStack } from "@chakra-ui/react";
 
 interface Anchor {
   name: string;
@@ -12,11 +14,11 @@ interface NavProps {
 
 const Navbar = (np: NavProps) => {
   return (
-    <div>
+    <VStack className={styles.container} spacing={"30px"}>
       {np.anchors.map((anchor) => (
         <NavbarComponent key={null} name={anchor.name} anchorLink={anchor.id} />
       ))}
-    </div>
+    </VStack>
   );
 };
 

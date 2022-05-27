@@ -1,5 +1,6 @@
-import { Text } from "@chakra-ui/react";
-import Link from "next/link";
+import { Link } from "@chakra-ui/react";
+
+import styles from "./Navbar.module.scss";
 
 interface NavbarComponentProps {
   name: string;
@@ -9,8 +10,10 @@ interface NavbarComponentProps {
 
 const NavbarComponent = (ncp: NavbarComponentProps) => {
   return (
-    <div>
-      <Link href={ncp.anchorLink}>{ncp.name}</Link>
+    <div className={styles.component}>
+      <Link style={{ textDecoration: "none" }} href={ncp.anchorLink}>
+        {ncp.name}
+      </Link>
     </div>
   );
 };
