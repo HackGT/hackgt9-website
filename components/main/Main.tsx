@@ -1,7 +1,11 @@
-import { Button, Center, VStack, Text } from "@chakra-ui/react";
+import { Center, VStack, Text, Link } from "@chakra-ui/react";
 import styles from "./Main.module.scss";
 
-const Main = () => {
+interface MainProps {
+  toJump: string;
+}
+
+const Main = (mp: MainProps) => {
   return (
     <div className={styles.title_box}>
       <Center>
@@ -11,7 +15,9 @@ const Main = () => {
         <VStack spacing="0.6rem" padding="1rem">
           <Text>Some witty catchphrase or something</Text>
           <Text>Coming soon to colleges near you</Text>
-          <Button className={styles.register_button}>Register now</Button>
+          <Link href={mp.toJump} className={styles.register_button}>
+            Register now
+          </Link>
         </VStack>
       </Center>
     </div>
