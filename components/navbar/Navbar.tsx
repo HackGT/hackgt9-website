@@ -1,4 +1,4 @@
-import NavbarComponent from "./NavBarComponent";
+import NavbarComponent from "./NavbarComponent";
 
 import styles from "./Navbar.module.scss";
 import { VStack } from "@chakra-ui/react";
