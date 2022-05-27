@@ -1,9 +1,21 @@
 import { Text } from "@chakra-ui/react";
+import NavbarComponent from "./NavBarComponent";
 
-const Navbar = () => {
+interface Anchor {
+  name: string;
+  id: string;
+}
+
+interface NavProps {
+  anchors: Anchor[];
+}
+
+const Navbar = (np: NavProps) => {
   return (
     <div>
-      <Text>Fancy routing ~~~~</Text>
+      {np.anchors.map((anchor) => (
+        <NavbarComponent key={null} name={anchor.name} anchorLink={anchor.id} />
+      ))}
     </div>
   );
 };
