@@ -3,6 +3,7 @@ import Head from "next/head";
 import About from "../components/about/About";
 import Faq from "../components/faq/Faq";
 import Main from "../components/main/Main";
+import Registration from "../components/registration/Registration";
 import Schedule from "../components/schedule/Schedule";
 import Sponsors from "../components/sponsors/Sponsors";
 import TrackChallenge from "../components/tracks_and_challenges/BaseChallengeTrack";
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
       <Main />
       <About />
       <TrackChallenge />
+      <Registration />
       <Schedule />
       <Faq />
       <Sponsors />

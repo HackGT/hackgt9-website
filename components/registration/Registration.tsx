@@ -1,11 +1,11 @@
-import { Text } from "@chakra-ui/react";
+import { useState } from "react";
+import NotYet from "./NotYet";
+import RegisterBase from "./RegisterBase";
 
 const Registration = () => {
-  return (
-    <div>
-      <Text>Where the registration button should be</Text>
-    </div>
-  );
+  const [timeToRegister] = useState(true);
+
+  return <div>{timeToRegister ? <RegisterBase /> : <NotYet />}</div>;
 };
 
 export default Registration;
