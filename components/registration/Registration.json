@@ -1,0 +1,16 @@
+{
+  "types": [
+    {
+      "name": "Participant",
+      "link": "https://2021.hack.gt/"
+    },
+    {
+      "name": "Mentor",
+      "link": "https://2020.hack.gt/"
+    },
+    {
+      "name": "Volunteer",
+      "link": "https://2019.hack.gt/"
+    }
+  ]
+}
