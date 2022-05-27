@@ -1,0 +1,14 @@
+{
+  "challenges": [
+    {
+      "name": "Throwbacks",
+      "description": "Something something",
+      "prize": "mp3"
+    },
+    {
+      "name": "Groovy",
+      "description": "Something something 2",
+      "prize": "nes"
+    }
+  ]
+}

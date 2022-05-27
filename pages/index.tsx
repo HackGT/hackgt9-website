@@ -1,13 +1,11 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import About from "../components/about/About";
-import Embed from "../components/embeds/Embed";
 import Faq from "../components/faq/Faq";
 import Main from "../components/main/Main";
 import Schedule from "../components/schedule/Schedule";
 import Sponsors from "../components/sponsors/Sponsors";
-import Challenges from "../components/tracks_and_challenges/Challenges";
-import Tracks from "../components/tracks_and_challenges/Tracks";
+import TrackChallenge from "../components/tracks_and_challenges/BaseChallengeTrack";
 // don't use the image class, or don't use netlify to deploy if you do
 const Home: NextPage = () => {
   return (
@@ -18,10 +16,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Main />
-      <Embed src="/pdf/sample.pdf" title="charlie" maxW="800px" ratio={1} />
       <About />
-      <Tracks />
-      <Challenges />
+      <TrackChallenge />
       <Schedule />
       <Faq />
       <Sponsors />
