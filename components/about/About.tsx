@@ -12,6 +12,15 @@ const About = () => {
          Viverra tellus in hac habitasse platea dictumst vestibulum 
          rhoncus. Posuere lorem ipsum dolor sit amet consectetur.
         Sed blandit libero volutpat sed.</Text>
+
+      <Text className={styles.mainText}>What is HackGT?</Text>
+      <Text className={styles.bodyText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+         sed do eiusmod tempor incididunt ut labore et dolore magna 
+         aliqua. Mauris cursus mattis molestie a iaculis at erat. 
+         Semper viverra nam libero justo laoreet sit amet cursus sit. 
+         Viverra tellus in hac habitasse platea dictumst vestibulum 
+         rhoncus. Posuere lorem ipsum dolor sit amet consectetur.
+        Sed blandit libero volutpat sed.</Text>
       </VStack>
     </div>
   );
