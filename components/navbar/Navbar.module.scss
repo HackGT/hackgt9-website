@@ -4,6 +4,7 @@
     position:fixed;
     right: 0vw;
     top: 23vh;
+    z-index: 100;
 
     .component {
             font-size: $p/1.5;
