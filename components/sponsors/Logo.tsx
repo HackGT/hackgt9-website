@@ -1,5 +1,7 @@
 import { Image } from "@chakra-ui/react";
 
+import styles from "./Sponsors.module.scss";
+
 interface LogoProps {
   key: null;
   url: string;
@@ -10,7 +12,13 @@ interface LogoProps {
 
 const Logo = (lp: LogoProps) => {
   return (
-    <Image boxSize={(lp.numTiers - lp.tier) * 150} objectFit="contain" alt={lp.name} src={lp.url} />
+    <Image
+      className={styles.border}
+      boxSize={(lp.numTiers - lp.tier) * 175}
+      objectFit="contain"
+      alt={lp.name}
+      src={lp.url}
+    />
   );
 };
 
