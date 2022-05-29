@@ -1,4 +1,5 @@
-import { Image } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
+import Image from "next/image";
 
 import styles from "./Sponsors.module.scss";
 
@@ -14,13 +15,13 @@ interface LogoProps {
 const Logo = (lp: LogoProps) => {
   return (
     <a href={lp.website} target="_blank" rel="noreferrer">
-      <Image
+      <Box
         className={styles.border}
+        position="relative"
         boxSize={(lp.numTiers - lp.tier) * 13 + "vw"}
-        objectFit="contain"
-        alt={lp.name}
-        src={lp.url}
-      />
+      >
+        <Image objectFit="contain" alt={lp.name} src={lp.url} layout="fill" />
+      </Box>
     </a>
   );
 };
