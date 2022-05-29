@@ -1,4 +1,4 @@
-import { Center, Grid, HStack, Text, VStack } from "@chakra-ui/react";
+import { Center, Grid, HStack, Text, VStack, Wrap } from "@chakra-ui/react";
 import { useState } from "react";
 import Logo from "./Logo";
 
@@ -15,7 +15,7 @@ const Sponsors = () => {
         <Text className={styles.title}>Sponsors</Text>
         {tiers.map((tier) => (
           <div key={null}>
-            <Grid templateColumns={"repeat(" + (tier + 1) + ", 1fr)"}>
+            <Wrap justify="center">
               {sponsors.sponsors
                 .filter((e) => e.tier == tier)
                 .map((sponsor) => (
@@ -27,7 +27,7 @@ const Sponsors = () => {
                     numTiers={tiers.length + 1}
                   />
                 ))}
-            </Grid>
+            </Wrap>
           </div>
         ))}
       </VStack>
