@@ -21,7 +21,8 @@ const Sponsors = () => {
                 .map((sponsor) => (
                   <Logo
                     key={null}
-                    url={sponsor.url}
+                    url={sponsor.logo_url}
+                    website={sponsor.website_url}
                     name={sponsor.name}
                     tier={sponsor.tier}
                     numTiers={tiers.length + 1}

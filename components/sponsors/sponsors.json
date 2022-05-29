@@ -3,82 +3,98 @@
     {
       "name": "Apple",
       "tier": 1,
-      "url": "/img/sponsors/space_efficient_cat_sponsor.png"
+      "logo_url": "/img/sponsors/space_efficient_cat_sponsor.png",
+      "website_url": "https://en.wikipedia.org/wiki/Cat"
     },
     {
       "name": "Apple",
       "tier": 1,
-      "url": "/img/sponsors/space_efficient_cat_sponsor.png"
+      "logo_url": "/img/sponsors/space_efficient_cat_sponsor.png",
+      "website_url": "https://en.wikipedia.org/wiki/Cat"
     },
     {
       "name": "Cat",
       "tier": 2,
-      "url": "/img/sponsors/space_efficient_cat_sponsor.png"
+      "logo_url": "/img/sponsors/space_efficient_cat_sponsor.png",
+      "website_url": "https://en.wikipedia.org/wiki/Cat"
     },
     {
       "name": "Dog",
       "tier": 2,
-      "url": "/img/sponsors/space_efficient_cat_sponsor.png"
+      "logo_url": "/img/sponsors/space_efficient_cat_sponsor.png",
+      "website_url": "https://en.wikipedia.org/wiki/Cat"
     },
     {
       "name": "Hamster",
       "tier": 2,
-      "url": "/img/sponsors/space_efficient_cat_sponsor.png"
+      "logo_url": "/img/sponsors/space_efficient_cat_sponsor.png",
+      "website_url": "https://en.wikipedia.org/wiki/Cat"
     },
     {
       "name": "Rabbit",
       "tier": 3,
-      "url": "/img/sponsors/space_efficient_cat_sponsor.png"
+      "logo_url": "/img/sponsors/space_efficient_cat_sponsor.png",
+      "website_url": "https://en.wikipedia.org/wiki/Cat"
     },
     {
       "name": "Rabbit",
       "tier": 3,
-      "url": "/img/sponsors/space_efficient_cat_sponsor.png"
+      "logo_url": "/img/sponsors/space_efficient_cat_sponsor.png",
+      "website_url": "https://en.wikipedia.org/wiki/Cat"
     },
     {
       "name": "Rabbit",
       "tier": 3,
-      "url": "/img/sponsors/space_efficient_cat_sponsor.png"
+      "logo_url": "/img/sponsors/space_efficient_cat_sponsor.png",
+      "website_url": "https://en.wikipedia.org/wiki/Cat"
     },
     {
       "name": "Rabbit",
       "tier": 3,
-      "url": "/img/sponsors/space_efficient_cat_sponsor.png"
+      "logo_url": "/img/sponsors/space_efficient_cat_sponsor.png",
+      "website_url": "https://en.wikipedia.org/wiki/Cat"
     },
     {
       "name": "Tree",
       "tier": 4,
-      "url": "/img/sponsors/space_efficient_cat_sponsor.png"
+      "logo_url": "/img/sponsors/space_efficient_cat_sponsor.png",
+      "website_url": "https://en.wikipedia.org/wiki/Cat"
     },
     {
       "name": "Tree",
       "tier": 4,
-      "url": "/img/sponsors/space_efficient_cat_sponsor.png"
+      "logo_url": "/img/sponsors/space_efficient_cat_sponsor.png",
+      "website_url": "https://en.wikipedia.org/wiki/Cat"
     },
     {
       "name": "Tree",
       "tier": 4,
-      "url": "/img/sponsors/space_efficient_cat_sponsor.png"
+      "logo_url": "/img/sponsors/space_efficient_cat_sponsor.png",
+      "website_url": "https://en.wikipedia.org/wiki/Cat"
     },
     {
       "name": "Tree",
       "tier": 4,
-      "url": "/img/sponsors/space_efficient_cat_sponsor.png"
+      "logo_url": "/img/sponsors/space_efficient_cat_sponsor.png",
+      "website_url": "https://en.wikipedia.org/wiki/Cat"
     },
     {
       "name": "Tree",
       "tier": 4,
-      "url": "/img/sponsors/space_efficient_cat_sponsor.png"
+      "logo_url": "/img/sponsors/space_efficient_cat_sponsor.png",
+      "website_url": "https://en.wikipedia.org/wiki/Cat"
     },
     {
       "name": "Tree",
       "tier": 4,
-      "url": "/img/sponsors/space_efficient_cat_sponsor.png"
+      "logo_url": "/img/sponsors/space_efficient_cat_sponsor.png",
+      "website_url": "https://en.wikipedia.org/wiki/Cat"
     },
     {
       "name": "Tree",
       "tier": 4,
-      "url": "/img/sponsors/space_efficient_cat_sponsor.png"
+      "logo_url": "/img/sponsors/space_efficient_cat_sponsor.png",
+      "website_url": "https://en.wikipedia.org/wiki/Cat"
     }
   ]
 }
