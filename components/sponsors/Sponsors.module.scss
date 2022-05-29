@@ -11,6 +11,16 @@
     }
 }
 
+/* add some intermediaries */
+@media (max-width: 850px) {
+    .container {
+    .title {
+            font-size: $tMobile / 1.5;
+        }
+    }
+
+}
+
 .border {
     border: 1px red solid;
 }

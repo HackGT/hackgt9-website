@@ -14,7 +14,7 @@ const Logo = (lp: LogoProps) => {
   return (
     <Image
       className={styles.border}
-      boxSize={(lp.numTiers - lp.tier) * 175}
+      boxSize={(lp.numTiers - lp.tier) * 13 + "vw"}
       objectFit="contain"
       alt={lp.name}
       src={lp.url}
