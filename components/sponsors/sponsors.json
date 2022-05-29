@@ -1,0 +1,84 @@
+{
+  "sponsors": [
+    {
+      "name": "Apple",
+      "tier": 1,
+      "url": "/img/sponsors/cat_sponsor.png"
+    },
+    {
+      "name": "Apple",
+      "tier": 1,
+      "url": "/img/sponsors/cat_sponsor.png"
+    },
+    {
+      "name": "Cat",
+      "tier": 2,
+      "url": "/img/sponsors/cat_sponsor.png"
+    },
+    {
+      "name": "Dog",
+      "tier": 2,
+      "url": "/img/sponsors/cat_sponsor.png"
+    },
+    {
+      "name": "Hamster",
+      "tier": 2,
+      "url": "/img/sponsors/cat_sponsor.png"
+    },
+    {
+      "name": "Rabbit",
+      "tier": 3,
+      "url": "/img/sponsors/cat_sponsor.png"
+    },
+    {
+      "name": "Rabbit",
+      "tier": 3,
+      "url": "/img/sponsors/cat_sponsor.png"
+    },
+    {
+      "name": "Rabbit",
+      "tier": 3,
+      "url": "/img/sponsors/cat_sponsor.png"
+    },
+    {
+      "name": "Rabbit",
+      "tier": 3,
+      "url": "/img/sponsors/cat_sponsor.png"
+    },
+    {
+      "name": "Tree",
+      "tier": 4,
+      "url": "/img/sponsors/cat_sponsor.png"
+    },
+    {
+      "name": "Tree",
+      "tier": 4,
+      "url": "/img/sponsors/cat_sponsor.png"
+    },
+    {
+      "name": "Tree",
+      "tier": 4,
+      "url": "/img/sponsors/cat_sponsor.png"
+    },
+    {
+      "name": "Tree",
+      "tier": 4,
+      "url": "/img/sponsors/cat_sponsor.png"
+    },
+    {
+      "name": "Tree",
+      "tier": 4,
+      "url": "/img/sponsors/cat_sponsor.png"
+    },
+    {
+      "name": "Tree",
+      "tier": 4,
+      "url": "/img/sponsors/cat_sponsor.png"
+    },
+    {
+      "name": "Tree",
+      "tier": 4,
+      "url": "/img/sponsors/cat_sponsor.png"
+    }
+  ]
+}

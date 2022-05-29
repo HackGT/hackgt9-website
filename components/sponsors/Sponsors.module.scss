@@ -1,0 +1,12 @@
+@import "../styles/variables.scss";
+
+.container {
+    padding-top: $p2/2;
+    padding-bottom: $p2;
+    padding-right: $p2;
+    padding-left: $p2;
+
+    .title {
+        font-size: $t/2;
+    }
+}
