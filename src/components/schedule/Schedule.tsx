@@ -7,7 +7,7 @@ import ScheduleTable from "./ScheduleTable";
 import styles from "./Schedule.module.scss";
 
 const Schedule = () => {
-  const [comingSoon] = useState(false);
+  const [comingSoon] = useState(true);
 
   return (
     <div className={styles.component}>
