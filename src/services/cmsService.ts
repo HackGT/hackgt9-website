@@ -1,10 +1,11 @@
 import axios from "axios";
 
-const CMS_URL = String(process.env.CMS_URL);
-const EVENT_NAME = String(process.env.EVENT_NAME);
+const CMS_URL = String(process.env.REACT_APP_CMS_URL);
+const EVENT_NAME = String(process.env.REACT_APP_EVENT_NAME);
 
 
 const getEventUrl = async (eventId: string): Promise<any> =>
+
   ({
     url: "",
   });
