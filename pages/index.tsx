@@ -5,14 +5,15 @@ import About from "../src/components/about/About";
 import Faq from "../src/components/faq/Faq";
 import Main from "../src/components/main/Main";
 import Registration from "../src/components/registration/Registration";
-import Schedule from "../src/components/schedule/Schedule";
 import Sponsors from "../src/components/sponsors/Sponsors";
 import TrackChallenge from "../src/components/tracks_and_challenges/BaseChallengeTrack";
 
 import links from "../src/components/navbar/nav.json";
 import Navbar from "../src/components/navbar/Navbar";
+import ScheduleTab from "../src/components/schedule/ScheduleTab";
+import { propNames } from "@chakra-ui/react";
 
-const Home: NextPage = () => {
+const Home: NextPage = (props) => {
   return (
     <div>
       <Head>
@@ -34,7 +35,7 @@ const Home: NextPage = () => {
         <Registration />
       </div>
       <div id="schedule">
-        <Schedule />
+        <ScheduleTab virtual={false} />
       </div>
       <div id="faq">
         <Faq />

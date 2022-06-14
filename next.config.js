@@ -8,6 +8,10 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
+  env: {
+    CMS_URL: process.env.REACT_APP_CMS_URL,
+    EVENT_NAME: process.env.REACT_APP_EVENT_NAME
+  }
 }
 
 module.exports = nextConfig
