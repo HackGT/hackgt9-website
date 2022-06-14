@@ -15,7 +15,11 @@ const Main = (mp: MainProps) => {
         <VStack spacing="0.6rem" padding="1rem">
           <Text>Some witty catchphrase or something</Text>
           <Text>Coming soon to colleges near you</Text>
-          <Link href={mp.toJump} className={styles.register_button}>
+          <Link
+            style={{ textDecoration: "none" }}
+            href={mp.toJump}
+            className={styles.register_button}
+          >
             Register now
           </Link>
         </VStack>

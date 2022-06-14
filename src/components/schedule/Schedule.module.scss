@@ -1,24 +1,31 @@
 @import "../styles/variables.scss";
 
 .comingSoon {
-    font-size: $t;
-}
-
-.schedule {
-    font-size: $tMobile/3;
-    .dayHeader {
-        padding-bottom: $p1;
-        padding-top: $p1;
-        font-size: $tMobile/2;
-    }
-    padding-bottom: $p3;
+  font-size: $tMobile;
+  text-align: center;
 }
 
 .title {
-    font-size: $tMobile;
+  font-size: $tMobile/2;
+  text-align: center;
 }
 
-.component {
-    background-color: aquamarine;
-    padding-top: $p2;
+.container {
+  padding-bottom: $p2;
+}
+
+.daySection {
+  .header {
+    text-align: center;
+    font-size: $subtMobile;
+    padding-bottom: $p1;
+  }
+
+  .row {
+    padding-left: $p2;
+    padding-right: $p2;
+    padding-top: $p1/2;
+    padding-bottom: $p1/2;
+    font-size: $p;
+  }
 }

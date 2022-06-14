@@ -2,32 +2,32 @@
 
 /* swap out image, it's obviously a decoy */
 .title_box {
-    background-image: url('/img/retro_arcade.jpg');
-    background-repeat: repeat;
-    height: 100vh;
-    color: whitesmoke;
-    padding-top: $p3;
+  background-image: url("/img/retro_arcade.jpg");
+  background-repeat: repeat;
+  height: 100vh;
+  color: whitesmoke;
+  padding-top: $p3;
 }
 
 .title {
-    font-size: $t;
+  font-size: $t;
 }
 
 .description {
-    font-style: italic;
-    .coming_soon {
-        font-size: $p;
-    }
-    .register_button {
-        color: black;
-        font-size: $p;
-        // button things
-    }
+  font-style: italic;
+  .coming_soon {
+    font-size: $p;
+  }
+  .register_button {
+    color: black;
+    font-size: $p;
+    background-color: white;
+  }
 }
 
 /* add some intermediaries */
 @media (max-width: 850px) {
-    .title {
-        font-size: $tMobile;
-    }
+  .title {
+    font-size: $tMobile;
+  }
 }

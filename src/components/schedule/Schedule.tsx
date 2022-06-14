@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import dateFormat from "dateformat";
-import { Box, chakra } from "@chakra-ui/react";
+import { Box, Center, chakra, Text, VStack } from "@chakra-ui/react";
 
 import { fetchAllEvents, fetchUpcomingEvents } from "../../services/cmsService";
 import { EventRow } from "./EventRow";
+
+import styles from "./Schedule.module.scss";
 
 type Props = {
   tableLength: number;
@@ -45,51 +47,20 @@ const Schedule: React.FC<Props> = (props: Props) => {
     getEvents();
   }, []);
 
-  const ScheduleTable = chakra(Box, {
-    baseStyle: {
-      maxWidth: "1100px",
-      textAlign: "left",
-      margin: "auto",
-    },
-  });
-
-  const DateHeader = chakra(Box, {
-    baseStyle: {
-      position: "sticky",
-      top: 0,
-      padding: "20px",
-      borderBottomWidth: "5px",
-      borderImageSlice: 1,
-      borderImageSource: "linear-gradient(to right, #33c2ff, #7b69ec)",
-      bg: "white",
-      textTransform: "uppercase",
-      zIndex: "999",
-    },
-  });
-
   return (
-    <div className="schedule">
-      <Box fontSize={{ base: "36px", md: "50px" }}>Schedule</Box>
-      <ScheduleTable className="schedule_table">
+    <Center className={styles.container}>
+      <VStack align="stretch" spacing={"20px"}>
+        <Text className={styles.title}>Schedule</Text>
         {events.map((chunk: any, index: any, arr: any) => (
-          <Box key={chunk[0].startDate}>
-            <DateHeader>
-              <Box
-                bgGradient="linear(to-r, #33c2ff, #7b69ec 30%)"
-                bgClip="text"
-                fontSize={{ base: "24px", md: "32px" }}
-              >
-                {`${getDayFromDate(chunk[index].startDate)}`}
-              </Box>
-            </DateHeader>
+          <Box className={styles.daySection} key={chunk[0].startDate}>
+            <Box className={styles.header}>{`${getDayFromDate(chunk[index].startDate)}`}</Box>
             {events[index].map((row: any) => (
               <EventRow key={null} row={row} />
             ))}
-            {index !== arr.length ? <Box height="40px" /> : null}
           </Box>
         ))}
-      </ScheduleTable>
-    </div>
+      </VStack>
+    </Center>
   );
 };
 
