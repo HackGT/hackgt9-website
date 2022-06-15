@@ -11,8 +11,6 @@ const getEventUrl = async (eventId: string): Promise<any> =>
   });
 
 const cmsRequest = async (query: string) => {
-  console.log(process.env.NODE_ENV);
-
   const response = await axios.post(CMS_URL, {
     query,
   });
