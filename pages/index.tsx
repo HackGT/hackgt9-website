@@ -11,6 +11,7 @@ import TrackChallenge from "../src/components/tracks_and_challenges/BaseChalleng
 import links from "../src/components/navbar/nav.json";
 import Navbar from "../src/components/navbar/Navbar";
 import ScheduleTab from "../src/components/schedule/ScheduleTab";
+import Footer from "../src/components/footer/Footer";
 import { propNames } from "@chakra-ui/react";
 
 const Home: NextPage = (props) => {
@@ -42,6 +43,9 @@ const Home: NextPage = (props) => {
       </div>
       <div id="sponsors">
         <Sponsors />
+      </div>
+      <div id="footer">
+        <Footer />
       </div>
     </div>
   );
