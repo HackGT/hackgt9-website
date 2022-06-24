@@ -2,32 +2,65 @@
 
 /* swap out image, it's obviously a decoy */
 .title_box {
-  background-image: url("/img/retro_arcade.jpg");
-  background-repeat: repeat;
+  background: linear-gradient(50.3deg, #2d0e25 23.88%, #2a2db2 89.37%, #2d31da 96.14%);
   height: 100vh;
   color: whitesmoke;
-  padding-top: $p3;
+  padding-top: $mid;
 }
 
 .title {
-  font-size: $t;
+  font-size: $title;
+  font-family: "Retronoid";
+  font-style: italic;
+  color: #d90d8e;
 }
 
 .description {
+  position: relative;
+  top: -5vh;
   font-style: italic;
-  .coming_soon {
-    font-size: $p;
+  font-family: "Retronoid";
+  font-size: $header;
+  .motto {
+    color: #eae5e5;
+    /* only works in safari apparently */
+    -webkit-text-stroke: 2px solid #ffffff;
   }
   .register_button {
+    font-family: "Courier New", Courier, monospace;
     color: black;
     font-size: $p;
     background-color: white;
   }
 }
 
-/* add some intermediaries */
-@media (max-width: 850px) {
+@media (max-width: 1200px) {
   .title {
-    font-size: $tMobile;
+    font-size: $titleIntermediate;
+  }
+  .description {
+    font-size: $headerIntermediate;
+    top: -3vh;
+  }
+}
+
+@media (max-width: 800px) {
+  .title {
+    font-size: $titleMobile * 1.5;
+  }
+  .description {
+    font-size: $headerMobile * 1.5;
+    top: 0vh;
+  }
+}
+
+/* add some intermediaries */
+@media (max-width: 480px) {
+  .title {
+    font-size: $titleMobile;
+  }
+  .description {
+    font-size: $headerMobile;
+    top: 0vh;
   }
 }
