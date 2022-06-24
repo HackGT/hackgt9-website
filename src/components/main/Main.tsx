@@ -1,4 +1,4 @@
-import { Center, VStack, Text, Link } from "@chakra-ui/react";
+import { Center, VStack, Text, Link, Image, Box } from "@chakra-ui/react";
 import styles from "./Main.module.scss";
 
 interface MainProps {
@@ -14,13 +14,17 @@ const Main = (mp: MainProps) => {
       <Center className={styles.description}>
         <VStack>
           <Text className={styles.motto}>Retro Reset</Text>
-          <Link
-            style={{ textDecoration: "none" }}
-            href={mp.toJump}
-            className={styles.register_button}
-          >
-            Register now
-          </Link>
+          <Box className={styles.register_button}>
+            <div className={styles.register_button_outer} />
+            <div className={styles.register_button_inner} />
+            <Link
+              className={styles.register_button_text}
+              style={{ textDecoration: "none" }}
+              href={mp.toJump}
+            >
+              Register now
+            </Link>
+          </Box>
         </VStack>
       </Center>
     </div>
