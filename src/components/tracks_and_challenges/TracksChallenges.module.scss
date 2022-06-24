@@ -1,20 +1,31 @@
 @import "../styles/variables.scss";
 
 .header {
-    font-size: $subt;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: $subt;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .subheader {
-    font-size: $subt/1.5;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: $subt/1.5;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
 }
 
 .description {
-    font-size: $p;
+  font-size: $p;
 }
 
 .container {
-    padding-top: $p2;
-    padding-bottom: $p2;
+  padding-top: $p2;
+  padding-bottom: $p2;
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: $p;
+  }
+  .subheader {
+    font-size: $p;
+    top: 0vh;
+  }
 }

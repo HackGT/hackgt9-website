@@ -1,4 +1,4 @@
-import { Text, HStack, Center, VStack } from "@chakra-ui/react";
+import { Text, HStack, Center, VStack, Wrap } from "@chakra-ui/react";
 import BaseComponent from "./ChallengeTrackComponent";
 
 import styles from "./TracksChallenges.module.scss";
@@ -12,7 +12,7 @@ const ChallengeTrackBase = () => {
       <VStack>
         <Text className={styles.header}>Tracks and Challenges</Text>
         <Text className={styles.header}>Tracks</Text>
-        <HStack spacing="10vw">
+        <Wrap spacing={"10vw"} justify={"center"}>
           {tracks.tracks.map((track) => (
             <BaseComponent
               key={track.name}
@@ -21,9 +21,9 @@ const ChallengeTrackBase = () => {
               prize={null}
             />
           ))}
-        </HStack>
+        </Wrap>
         <Text className={styles.header}>Challenges</Text>
-        <HStack spacing="10vw">
+        <Wrap spacing={"10vw"} justify={"center"}>
           {challenges.challenges.map((challenge) => (
             <BaseComponent
               key={challenge.name}
@@ -32,7 +32,7 @@ const ChallengeTrackBase = () => {
               prize={challenge.prize}
             />
           ))}
-        </HStack>
+        </Wrap>
       </VStack>
     </Center>
   );
