@@ -32,9 +32,6 @@ const Home: NextPage = (props) => {
       <div id="tracks_and_challenges">
         <TrackChallenge />
       </div>
-      <div id="registration">
-        <Registration />
-      </div>
       <div id="schedule">
         <ScheduleTab virtual={false} />
       </div>
