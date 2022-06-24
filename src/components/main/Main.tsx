@@ -9,6 +9,15 @@ const Main = (mp: MainProps) => {
   return (
     <div className={styles.title_box}>
       <Center>
+        <Image
+          className={styles.logo}
+          objectFit="contain"
+          alt="logo"
+          boxSize={"60vw"}
+          src="/img/sponsors/space_efficient_cat_sponsor.png"
+        />
+      </Center>
+      <Center>
         <Text className={styles.title}>HackGT 9</Text>
       </Center>
       <Center className={styles.description}>
