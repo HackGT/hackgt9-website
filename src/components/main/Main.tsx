@@ -26,6 +26,11 @@ const Main = (mp: MainProps) => {
           <Box className={styles.register_button}>
             <div className={styles.register_button_outer} />
             <div className={styles.register_button_inner} />
+            <div className={styles.loading_bar_position}>
+              <div className={styles.loading_bar_mask}>
+                <div className={styles.loading_bar} />
+              </div>
+            </div>
             <Link
               className={styles.register_button_text}
               style={{ textDecoration: "none" }}
