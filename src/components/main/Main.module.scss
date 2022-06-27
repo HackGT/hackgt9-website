@@ -6,26 +6,30 @@ $mask-base-width: 485px;
 $mask-base-height: 40px;
 $loading-bar-transition: background-position 2s ease;
 
-/* swap out image, it's obviously a decoy */
 .title_box {
   background: linear-gradient(50.3deg, #2d0e25 23.88%, #2a2db2 89.37%, #2d31da 96.14%);
   height: 100vh;
   color: whitesmoke;
   padding-top: $mid;
+  overflow: hidden;
 }
 
 .title {
+  z-index: 2;
   font-size: $title;
   font-family: "Retronoid";
   font-style: italic;
   color: #d90d8e;
 }
 
+/* swap out image, it's obviously a decoy */
 .logo {
+  z-index: 2;
   display: none;
 }
 
 .description {
+  z-index: 2;
   position: relative;
   top: -5vh;
   font-style: normal;
@@ -76,8 +80,8 @@ $loading-bar-transition: background-position 2s ease;
 }
 
 .loading_bar_mask {
-  -webkit-mask-image: url("/svg/loading_bar_mask.svg");
-  mask-image: url("/svg/loading_bar_mask.svg");
+  -webkit-mask-image: url("/svg/main_page/loading_bar_mask.svg");
+  mask-image: url("/svg/main_page/loading_bar_mask.svg");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   object-fit: fill;
@@ -105,6 +109,27 @@ $loading-bar-transition: background-position 2s ease;
     background-position: right bottom;
     transition: $loading-bar-transition;
   }
+}
+
+#large_ellipse {
+  position: absolute;
+  z-index: 1;
+}
+
+#small_ellipse {
+  position: absolute;
+  z-index: 1;
+  right: 18px;
+  top: 500px;
+}
+
+#arc {
+  position: absolute;
+  z-index: 1;
+  top: 200px;
+  left: 25vw;
+  max-width: 80vw;
+  max-height: 80vh;
 }
 
 @media (min-width: 900px) {
@@ -148,6 +173,13 @@ $loading-bar-transition: background-position 2s ease;
   }
   .loading_bar_mask {
     mask-size: 55%;
+  }
+  #large_ellipse {
+    top: 150px;
+  }
+  #arc {
+    top: 180px;
+    left: 150px;
   }
 }
 
@@ -196,6 +228,13 @@ $loading-bar-transition: background-position 2s ease;
     background-position: left bottom;
     transition: $loading-bar-transition;
   }
+  #large_ellipse {
+    top: 50px;
+  }
+  #arc {
+    top: 200px;
+    left: 80px;
+  }
 }
 
 /* add some intermediaries */
@@ -238,6 +277,13 @@ $loading-bar-transition: background-position 2s ease;
       height: $mask-base-height * 2.4;
     }
   }
+  #arc {
+    top: 300px;
+    left: 50px;
+  }
+  #small_ellipse {
+    top: 60vh;
+  }
 }
 
 @media (max-height: 800px) {
@@ -248,7 +294,7 @@ $loading-bar-transition: background-position 2s ease;
 
 @media (max-aspect-ratio: "20/21") {
   .title_box {
-    padding-top: $mid/5;
+    padding-top: $mid/10;
   }
   .logo {
     display: inline;
