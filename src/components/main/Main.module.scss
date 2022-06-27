@@ -1,33 +1,302 @@
 @import "../styles/variables.scss";
 
-/* swap out image, it's obviously a decoy */
+/* Local variables */
+$mask-scale: 100%;
+$mask-base-width: 485px;
+$mask-base-height: 40px;
+$loading-bar-transition: background-position 2s ease;
+
 .title_box {
-  background-image: url("/img/retro_arcade.jpg");
-  background-repeat: repeat;
+  background: linear-gradient(50.3deg, #2d0e25 23.88%, #2a2db2 89.37%, #2d31da 96.14%);
   height: 100vh;
   color: whitesmoke;
-  padding-top: $p3;
+  padding-top: $mid;
+  overflow: hidden;
 }
 
 .title {
-  font-size: $t;
+  z-index: 2;
+  font-size: $title;
+  font-family: "Retronoid";
+  font-style: italic;
+  color: #d90d8e;
+}
+
+/* swap out image, it's obviously a decoy */
+.logo {
+  z-index: 2;
+  display: none;
 }
 
 .description {
-  font-style: italic;
-  .coming_soon {
-    font-size: $p;
+  z-index: 2;
+  position: relative;
+  top: -5vh;
+  font-style: normal;
+  font-family: "Retronoid";
+  font-size: $header;
+  .motto {
+    color: #eae5e5;
+    /* only works in safari apparently */
+    -webkit-text-stroke: 2px solid #ffffff;
+  }
+}
+
+.register_button {
+  background-color: transparent;
+  text-align: center;
+  .register_button_outer {
+    position: relative;
+    width: 790px;
+    height: 238px;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.5) 0%, rgba(217, 217, 217, 0.2) 100%);
+    box-shadow: inset 4px 4px 20px #07081d, inset -2px -2px 8px 1px rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+  }
+  .register_button_inner {
+    position: relative;
+    top: -225px;
+    left: 0.5rem;
+    width: 775px;
+    height: 213px;
+    background: #131d25;
+    box-shadow: inset 4px 4px 20px #07081d, inset -2px -2px 8px 1px rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+  }
+  .register_button_text {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-style: normal;
+    color: white;
+    font-size: 37.7px;
+    position: relative;
+    top: -720px;
+  }
+}
+
+.loading_bar_position {
+  position: relative;
+  top: -310px;
+  left: 122px;
+}
+
+.loading_bar_mask {
+  -webkit-mask-image: url("/svg/main_page/loading_bar_mask.svg");
+  mask-image: url("/svg/main_page/loading_bar_mask.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  object-fit: fill;
+  mask-size: 70%;
+  mask-position: center;
+
+  position: relative;
+  top: -110px;
+  left: -127px;
+
+  .loading_bar {
+    position: relative;
+    top: -35px;
+    left: -10px;
+    width: $mask-base-width * 1.65;
+    height: $mask-base-height * 6;
+
+    background: linear-gradient(
+      90deg,
+      rgba(148, 2, 94, 1) 0%,
+      rgba(255, 35, 176, 0.5) 50%,
+      rgba(253, 144, 216, 1) 100%
+    );
+    background-size: 400% 100%;
+    background-position: right bottom;
+    transition: $loading-bar-transition;
+  }
+}
+
+#large_ellipse {
+  position: absolute;
+  z-index: 1;
+}
+
+#small_ellipse {
+  position: absolute;
+  z-index: 1;
+  right: 18px;
+  top: 500px;
+}
+
+#arc {
+  position: absolute;
+  z-index: 1;
+  top: 200px;
+  left: 25vw;
+  max-width: 80vw;
+  max-height: 80vh;
+}
+
+@media (min-width: 900px) {
+  .loading_bar:hover {
+    background-position: left bottom;
+    transition: $loading-bar-transition;
+  }
+}
+
+@media (max-width: 1200px) {
+  .title_box {
+    padding-top: $mid * 1.25;
+  }
+  .title {
+    font-size: $titleIntermediate;
+  }
+  .description {
+    font-size: $headerIntermediate;
+    top: -3vh;
   }
   .register_button {
-    color: black;
-    font-size: $p;
-    background-color: white;
+    .register_button_outer {
+      width: 600px;
+      height: 188px;
+      left: 110px;
+    }
+    .register_button_inner {
+      width: 588px;
+      height: 176px;
+      top: -182px;
+      left: 117px;
+    }
+    .register_button_text {
+      top: -600px;
+      left: 15px;
+    }
+  }
+  .loading_bar_position {
+    top: -255px;
+    left: 138px;
+  }
+  .loading_bar_mask {
+    mask-size: 55%;
+  }
+  #large_ellipse {
+    top: 150px;
+  }
+  #arc {
+    top: 180px;
+    left: 150px;
+  }
+}
+
+/* mold this one to be more similar to the mobile version */
+@media (max-width: 900px) {
+  .title_box {
+    padding-top: $mid/3;
+  }
+  .title {
+    font-size: $titleMobile * 1.5;
+  }
+  .description {
+    font-size: $headerMobile * 1.5;
+    top: -20px;
+  }
+  .register_button {
+    .register_button_outer {
+      width: 400px;
+      height: 140px;
+      left: 25px;
+    }
+    .register_button_inner {
+      width: 384px;
+      height: 125px;
+      top: -132px;
+      left: 33px;
+    }
+    .register_button_text {
+      top: -410px;
+      left: 10px;
+      font-size: 30px;
+    }
+  }
+  .loading_bar_position {
+    top: -140px;
+    left: 140px;
+  }
+  .loading_bar_mask {
+    mask-size: 70%;
+    .loading_bar {
+      width: $mask-base-width * 0.9;
+      height: $mask-base-height * 3.8;
+    }
+  }
+  .loading_bar:active {
+    background-position: left bottom;
+    transition: $loading-bar-transition;
+  }
+  #large_ellipse {
+    top: 50px;
+  }
+  #arc {
+    top: 200px;
+    left: 80px;
   }
 }
 
 /* add some intermediaries */
-@media (max-width: 850px) {
+@media (max-width: 480px) {
   .title {
-    font-size: $tMobile;
+    font-size: $titleMobile;
+  }
+  .description {
+    font-size: $headerMobile;
+    top: 0vh;
+  }
+  .register_button {
+    .register_button_outer {
+      width: 250px;
+      height: 100px;
+      left: 10px;
+    }
+    .register_button_inner {
+      width: 235px;
+      height: 87px;
+      top: -93px;
+      left: 18px;
+    }
+    .register_button_text {
+      top: -275px;
+      left: 5px;
+      font-size: 20px;
+    }
+  }
+
+  .loading_bar_position {
+    top: -60px;
+    left: 0px;
+  }
+  .loading_bar_mask {
+    mask-size: 70%;
+    left: 0px;
+    .loading_bar {
+      width: $mask-base-width * 0.55;
+      height: $mask-base-height * 2.4;
+    }
+  }
+  #arc {
+    top: 300px;
+    left: 50px;
+  }
+  #small_ellipse {
+    top: 60vh;
+  }
+}
+
+@media (max-height: 800px) {
+  .title_box {
+    padding-top: $mid/1.5;
+  }
+}
+
+@media (max-aspect-ratio: "20/21") {
+  .title_box {
+    padding-top: $mid/10;
+  }
+  .logo {
+    display: inline;
   }
 }

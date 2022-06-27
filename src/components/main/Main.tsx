@@ -1,4 +1,4 @@
-import { Center, VStack, Text, Link } from "@chakra-ui/react";
+import { Center, VStack, Text, Link, Image, Box } from "@chakra-ui/react";
 import styles from "./Main.module.scss";
 
 interface MainProps {
@@ -8,20 +8,48 @@ interface MainProps {
 const Main = (mp: MainProps) => {
   return (
     <div className={styles.title_box}>
+      <Image
+        id={styles.large_ellipse}
+        alt="big big ellipse"
+        src="/svg/main_page/main_page_large_ellipse.svg"
+      />
+      <Image
+        id={styles.small_ellipse}
+        alt="little ellipse"
+        src="/svg/main_page/main_page_small_ellipse.svg"
+      />
+      <Image id={styles.arc} alt="arc" src="/svg/main_page/main_page_arc.svg" />
       <Center>
-        <Text className={styles.title}>HackGT#</Text>
+        <Image
+          className={styles.logo}
+          objectFit="contain"
+          alt="logo"
+          boxSize={"60vw"}
+          src="/img/sponsors/space_efficient_cat_sponsor.png"
+        />
+      </Center>
+      <Center>
+        <Text className={styles.title}>HackGT 9</Text>
       </Center>
       <Center className={styles.description}>
-        <VStack spacing="0.6rem" padding="1rem">
-          <Text>Some witty catchphrase or something</Text>
-          <Text>Coming soon to colleges near you</Text>
-          <Link
-            style={{ textDecoration: "none" }}
-            href={mp.toJump}
-            className={styles.register_button}
-          >
-            Register now
-          </Link>
+        <VStack>
+          <Text className={styles.motto}>Retro Reset</Text>
+          <Box className={styles.register_button}>
+            <div className={styles.register_button_outer} />
+            <div className={styles.register_button_inner} />
+            <div className={styles.loading_bar_position}>
+              <div className={styles.loading_bar_mask}>
+                <div className={styles.loading_bar} />
+              </div>
+            </div>
+            <Link
+              className={styles.register_button_text}
+              style={{ textDecoration: "none" }}
+              href={mp.toJump}
+            >
+              Register now
+            </Link>
+          </Box>
         </VStack>
       </Center>
     </div>
