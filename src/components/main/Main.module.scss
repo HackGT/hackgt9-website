@@ -43,10 +43,12 @@ $loading-bar-transition: background-position 2s ease;
 }
 
 .register_button {
+  max-width: 795px;
   background-color: transparent;
   text-align: center;
+  position: relative;
   .register_button_outer {
-    position: relative;
+    position: absolute;
     width: 790px;
     height: 238px;
     background: linear-gradient(180deg, rgba(217, 217, 217, 0.5) 0%, rgba(217, 217, 217, 0.2) 100%);
@@ -54,9 +56,9 @@ $loading-bar-transition: background-position 2s ease;
     border-radius: 25px;
   }
   .register_button_inner {
-    position: relative;
-    top: -225px;
-    left: 0.5rem;
+    position: absolute;
+    bottom: 15px;
+    left: 7px;
     width: 775px;
     height: 213px;
     background: #131d25;
@@ -64,18 +66,19 @@ $loading-bar-transition: background-position 2s ease;
     border-radius: 25px;
   }
   .register_button_text {
+    position: absolute;
+    top: 50px;
+    left: 290px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     font-style: normal;
     color: white;
     font-size: 37.7px;
-    position: relative;
-    top: -720px;
   }
 }
 
 .loading_bar_position {
   position: relative;
-  top: -310px;
+  top: 130px;
   left: 122px;
 }
 
@@ -151,25 +154,24 @@ $loading-bar-transition: background-position 2s ease;
     top: -3vh;
   }
   .register_button {
+    max-width: 605px;
+    max-height: 190px;
     .register_button_outer {
       width: 600px;
       height: 188px;
-      left: 110px;
     }
     .register_button_inner {
       width: 588px;
       height: 176px;
-      top: -182px;
-      left: 117px;
+      top: 5px;
     }
     .register_button_text {
-      top: -600px;
-      left: 15px;
+      top: 40px;
+      left: 200px;
     }
   }
   .loading_bar_position {
-    top: -255px;
-    left: 138px;
+    top: 110px;
   }
   .loading_bar_mask {
     mask-size: 55%;
@@ -196,26 +198,27 @@ $loading-bar-transition: background-position 2s ease;
     top: -20px;
   }
   .register_button {
+    max-width: 405px;
+    max-height: 145px;
     .register_button_outer {
       width: 400px;
       height: 140px;
-      left: 25px;
     }
     .register_button_inner {
       width: 384px;
       height: 125px;
-      top: -132px;
-      left: 33px;
+      top: 7px;
+      left: 10px;
     }
     .register_button_text {
-      top: -410px;
-      left: 10px;
       font-size: 30px;
+      left: 125px;
+      top: 25px;
     }
   }
   .loading_bar_position {
-    top: -140px;
-    left: 140px;
+    top: 120px;
+    left: 130px;
   }
   .loading_bar_mask {
     mask-size: 70%;
@@ -247,27 +250,25 @@ $loading-bar-transition: background-position 2s ease;
     top: 0vh;
   }
   .register_button {
+    max-width: 255px;
     .register_button_outer {
       width: 250px;
       height: 100px;
-      left: 10px;
     }
     .register_button_inner {
       width: 235px;
       height: 87px;
-      top: -93px;
-      left: 18px;
     }
     .register_button_text {
-      top: -275px;
-      left: 5px;
+      top: 25px;
+      left: 80px;
       font-size: 20px;
     }
   }
 
   .loading_bar_position {
-    top: -60px;
-    left: 0px;
+    top: 126px;
+    left: 5px;
   }
   .loading_bar_mask {
     mask-size: 70%;

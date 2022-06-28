@@ -34,22 +34,18 @@ const Main = (mp: MainProps) => {
       <Center className={styles.description}>
         <VStack>
           <Text className={styles.motto}>Retro Reset</Text>
-          <Box className={styles.register_button}>
-            <div className={styles.register_button_outer} />
-            <div className={styles.register_button_inner} />
-            <div className={styles.loading_bar_position}>
-              <div className={styles.loading_bar_mask}>
-                <div className={styles.loading_bar} />
+          <Link href="https://www.merriam-webster.com/dictionary/registration" target="_blank">
+            <Box className={styles.register_button}>
+              <div className={styles.register_button_outer} />
+              <div className={styles.register_button_inner} />
+              <div className={styles.loading_bar_position}>
+                <div className={styles.loading_bar_mask}>
+                  <div className={styles.loading_bar} />
+                </div>
               </div>
-            </div>
-            <Link
-              className={styles.register_button_text}
-              style={{ textDecoration: "none" }}
-              href={mp.toJump}
-            >
-              Register now
-            </Link>
-          </Box>
+              <Text className={styles.register_button_text}>Register now</Text>
+            </Box>
+          </Link>
         </VStack>
       </Center>
     </div>
