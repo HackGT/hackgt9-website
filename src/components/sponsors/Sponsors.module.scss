@@ -1,26 +1,48 @@
 @import "../styles/variables.scss";
 
 .container {
-    padding-top: $p2/2;
-    padding-bottom: $p2;
-    padding-right: $p2;
-    padding-left: $p2;
+  padding-top: $p2/2;
+  padding-bottom: $p2;
+  padding-right: $p2;
+  padding-left: $p2;
 
+  background: rgba(9, 1, 53, 1);
+
+  font-family: "Retronoid";
+  color: whitesmoke;
+
+  .title {
+    font-size: $header;
+  }
+  .sub_header {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: $header/1.7;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
     .title {
-        font-size: $t/2;
+      font-size: $header/2;
     }
+    .sub_header {
+      font-size: $header/3;
+    }
+  }
 }
 
 /* add some intermediaries */
-@media (max-width: 850px) {
-    .container {
+@media (max-width: 600px) {
+  .container {
     .title {
-            font-size: $tMobile / 1.5;
-        }
+      font-size: $headerMobile;
     }
-
+    .sub_header {
+      font-size: $headerMobile/1.5;
+    }
+  }
 }
 
 .border {
-    border: 1px red solid;
+  border: 1px red solid;
 }

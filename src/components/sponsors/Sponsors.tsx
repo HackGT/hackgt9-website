@@ -13,7 +13,8 @@ const Sponsors = () => {
     <Center className={styles.container}>
       <VStack>
         <Text className={styles.title}>Sponsors</Text>
-        {tiers.map((tier) => (
+        <Text className={styles.sub_header}>Coming Soon!</Text>
+        {/* {tiers.map((tier) => (
           <div key={null}>
             <Wrap justify="center">
               {sponsors.sponsors
@@ -30,7 +31,7 @@ const Sponsors = () => {
                 ))}
             </Wrap>
           </div>
-        ))}
+        ))} */}
       </VStack>
     </Center>
   );
