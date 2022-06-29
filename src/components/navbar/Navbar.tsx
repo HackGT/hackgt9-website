@@ -52,7 +52,7 @@ function myFunction() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = 90 - (winScroll / height) * 90;
-  document.getElementById("myBar").style.width = 90 - scrolled + "%";
+  // document.getElementById("myBar").style.width = 90 - scrolled + "%";
 }
 
 export default Navbar;
