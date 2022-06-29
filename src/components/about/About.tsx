@@ -11,38 +11,6 @@ const About = () => {
             {`We're`} back with the eighth iteration of our flagship event where we bring you to the HackGT 
             marketplace to support you as you hone your hacking skills and explore a weekend filled with 
             community and compassion.</Text>
-            {/* There's supposed to be a tetris img sort of thing here. */}
-            {/* <HStack>
-            <Grid className={styles.tetris1} gap={0} templateAreas={`"a b c" "d e f"`}>
-              <GridItem area={"d"}>
-                <Image src="/img/about/tetris1.png" alt="tetris"></Image>
-              </GridItem>
-              <GridItem area={"b"}>
-
-                <Image src="/img/about/tetris1.png" alt="tetris"></Image>
-              </GridItem>
-              <GridItem area={"e"}>
-                <Image src="/img/about/tetris1.png" alt="tetris"></Image>
-              </GridItem>
-              <GridItem area={"f"}>
-                <Image src="/img/about/tetris1.png" alt="tetris"></Image>
-              </GridItem>
-            </Grid>
-            <Grid className={styles.tetris2} gap={0} templateAreas={`"a b" "c d" "e f"`}>
-              <GridItem area={"e"}>
-                <Image src="/img/about/tetris2.png" alt="tetris"></Image>
-              </GridItem>
-              <GridItem area={"f"}>
-                <Image src="/img/about/tetris2.png" alt="tetris"></Image>
-              </GridItem>
-              <GridItem area={"d"}>
-                <Image src="/img/about/tetris2.png" alt="tetris"></Image>
-              </GridItem>
-              <GridItem area={"b"}>
-                <Image src="/img/about/tetris2.png" alt="tetris"></Image>
-              </GridItem>
-            </Grid>
-            </HStack> */}
             <Grid className={styles.tetris} templateAreas={`"a b c d e" "f g h i j" "k l m n o"`}>
               <GridItem  area={"k"}>
                 <Image src="/img/about/tetris1.png" alt="tetris"></Image>
