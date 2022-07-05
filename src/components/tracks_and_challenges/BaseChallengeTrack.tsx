@@ -8,6 +8,18 @@ import tracks from "./tracks.json";
 const ChallengeTrackBase = () => {
   return (
     <Center className={styles.container}>
+      <Image id={styles.pink_ellipse} alt="pink ellipse" src="/svg/tracks/pink_ellipse.svg" />
+      <Image id={styles.teal_ellipse} alt="teal ellipse" src="/svg/tracks/teal_ellipse.svg" />
+      <Image
+        id={styles.faint_blue_ellipse}
+        alt="faint blue ellipse"
+        src="/svg/tracks/faint_blue_ellipse.svg"
+      />
+      <Image
+        id={styles.giant_faint_pink_ellipse}
+        alt="giant pink ellipse"
+        src="/svg/tracks/giant_faint_pink_ellipse.svg"
+      />
       <VStack>
         <Text className={styles.header}>Tracks</Text>
         <Text className={styles.subtext}>
@@ -18,6 +30,7 @@ const ChallengeTrackBase = () => {
         <Wrap justify={"center"} spacing={{ base: "0px", md: "7vw" }}>
           <VStack>
             <Image
+              className={styles.not_background}
               alt="blue console"
               src="/img/tracks/player_blue.png"
               boxSize={{ base: "60vw", md: "30vw", lg: "25vw" }}
@@ -39,6 +52,7 @@ const ChallengeTrackBase = () => {
           </VStack>
           <VStack>
             <Image
+              className={styles.not_background}
               alt="pink console"
               src="/img/tracks/player_pink.png"
               boxSize={{ base: "60vw", md: "30vw", lg: "25vw" }}
