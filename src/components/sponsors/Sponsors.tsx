@@ -1,4 +1,4 @@
-import { Center, Grid, HStack, Text, VStack, Wrap } from "@chakra-ui/react";
+import { Center, Grid, HStack, Image, Text, VStack, Wrap } from "@chakra-ui/react";
 import { useState } from "react";
 import Logo from "./Logo";
 
@@ -12,7 +12,22 @@ const Sponsors = () => {
   return (
     <Center className={styles.container}>
       <VStack>
-        <Text className={styles.title}>Sponsors</Text>
+        <HStack>
+          <Image
+            boxSize={"25vw"}
+            alt="left button"
+            src="/svg/sponsors/left_buttons.svg"
+            id={styles.left_button}
+          />
+          <Text className={styles.title}>Sponsors</Text>
+          <Image
+            boxSize={"25vw"}
+            alt="right button"
+            src="/svg/sponsors/right_buttons.svg"
+            id={styles.right_button}
+          />
+        </HStack>
+
         <Text className={styles.sub_header}>Coming Soon!</Text>
         {/* {tiers.map((tier) => (
           <div key={null}>
