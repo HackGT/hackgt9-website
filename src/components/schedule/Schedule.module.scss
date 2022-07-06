@@ -5,8 +5,25 @@
   text-align: center;
 }
 
+.comingSoonTitle {
+  font-size: $subt;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: whitesmoke;
+  padding-top: $p1;
+  padding-bottom: $p1;
+}
+
 .title {
-  font-size: $tMobile/2;
+  color: whitesmoke;
+  font-size: $header;
+  font-family: "Retronoid";
+  z-index: 2;
+}
+
+.progressBar {
+  left: 15.2%;
+  right: 15.6%;
+  width: 70%;
   text-align: center;
 }
 

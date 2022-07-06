@@ -10,6 +10,7 @@ const ScheduleTab: React.FC<Props> = (props: Props) => (
   <div>
     {/* <ComingSoon /> */}
     <Schedule tableLength={Infinity} homepage={false} virtual={props.virtual} />
+    <ComingSoon />
   </div>
 );
 export default ScheduleTab;
