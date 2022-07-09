@@ -9,6 +9,7 @@ $loading-bar-transition: background-position 2s ease;
 .title_box {
   color: whitesmoke;
   padding-top: $mid;
+  padding-bottom: $mid;
   overflow: hidden;
 }
 
@@ -291,7 +292,7 @@ $loading-bar-transition: background-position 2s ease;
   }
 }
 
-@media (max-aspect-ratio: "20/21") {
+@media (max-aspect-ratio: "54/55") {
   .title_box {
     padding-top: $mid/10;
   }
