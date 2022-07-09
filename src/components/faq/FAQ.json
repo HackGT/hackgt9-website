@@ -1,60 +1,48 @@
 {
-   "qas": [
-       {
-           "question": "Who is eligible to participate?",
-           "answer": "Any student over the age of 18 enrolled in any college or university is allowed to participate. If you are younger than 18, but a Georgia Tech student, you can still participate."
-       },
-        {
-           "question": "Who is eliglble to mentor/volunteer?",
-           "answer": "Anyone can mentor or volunteer. If you are interested in helping participants through their projects, then apply as a mentor. If you are interested in helping us run the event, then apply as a volunteer."
-       },
-        {
-           "question": "Do I need any experience to apply?",
-           "answer": "No! Experience is not required. Hackathons are open environments for everyone. If you are new to hackathons, the Emerging Hacker track may be for you!"
-       },
-        {
-           "question": "How does the admissions process work?",
-           "answer": "That's a secret :)"
-       },
-        {
-           "question": "Are there any costs?",
-           "answer": "No! HackGT # is completely free to participants and mentors thanks to our sponsors."
-       },
-        {
-           "question": "Is there an admissions puzzle?",
-           "answer": "Perhaps... take a look around and you may find the way. 👀"
-       },
-        {
-           "question": "Will hardware be provided?",
-           "answer": "We will provide hardware through our hardware desk!"
-       },
-        {
-           "question": "What do I need for the event",
-           "answer": "we recommend bringing a laptop, charger, headphones, water bottle, and anything else you'll need over the weekend. We'll provide hardware, meals, and snacks."
-       },
-        {
-           "question": "Can I use past projects?",
-           "answer": "In general, no — true to the spirit of hackathons, you may not submit your past projects to HackGT."
-       },
-        {
-           "question": "What if I don't have a team?",
-           "answer": "No worries! We will help you find your team based on your skills and interests through our team formation tool."
-       },
-        {
-           "question": "Do projects need to be themed?",
-           "answer": "No, you can make anything you want! If you want more direction, we will also have sponsor challenges and HackGT 9 awards, which will be released before the event."
-       },
-        {
-           "question": "What are the prizes?",
-           "answer": "We'll announce more info on prizes soon!"
-       },
-        {
-           "question": "Will there be swag?",
-           "answer": "Yes :)"
-       },
-        {
-           "question": "I have more questions!",
-           "answer": "Contact us at hello@hexlabs.org"
-       }
-   ] 
+  "qas": [
+    {
+      "question": "Do I need any XP to apply?",
+      "answer": "No! Experience is not required. Hackathons are open creative and learning environments for everyone. If you are new to hackathons, the Emerging Hacker track may be for you!"
+    },
+    {
+      "question": "Our Covid safety and in-person guidelines.",
+      "answer": "HackGT 9 will be in-person this fall. Currently, the Georgia Institute of Technology is proceeding with normal on-campus operations during the fall semester. However, even with nationwide rollouts of the vaccine, we still want to exercise caution, and we will be asking all attendees to get tested prior to attending and to wear masks during the event. "
+    },
+    {
+      "question": "Did you say “FREE”?",
+      "answer": "YES! Once you're on GT's campus, HackGT 9 is completely free to participants and mentors thanks to our sponsors. Free food, free swag, free vibes. 😇\nIf you will be traveling from afar, we offer reimbursements to GT, but transportation will be your only cost otherwise."
+    },
+    {
+      "question": "How does the admissions process work?",
+      "answer": "That's a secret :)"
+    },
+    {
+      "question": "What do I need for the event?",
+      "answer": "We recommend bringing a laptop, charger, headphones, and anything else you'll need over the weekend. We'll provide hardware, meals, snacks, swag, and ~good vibes~."
+    },
+    {
+      "question": "What projects can I make? ",
+      "answer": "You can make anything you want! If you want more direction, we will have sponsor challenges and HackGT 9 tracks for both the General and Emerging participants. However, you may not submit your past projects to HackGT. \nWe will send out an event packet containing project submission rules closer to October."
+    },
+    {
+      "question": "I'm not a solo hacker. How can I make a team?",
+      "answer": "No worries; we love multi-player hacker groups! We will help you find your team based on your skills and interests through our team formation tool.\nYou can also form a team with anyone! You are free to form teams that are entirely one mode, or you can have a mix of Emerging and General mode participants within a team. Note that a team must be 100% Emerging participants to be eligible for Emerging-specific prizes."
+    },
+    {
+      "question": "What are the prizes? Is there swag?",
+      "answer": "If you win a prize, we will make sure you get it no matter where in the world you are! We'll announce more info on prizes soon.\nHackGT 9 swag will be distributed during the event and there will be more opportunities to win exclusive items from winning activities or using points from event participation to redeem additional retro swag. More information coming soon!"
+    },
+    {
+      "question": "Who is eligible to mentor/volunteer?",
+      "answer": "Anyone can mentor or volunteer. If you are interested in helping participants through their projects, then apply as a mentor. If you are interested in helping us run the event, then apply as a volunteer."
+    },
+    {
+      "question": "Are we assigned mentors?",
+      "answer": "Mentorship this year will be in an Office Hours style format. Participants can submit questions via a virtual queue and meet mentors 1:1"
+    },
+    {
+      "question": "I have more questions...",
+      "answer": "Contact us at hello@hexlabs.org"
+    }
+  ]
 }

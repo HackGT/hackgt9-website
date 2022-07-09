@@ -8,7 +8,7 @@ const Faq = () => {
   return (
     <div className={styles.container}>
       <Center>
-        <Text className={styles.title}>Frequently Asked Questions</Text>
+        <Text className={styles.title}>FAQ</Text>
       </Center>
       <VStack spacing={"20px"}>
         {qas.qas.map((entry) => (
