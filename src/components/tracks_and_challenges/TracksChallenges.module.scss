@@ -68,6 +68,16 @@ $track_width: 60vw;
 
 #general_track_container {
   padding: 12vh 0 12vh 0;
+  position: relative;
+  #faint_pink_ellipse {
+    position: absolute;
+    right: 0px;
+  }
+  #blue_ellipse {
+    position: absolute;
+    top: 250px;
+    left: 150px;
+  }
 }
 
 #emerging_track_container {
@@ -144,6 +154,12 @@ $track_width: 60vw;
 @media (max-width: 900px) {
   .track_container {
     padding: 8vw;
+  }
+
+  #general_track_container {
+    #blue_ellipse {
+      left: 0px;
+    }
   }
 }
 
