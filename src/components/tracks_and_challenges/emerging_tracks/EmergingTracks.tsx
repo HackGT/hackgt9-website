@@ -1,22 +1,24 @@
-import { Center, Image, Text, VStack } from "@chakra-ui/react";
+import { Center, Text, VStack } from "@chakra-ui/react";
 import TD from "../TD";
-import styles from "./Faq.module.scss";
+import styles from "../TracksChallenges.module.scss";
 
-const Faq = () => {
+import et from "./emerging_tracks.json";
+
+const EmergingTracks = () => {
   return (
-    <div className={styles.container}>
+    <div id={styles.general_track_container}>
       <Center>
-        <VStack className={styles.faq_box}>
-          <Text className={styles.title}>General Tracks</Text>
+        <VStack>
+          <Text className={styles.subheader}>Emerging Tracks</Text>
         </VStack>
       </Center>
       <VStack spacing={"20px"}>
-        {qas.qas.map((entry) => (
-          <QA key={entry.question} question={entry.question} answer={entry.answer} />
+        {et.emerging_tracks.map((entry) => (
+          <TD key={null} track={entry.name} description={entry.description} />
         ))}
       </VStack>
     </div>
   );
 };
 
-export default Faq;
+export default EmergingTracks;
