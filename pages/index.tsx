@@ -11,6 +11,8 @@ import links from "../src/components/navbar/nav.json";
 import Navbar from "../src/components/navbar/Navbar";
 import ScheduleTab from "../src/components/schedule/ScheduleTab";
 import Footer from "../src/components/footer/Footer";
+import GeneralTracks from "../src/components/tracks_and_challenges/general_tracks/GeneralTracks";
+import EmergingTracks from "../src/components/tracks_and_challenges/emerging_tracks/EmergingTracks";
 
 const Home: NextPage = (props) => {
   return (
@@ -29,6 +31,12 @@ const Home: NextPage = (props) => {
       </div>
       <div id="tracks_and_challenges">
         <TrackChallenge />
+      </div>
+      <div id="general_tracks">
+        <GeneralTracks />
+      </div>
+      <div id="emerging_tracks">
+        <EmergingTracks />
       </div>
       <div id="schedule">
         <ScheduleTab virtual={false} />

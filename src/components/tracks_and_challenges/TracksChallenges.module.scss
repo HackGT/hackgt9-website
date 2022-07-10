@@ -1,5 +1,9 @@
 @import "../styles/variables.scss";
 
+$track_title: 20px;
+$description: 16px;
+$track_width: 60vw;
+
 .header {
   color: whitesmoke;
   font-size: $header;
@@ -22,6 +26,7 @@
   font-family: "Retronoid";
   text-align: center;
   padding-bottom: 2rem;
+  z-index: 3;
 }
 
 .description {
@@ -61,6 +66,67 @@
   }
 }
 
+#general_track_container {
+  padding: 12vh 0 12vh 0;
+  position: relative;
+  #faint_pink_ellipse {
+    position: absolute;
+    right: 0px;
+  }
+  #blue_ellipse {
+    position: absolute;
+    top: 250px;
+    left: 150px;
+  }
+}
+
+#emerging_track_container {
+  padding: 12vh 0 12vh 0;
+  position: relative;
+
+  #giant_pink_ellipse {
+    position: absolute;
+    top: -200px;
+    z-index: 1;
+  }
+  #faint_blue_ellipse {
+    position: absolute;
+    right: 100px;
+    top: 200px;
+    z-index: 1;
+  }
+  #yellow_streak {
+    position: absolute;
+    top: 600px;
+    right: 100px;
+    z-index: 1;
+  }
+}
+
+.td_container {
+  color: whitesmoke;
+  z-index: 3;
+
+  background: rgba(217, 217, 217, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 71.5px;
+
+  width: $track_width;
+  text-align: left;
+  padding: 1rem 2rem 1rem 2rem;
+
+  .track {
+    font-size: $track_title;
+    padding: 0.5rem 0 0.5rem 0;
+  }
+
+  .description {
+    font-size: $description;
+    text-align: left;
+    padding-bottom: 1.4rem;
+  }
+}
+
 .not_background {
   z-index: 2;
 }
@@ -88,6 +154,12 @@
 @media (max-width: 900px) {
   .track_container {
     padding: 8vw;
+  }
+
+  #general_track_container {
+    #blue_ellipse {
+      left: 0px;
+    }
   }
 }
 

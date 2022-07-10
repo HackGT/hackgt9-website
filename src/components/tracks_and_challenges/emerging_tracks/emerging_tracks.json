@@ -1,0 +1,24 @@
+{
+  "emerging_tracks": [
+    {
+      "name": "Systems",
+      "description": "Repurpose old software or hardware into something new!"
+    },
+    {
+      "name": "Data Science",
+      "description": "Level up your community by building a project focused on social good!"
+    },
+    {
+      "name": "App Development",
+      "description": "Arcades are known for their flashing lights and kaleidoscope of colors — build a project that is visually exhilarating!"
+    },
+    {
+      "name": "Gaming & Graphics",
+      "description": "Upgrade any application or service with your very own extension!"
+    },
+    {
+      "name": "UX & Design",
+      "description": "Crunch the numbers to get a high score — use data to find insights!"
+    }
+  ]
+}
