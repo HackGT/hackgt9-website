@@ -1,4 +1,4 @@
-import { Text, HStack, Center, VStack, Wrap, Image, Box } from "@chakra-ui/react";
+import { Text, HStack, Center, VStack, Wrap, Image, Box, Link } from "@chakra-ui/react";
 import BaseComponent from "./BaseComponent";
 
 import styles from "./TracksChallenges.module.scss";
@@ -36,19 +36,20 @@ const ChallengeTrackBase = () => {
               boxSize={{ base: "60vw", md: "30vw", lg: "25vw" }}
               objectFit="contain"
             />
-
-            <Box
-              className={styles.track_container}
-              width={{ base: "70vw", lg: "500px" }}
-              minHeight={{ base: "none", md: "380px", lg: "500px" }}
-            >
-              <BaseComponent
-                key={tracks.tracks[0].name}
-                name={tracks.tracks[0].name}
-                description={tracks.tracks[0].description}
-                prize={null}
-              />
-            </Box>
+            <Link href={tracks.tracks[0].id} style={{ textDecoration: "none" }}>
+              <Box
+                className={styles.track_container}
+                width={{ base: "70vw", lg: "500px" }}
+                minHeight={{ base: "none", md: "380px", lg: "500px" }}
+              >
+                <BaseComponent
+                  key={tracks.tracks[0].name}
+                  name={tracks.tracks[0].name}
+                  description={tracks.tracks[0].description}
+                  prize={null}
+                />
+              </Box>
+            </Link>
           </VStack>
           <VStack>
             <Image
@@ -58,19 +59,20 @@ const ChallengeTrackBase = () => {
               boxSize={{ base: "60vw", md: "30vw", lg: "25vw" }}
               objectFit="contain"
             />
-
-            <Box
-              className={styles.track_container}
-              width={{ base: "70vw", lg: "500px" }}
-              minHeight={{ base: "none", md: "470px", lg: "500px" }}
-            >
-              <BaseComponent
-                key={tracks.tracks[1].name}
-                name={tracks.tracks[1].name}
-                description={tracks.tracks[1].description}
-                prize={null}
-              />
-            </Box>
+            <Link href={tracks.tracks[1].id} style={{ textDecoration: "none" }}>
+              <Box
+                className={styles.track_container}
+                width={{ base: "70vw", lg: "500px" }}
+                minHeight={{ base: "none", md: "470px", lg: "500px" }}
+              >
+                <BaseComponent
+                  key={tracks.tracks[1].name}
+                  name={tracks.tracks[1].name}
+                  description={tracks.tracks[1].description}
+                  prize={null}
+                />
+              </Box>
+            </Link>
           </VStack>
         </Wrap>
       </VStack>
