@@ -3,48 +3,54 @@
 
 .container {
     position:fixed;
-    right: 25vw;
+    // right: 25vw;
     top: 6vh;
     z-index: 100;
-    width: 60vw;
+    width: 75vw;
     .component {
         font-size:1.5vw;
         font-family: 'Titilium Web', sans-serif;
-        font-weight: 400;
-        color: green; //temporary change
+        font-weight: 600;
+        color: white; //temporary change
+    }
+    .component:hover{
+        text-decoration: underline;
     }
 }
+
 .navbg {
     z-index: 100;
-    width: 90vw;
+    width: 89vw;
     position:fixed;
+    height: 2vh;
     left: 5vw;
     top: 2.5vh;
     color: #E277BE;
     background: #E277BE;
     border-radius: 32px;
 }
+
 .progressBar{
-    z-index: 100;
-    width: 90vw;
-    position:fixed;
+    z-index: 120;
+    min-width: 5vw;
+    max-width: 89vw;
+    position: fixed;
+    height: 2vh;
     left: 5vw;
     top: 2.5vh;
     border-radius: 32px;
     color: #00DDFF;
     background-color:#00DDFF;
 }
-.menu, .menuButton, .menuItem, .menuList, #menu{
+.menu{
     visibility: hidden; 
 }
-.menu{
-    position: fixed;
-}
 @media screen and (max-width: 750px) {
-    .navbg, .progressBar, .component, .container {
+    .navbg, .progressBar, .container{
         visibility: hidden;
     }
-    .menu, .menuButton, .menuItem, .menuList, #menu{
+
+    .menu{
         transition: 0.5s;
         visibility: visible; 
     }
@@ -54,20 +60,7 @@
         position: fixed;
         top:0vh;
     }
-    .menuButton{
-        right: 0vw;
-    }
-    .menuList{
-        font-size:1.5vw;
-        margin:10px;
-        font-family: 'Titilium Web', sans-serif;
-        font-weight: 400;
-        color: green;
-    }
-    .menuItem{
-        background: yellow;
-        color: pink;
-    }
+    
     
 }
 
