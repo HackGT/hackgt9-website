@@ -117,7 +117,10 @@ function scrollFunction() {
       width = 75 + 40 * ((winScroll - currSec.offsetTop) / scrollable);
       break;
   }
-  document.getElementById("myBar").style.width = width + "%";
+  const bar = document.getElementById("myBar");
+  if (bar) {
+    bar.style.width = width + "%";
+  }
 }
 
 export default Navbar;
