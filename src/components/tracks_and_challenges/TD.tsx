@@ -1,4 +1,4 @@
-import { Collapse, Text } from "@chakra-ui/react";
+import { Collapse, HStack, Text, Image } from "@chakra-ui/react";
 import { useState } from "react";
 import styles from "./TracksChallenges.module.scss";
 
@@ -14,14 +14,28 @@ const TD = (tdp: TDProps) => {
 
   return (
     <div className={styles.td_container}>
-      <Text
+      <HStack
         className={styles.track}
         onClick={() => {
           setTrackClicked(!trackClicked);
         }}
       >
-        {tdp.track}
-      </Text>
+        <Text>{tdp.track}</Text>
+        {trackClicked ? (
+          <Image
+            className={styles.arrow}
+            alt="arrow down"
+            src="/icon/arrows/akar-icons_chevron-down.png"
+          />
+        ) : (
+          <Image
+            className={styles.arrow}
+            id={styles.down_arrow}
+            alt="arrow up"
+            src="/icon/arrows/akar-icons_chevron-down.png"
+          />
+        )}
+      </HStack>
       <Collapse in={trackClicked} animateOpacity>
         <Text className={styles.description}>{tdp.description}</Text>
       </Collapse>

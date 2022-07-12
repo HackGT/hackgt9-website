@@ -2,6 +2,7 @@
 
 $track_title: 20px;
 $description: 16px;
+$descriptionMobile: 12px;
 $track_width: 60vw;
 
 .header {
@@ -106,6 +107,7 @@ $track_width: 60vw;
 .td_container {
   color: whitesmoke;
   z-index: 3;
+  position: relative;
 
   background: rgba(217, 217, 217, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -113,7 +115,7 @@ $track_width: 60vw;
 
   width: $track_width;
   text-align: left;
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 1rem 2rem 0.75rem 2rem;
 
   .track {
     font-size: $track_title;
@@ -124,6 +126,15 @@ $track_width: 60vw;
     font-size: $description;
     text-align: left;
     padding-bottom: 1.4rem;
+  }
+
+  .arrow {
+    position: absolute;
+    right: 2rem;
+  }
+
+  #down_arrow {
+    transform: rotate(180deg);
   }
 }
 
@@ -186,6 +197,14 @@ $track_width: 60vw;
   .container {
     #pink_ellipse {
       left: 0px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .td_container {
+    .arrow {
+      display: none;
     }
   }
 }

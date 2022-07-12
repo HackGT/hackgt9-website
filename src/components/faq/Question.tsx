@@ -10,12 +10,12 @@ interface QuestionProps {
 const Question = (qp: QuestionProps) => {
   const [arrowDirection, setArrowDirection] = useState(false);
 
-  const showAnswer = () => {
-    setArrowDirection(!arrowDirection);
-  };
-
   return (
-    <HStack onClick={showAnswer}>
+    <HStack
+      onClick={() => {
+        setArrowDirection(!arrowDirection);
+      }}
+    >
       <Text className={`${styles.question} ${styles.both}`}>{qp.question}</Text>
       {arrowDirection ? (
         <Image alt="arrow down" src="/icon/arrows/akar-icons_chevron-down.png" />
