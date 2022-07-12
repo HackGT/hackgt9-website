@@ -24,6 +24,10 @@
   }
 }
 
+.flip {
+  transform: rotate(180deg);
+}
+
 .faq_box {
   padding-bottom: $p2;
   #game_console {
