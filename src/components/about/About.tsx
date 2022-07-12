@@ -15,15 +15,15 @@ const About = () => {
       ></Image>
       <Center>
         <Box className={styles.mainBox}>
+          <Center>
           <Text className={styles.title}>About</Text>
-
           <Text className={styles.bodyText}>
             Discover your craft this fall at HackGT 8 from October 22nd - 24th!
             {`We're`} back with the eighth iteration of our flagship event where we bring you to the
             HackGT marketplace to support you as you hone your hacking skills and explore a weekend
             filled with community and compassion.
           </Text>
-
+          </Center>
           <Grid className={styles.tetris} templateAreas={`"a b c d e" "f g h i j" "k l m n o"`}>
             <GridItem area={"k"}>
               <Image src="/img/about/tetris1.png" alt="tetris"></Image>
