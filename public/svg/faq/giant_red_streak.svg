@@ -1,12 +1,16 @@
 <svg width="995" height="1349" viewBox="0 0 995 1349" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_f_1210_923)">
-<path d="M539.469 233.779C391.759 31.9984 158.277 47.2332 60 80.0732C148.895 119.229 278.309 92.8363 486.468 341.917C807.336 725.862 851.558 1021.24 954.21 1288.72C877.509 1021.15 687.179 435.559 539.469 233.779Z" fill="#5B204C"/>
+<path d="M539.469 233.779C391.759 31.9984 158.277 47.2332 60 80.0732C148.895 119.229 278.309 92.8363 486.468 341.917C807.336 725.862 851.558 1021.24 954.21 1288.72C877.509 1021.15 687.179 435.559 539.469 233.779Z" fill="#5B204C">
+<animate attributeName="fill-opacity" values="0.4; 0.7; 0.4; 1.0; 0.4" dur="10s" fill="remove" repeatCount="indefinite"/>
+</path>
 </g>
 <defs>
 <filter id="filter0_f_1210_923" x="0" y="0.477051" width="1014.21" height="1348.24" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="30" result="effect1_foregroundBlur_1210_923"/>
+<feGaussianBlur stdDeviation="30" result="effect1_foregroundBlur_1210_923">
+<animate attributeName="stdDeviation" values="40; 30; 40" dur="3s" fill="remove" repeatCount="indefinite"/>
+</feGaussianBlur>
 </filter>
 </defs>
 </svg>
