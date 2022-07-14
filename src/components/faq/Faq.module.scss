@@ -24,6 +24,10 @@
   }
 }
 
+.flip {
+  transform: rotate(180deg);
+}
+
 .faq_box {
   padding-bottom: $p2;
   #game_console {
@@ -39,6 +43,7 @@
 
 .qa_shape {
   z-index: 3;
+  font-family: "Titillium Web";
   .question {
     font-size: $p;
   }

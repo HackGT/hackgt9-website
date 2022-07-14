@@ -1,5 +1,7 @@
 <svg width="886" height="482" viewBox="0 0 886 482" fill="none" xmlns="http://www.w3.org/2000/svg">
-<ellipse cx="443" cy="241" rx="443" ry="241" fill="url(#paint0_radial_1210_233)" fill-opacity="0.7"/>
+<ellipse cx="443" cy="241" rx="443" ry="241" fill="url(#paint0_radial_1210_233)" fill-opacity="0.7">
+<animate attributeName="fill-opacity" values="0.7; 0.3; 0.05; 0.3; 0.7" dur="9s" fill="remove" repeatCount="indefinite"/>
+</ellipse>
 <defs>
 <radialGradient id="paint0_radial_1210_233" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(443 241) rotate(90) scale(241 443)">
 <stop stop-color="#D90D8E"/>

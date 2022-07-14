@@ -1,4 +1,4 @@
-import { Collapse, VStack } from "@chakra-ui/react";
+import { Box, Collapse, VStack } from "@chakra-ui/react";
 import { useState } from "react";
 import Answer from "./Answer";
 import Question from "./Question";
@@ -15,12 +15,13 @@ const QA = (qap: QAProps) => {
 
   return (
     <div className={styles.qa_shape}>
-      <Question
+      <Box
         onClick={() => {
           setQuestionClicked(!questionClicked);
         }}
-        question={qap.question}
-      />
+      >
+        <Question open={questionClicked} question={qap.question} />
+      </Box>
       <Collapse in={questionClicked} animateOpacity>
         <Answer answer={qap.answer} />
       </Collapse>
