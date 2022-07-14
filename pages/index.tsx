@@ -23,33 +23,33 @@ const Home: NextPage = (props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar anchors={links.components} />
-      <div id="home">
+      <section id="home">
         <Main toJump="#registration" />
-      </div>
-      <div id="about">
+      </section>
+      <section id="about">
         <About />
-      </div>
-      <div id="tracks_and_challenges">
+      </section>
+      <section id="tracks_and_challenges">
         <TrackChallenge />
-      </div>
-      <div id="general_tracks">
+      </section>
+      <section id="general_tracks">
         <GeneralTracks />
-      </div>
-      <div id="emerging_tracks">
+      </section>
+      <section id="emerging_tracks">
         <EmergingTracks />
-      </div>
-      <div id="schedule">
+      </section>
+      <section id="schedule">
         <ScheduleTab virtual={false} />
-      </div>
-      <div id="faq">
+      </section>
+      <section id="faq">
         <Faq />
-      </div>
-      <div id="sponsors">
+      </section>
+      <section id="sponsors">
         <Sponsors />
-      </div>
-      <div id="footer">
+      </section>
+      <section id="footer">
         <Footer />
-      </div>
+      </section>
     </div>
   );
 };

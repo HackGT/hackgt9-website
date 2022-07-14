@@ -6,33 +6,32 @@
   align-items: center;
 
   .mainBox {
-    z-index: 2;
-    position: absolute;
+    z-index: 10;
+    position: relative;
     width: 30vw;
     height: 80vh;
-    left: 35%;
-    right: 35%;
-    top: 110vh;
+    top: 15vh;
+    right: 25vw;
     background: linear-gradient(152.13deg, #8e3480 5.27%, #1d2038 96.54%);
     box-shadow: inset -2px -2px 10px #07081d, inset 2px 2px 10px 1px radgradba(255, 255, 255, 0.2);
     border-radius: 25px;
     .tetris {
-      position: relative;
+      position: absolute;
       left: 18vw;
-      top: 65vh;
+      bottom: 2rem;
       width: 8vw;
       height: auto;
     }
   }
-
+  :root{
+    font-size: 100% ;
+  }
   .title {
     z-index: 2;
-    position: absolute;
-    font-size: 5vw;
+    position: relative;
+    font-size: 5rem;
     text-align: center;
-    top: 10vh;
-    left: 5vw;
-    right: 5vw;
+    top: 1rem;
     color: white;
     font-family: "Retronoid";
   }
@@ -40,95 +39,98 @@
   .bodyText {
     z-index: 2;
     position: absolute;
-    left: 16%;
-    right: 16%;
+    left: 5%;
+    right: 5%;
     top: 27vh;
     font-family: "Titillium Web";
     font-weight: 400;
-    font-size: 1.3vw;
+    font-size: 1.1vw;
     text-align: center;
     color: #ffffff;
+  }
+  .orange_arc{
+    position: relative;
+    height:auto;
+    max-width: 50vw;
+    top: 40px;
+    left: 25vw;
+    z-index: 30;
   }
   .radgrad1 {
     position: absolute;
     left: 6vw;
-    top: 106vh;
+    top: 130vh;
     width: 16vw;
     height: auto;
   }
   .radgrad2 {
     position: absolute;
     left: 10vw;
-    top: 150vh;
+    top: 180vh;
     width: 20vw;
     height: auto;
   }
   .radgrad3 {
     position: absolute;
     left: 80vw;
-    top: 160vh;
+    top: 190vh;
     width: 16vw;
     height: auto;
   }
   .radgrad4 {
     position: absolute;
     left: 70vw;
-    top: 140vh;
+    top: 170vh;
     width: 6vw;
     height: auto;
   }
 }
-
 @media (max-width: 1200px) {
   .container {
     padding-top: 20vh;
     .mainBox {
+      position: relative;
       width: 60vw;
       height: 80vh;
-      left: 20%;
-      right: 20%;
-      top: 110vh;
+      top: 15vh;
     }
     .bodyText {
-      top: 30%;
+      top: 8rem;
       font-weight: 400;
-      font-size: 25px;
+      font-size: 2vw;
     }
     .title {
-      font-size: 100px;
+      font-size: 5rem;
       text-align: center;
-      top: 8vh;
+      top: 0rem;
     }
     .tetris {
-      z-index: 1;
       visibility: hidden;
     }
-  }
 }
 
 @media (max-width: 700px) {
   .container {
-    .mainBox {
-      width: 60vw;
-      height: 60vh;
-      top: 120vh;
-    }
-    .bodyText {
-      left: 18%;
-      right: 18%;
-      top: 30%;
-      font-weight: 400;
-      font-size: 3vw;
-    }
-    .title {
-      font-size: 10vw;
-      text-align: center;
-      top: 8vh;
-      left: 20%;
-      right: 20%;
-    }
-    .tetris {
-      visibility: hidden;
+      .mainBox {
+        position: relative;
+        width: 70vw;
+        height: 65vh;
+        top: 5vh;
+      }
+      .bodyText {
+        left: 15%;
+        right: 15%;
+        top: 25%;
+        font-weight: 400;
+        font-size: 2.9vw;
+      }
+      .title {
+        font-size: 10vw;
+        top: 2vh; 
+      }
+      .tetris {
+        visibility: hidden;
+      }
     }
   }
 }
