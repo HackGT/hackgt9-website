@@ -1,19 +1,24 @@
-import { Text, Box, Image, Grid, GridItem, HStack, Center } from "@chakra-ui/react";
+import { Text, Box, Image, Grid, GridItem, Center } from "@chakra-ui/react";
 import styles from "./About.module.scss";
 const About = () => {
   return (
     <div className={styles.container}>
       <Image
-        src="/img/about/radgrad1.png"
-        alt="radius gradient"
+        src="/svg/about/faint_blue_radgrad.svg"
+        alt="faint blue radius gradient"
         className={styles.radgrad1}
       ></Image>
       <Image
-        src="/img/about/radgrad2.png"
-        alt="radius gradient"
+        src="/svg/about/faint_purple_radgrad.svg"
+        alt="faint purple radius gradient"
         className={styles.radgrad2}
       ></Image>
       <Center>
+        <Image
+          src="/svg/about/orange_arc.svg"
+          alt="orange arc"
+          className={styles.orange_arc}
+        ></Image>
         <Box className={styles.mainBox}>
           <Center>
           <Text className={styles.title}>About</Text>
@@ -53,14 +58,14 @@ const About = () => {
         </Box>
       </Center>
       <Image
-        src="/img/about/radgrad4.png"
-        alt="radius gradient"
-        className={styles.radgrad3}
-      ></Image>
-      <Image
-        src="/img/about/radgrad3.png"
+        src="/svg/about/small_faint_blue_radgrad.svg"
         alt="radius gradient"
         className={styles.radgrad4}
+      ></Image>
+      <Image
+        src="/svg/about/purple_orange_radgrad.svg"
+        alt="radius gradient"
+        className={styles.radgrad3}
       ></Image>
     </div>
   );
