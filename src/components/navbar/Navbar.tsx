@@ -9,8 +9,7 @@ import {
   MenuItem,
   IconButton,
   MenuList,
-  Center,
-  VStack,
+  Center
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { useEffect } from "react";
@@ -34,9 +33,7 @@ const Navbar = (np: NavProps) => {
   return (
     <div>
       <Box className={styles.navbg}>`</Box>
-      <Box className={styles.progressBar} id="myBar">
-        `
-      </Box>
+      <Box className={styles.progressBar} id="myBar"></Box>
       <Center>
         <HStack className={styles.container} spacing={"8vw"}>
           {np.anchors.map((anchor) => (

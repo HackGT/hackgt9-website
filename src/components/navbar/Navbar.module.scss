@@ -19,11 +19,16 @@
 }
 
 .navbg {
+    -webkit-mask-image: url("/svg/about/navbar_mask.svg");
+    mask-image: url("/svg/about/navbar_mask.svg");
+    -webkit-mask-size: cover;
+    mask-size:cover;
     z-index: 100;
-    width: 89vw;
+    width: 85vw;
     position:fixed;
     height: 2vh;
-    left: 5vw;
+    left: 6vw;
+    right: 6vw;
     top: 2.5vh;
     color: #E277BE;
     background: #E277BE;
@@ -31,12 +36,17 @@
 }
 
 .progressBar{
+    -webkit-mask-image: url("/svg/about/navbar_mask.svg");
+    mask-image: url("/svg/about/navbar_mask.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;
     z-index: 120;
     min-width: 5vw;
-    max-width: 89vw;
+    max-width: 85vw;
     position: fixed;
     height: 2vh;
-    left: 5vw;
+    left: 6vw;
+    right: 6vw;
     top: 2.5vh;
     border-radius: 32px;
     color: #00DDFF;
