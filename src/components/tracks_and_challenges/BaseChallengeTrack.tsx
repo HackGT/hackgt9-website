@@ -21,12 +21,11 @@ const ChallengeTrackBase = () => {
         src="/svg/tracks/giant_faint_pink_ellipse.svg"
       />
       <VStack>
-        <Text className={styles.header}>Tracks</Text>
+        <Text className={styles.header}>Modes</Text>
         <Text className={styles.subtext}>
           Are you an experienced or a beginner player in the hackathon game? We have two modes for
-          you to select from. Click each track to learn more.
+          you to select from. Click each mode to learn more.
         </Text>
-
         <Wrap justify={"center"} spacing={{ base: "0px", md: "7vw" }}>
           <VStack>
             <Image
@@ -75,6 +74,11 @@ const ChallengeTrackBase = () => {
             </Link>
           </VStack>
         </Wrap>
+        <Text className={styles.subtext} id={styles.only_one_mode}>
+          You may only apply to one mode. We will be limiting the number of Emerging hackers to
+          ensure we have enough resources to offer all participants a great experience. We recommend
+          you apply to the one that suits you the most!
+        </Text>
       </VStack>
     </Center>
   );

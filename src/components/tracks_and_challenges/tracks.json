@@ -3,12 +3,12 @@
     {
       "name": "General",
       "id": "#general_tracks",
-      "description": "Already have the XP  and found your groove at building technology projects? The General Track gives the conventional hacker experience with full creative control and exciting supplementary resources as needed. This track is your opportunity to innovate and connect with others as you bring your ideas to life. We’ll bring engaging industry professionals, provide new technologies, and award impactful prizes to help you power up your project. "
+      "description": "Already have the XP and found your groove at building technology projects? The General Track gives the conventional hacker experience with full creative control and exciting supplementary resources as needed. This track is your opportunity to innovate and connect with others as you bring your ideas to life. We'll bring engaging industry professionals, provide new technologies, and award impactful prizes to help you power up your project. "
     },
     {
       "name": "Emerging",
       "id": "#emerging_tracks",
-      "description": "Feeling like a newbie to hackathons and uncertain on how to get a technology project up and running? The Emerging Hacker Track is here to provide you with walkthroughs on introductory tech and tips on how to become a pro at a hackathon. Back by popular demand, this track will feature mentor matching to help guide you and your team through your first hackathon project. We will also be offering a wide and flexible variety of workshops ranging from web development and data science to design and computing systems designed just for you to learn the fundamentals and get you started on your dream hackathon project!"
+      "description": "Feeling like a newbie to hackathons and uncertain on how to get a technology project up and running? The Emerging Hacker Track is here to provide you with walkthroughs on introductory tech and tips on how to become a pro at a hackathon. We offer a wide variety of workshops to explore and learn about various topics in computing. We will also have on-demand mentor office hours so you get the help you need to complete your very first hackathon project."
     }
   ]
 }
