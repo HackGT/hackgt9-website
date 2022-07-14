@@ -1,6 +1,6 @@
 <svg width="373" height="377" viewBox="0 0 373 377" fill="none" xmlns="http://www.w3.org/2000/svg">
 <ellipse cx="186.35" cy="188.553" rx="185.5" ry="188.5" transform="rotate(22.3904 186.35 188.553)" fill="url(#paint0_radial_1210_647)" fill-opacity="0.5">
-<animate attributeName="fill-opacity" values="0.7; 0; 0.7" dur="5s" fill="remove" repeatCount="indefinite"/>
+<animate attributeName="fill-opacity" values="0.7; 0; 0.7" dur="2.3s" fill="remove" repeatCount="indefinite"/>
 </ellipse>
 <defs>
 <radialGradient id="paint0_radial_1210_647" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(186.35 188.553) rotate(90) scale(188.5 185.5)">
