@@ -1,4 +1,4 @@
-import { Box, Collapse, VStack } from "@chakra-ui/react";
+import { Box, Collapse } from "@chakra-ui/react";
 import { useState } from "react";
 import Answer from "./Answer";
 import Question from "./Question";

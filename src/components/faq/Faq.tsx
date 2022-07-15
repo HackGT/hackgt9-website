@@ -3,6 +3,7 @@ import QA from "./QA";
 import styles from "./Faq.module.scss";
 
 import qas from "./FAQ.json";
+import HardwareQ from "./HardwareQ";
 
 const Faq = () => {
   return (
@@ -35,9 +36,13 @@ const Faq = () => {
         </VStack>
       </Center>
       <VStack spacing={"20px"}>
-        {qas.qas.map((entry) => (
-          <QA key={entry.question} question={entry.question} answer={entry.answer} />
-        ))}
+        {qas.qas.map((entry) =>
+          entry.question == "hardware" ? (
+            <HardwareQ />
+          ) : (
+            <QA key={entry.question} question={entry.question} answer={entry.answer} />
+          )
+        )}
       </VStack>
     </div>
   );
