@@ -107,7 +107,6 @@ $track_width: 60vw;
 
 #only_one_mode {
   padding-top: 5rem;
-  max-width: 70vw;
 }
 
 #general {
@@ -198,6 +197,9 @@ $track_width: 60vw;
   .subheader {
     font-size: $subHeaderMobile;
     top: 0vh;
+  }
+  .subtext {
+    padding: 0 3rem 0 3rem;
   }
 
   .track_container {
