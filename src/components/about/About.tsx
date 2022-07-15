@@ -7,27 +7,24 @@ const About = () => {
         src="/svg/about/faint_blue_radgrad.svg"
         alt="faint blue radius gradient"
         className={styles.radgrad1}
-      ></Image>
+      />
       <Image
         src="/svg/about/faint_purple_radgrad.svg"
         alt="faint purple radius gradient"
         className={styles.radgrad2}
-      ></Image>
+      />
       <Center>
-        <Image
-          src="/svg/about/orange_arc.svg"
-          alt="orange arc"
-          className={styles.orange_arc}
-        ></Image>
+        <Image src="/svg/about/orange_arc.svg" alt="orange arc" className={styles.orange_arc} />
         <Box className={styles.mainBox}>
           <Center>
-          <Text className={styles.title}>About</Text>
-          <Text className={styles.bodyText}>
-            Discover your craft this fall at HackGT 8 from October 22nd - 24th! {`We're `}
-            back with the eighth iteration of our flagship event where we bring you to the HackGT
-            marketplace to support you as you hone your hacking skills and explore a weekend filled
-            with community and compassion.
-          </Text>
+            <Image alt="tetris block corner arrangement" src="/svg/about/tetris_blocks.svg" />
+            <Text className={styles.title}>About</Text>
+            <Text className={styles.bodyText}>
+              Discover your craft this fall at HackGT 8 from October 22nd - 24th! {`We're `}
+              back with the eighth iteration of our flagship event where we bring you to the HackGT
+              marketplace to support you as you hone your hacking skills and explore a weekend
+              filled with community and compassion.
+            </Text>
           </Center>
           <Grid className={styles.tetris} templateAreas={`"a b c d e" "f g h i j" "k l m n o"`}>
             <GridItem area={"k"}>

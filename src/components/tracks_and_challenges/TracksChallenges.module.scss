@@ -42,12 +42,10 @@ $track_width: 60vw;
   padding-top: 40vh;
   padding-bottom: $p2;
   position: relative;
-  width: 100vw;
 
   #pink_ellipse {
     position: absolute;
     top: -80px;
-    left: 15vw;
     z-index: 1;
   }
   #teal_ellipse {
@@ -90,11 +88,12 @@ $track_width: 60vw;
   #giant_pink_ellipse {
     position: absolute;
     top: -200px;
+    right: 0px;
     z-index: 1;
   }
   #faint_blue_ellipse {
     position: absolute;
-    right: 100px;
+    right: 0px;
     top: 200px;
     z-index: 1;
   }
@@ -109,6 +108,16 @@ $track_width: 60vw;
 #only_one_mode {
   padding-top: 5rem;
   max-width: 70vw;
+}
+
+#general {
+  padding-right: 3vw;
+  padding-left: 3vw;
+}
+
+#emerging {
+  padding-left: 3vw;
+  padding-right: 3vw;
 }
 
 .td_container {

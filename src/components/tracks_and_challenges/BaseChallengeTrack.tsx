@@ -26,53 +26,57 @@ const ChallengeTrackBase = () => {
           Are you an experienced or a beginner player in the hackathon game? We have two modes for
           you to select from. Click each mode to learn more.
         </Text>
-        <Wrap justify={"center"} spacing={{ base: "0px", md: "7vw" }}>
-          <VStack>
-            <Image
-              className={styles.not_background}
-              alt="blue console"
-              src="/img/tracks/player_blue.png"
-              boxSize={{ base: "60vw", md: "30vw", lg: "25vw" }}
-              objectFit="contain"
-            />
-            <Link href={tracks.tracks[0].id} style={{ textDecoration: "none" }}>
-              <Box
-                className={styles.track_container}
-                width={{ base: "70vw", lg: "500px" }}
-                minHeight={{ base: "none", md: "380px", lg: "500px" }}
-              >
-                <BaseComponent
-                  key={tracks.tracks[0].name}
-                  name={tracks.tracks[0].name}
-                  description={tracks.tracks[0].description}
-                  prize={null}
-                />
-              </Box>
-            </Link>
-          </VStack>
-          <VStack>
-            <Image
-              className={styles.not_background}
-              alt="pink console"
-              src="/img/tracks/player_pink.png"
-              boxSize={{ base: "60vw", md: "30vw", lg: "25vw" }}
-              objectFit="contain"
-            />
-            <Link href={tracks.tracks[1].id} style={{ textDecoration: "none" }}>
-              <Box
-                className={styles.track_container}
-                width={{ base: "70vw", lg: "500px" }}
-                minHeight={{ base: "none", md: "470px", lg: "500px" }}
-              >
-                <BaseComponent
-                  key={tracks.tracks[1].name}
-                  name={tracks.tracks[1].name}
-                  description={tracks.tracks[1].description}
-                  prize={null}
-                />
-              </Box>
-            </Link>
-          </VStack>
+        <Wrap margin={"0px"} justify={"center"} spacing={{ base: "0px" }}>
+          <div id={styles.general}>
+            <VStack>
+              <Image
+                className={styles.not_background}
+                alt="blue console"
+                src="/img/tracks/player_blue.png"
+                boxSize={{ base: "60vw", md: "30vw", lg: "25vw" }}
+                objectFit="contain"
+              />
+              <Link href={tracks.tracks[0].id} style={{ textDecoration: "none" }}>
+                <Box
+                  className={styles.track_container}
+                  width={{ base: "70vw", lg: "500px" }}
+                  minHeight={{ base: "none", md: "380px", lg: "500px" }}
+                >
+                  <BaseComponent
+                    key={tracks.tracks[0].name}
+                    name={tracks.tracks[0].name}
+                    description={tracks.tracks[0].description}
+                    prize={null}
+                  />
+                </Box>
+              </Link>
+            </VStack>
+          </div>
+          <div id={styles.emerging}>
+            <VStack>
+              <Image
+                className={styles.not_background}
+                alt="pink console"
+                src="/img/tracks/player_pink.png"
+                boxSize={{ base: "60vw", md: "30vw", lg: "25vw" }}
+                objectFit="contain"
+              />
+              <Link href={tracks.tracks[1].id} style={{ textDecoration: "none" }}>
+                <Box
+                  className={styles.track_container}
+                  width={{ base: "70vw", lg: "500px" }}
+                  minHeight={{ base: "none", md: "470px", lg: "500px" }}
+                >
+                  <BaseComponent
+                    key={tracks.tracks[1].name}
+                    name={tracks.tracks[1].name}
+                    description={tracks.tracks[1].description}
+                    prize={null}
+                  />
+                </Box>
+              </Link>
+            </VStack>
+          </div>
         </Wrap>
         <Text className={styles.subtext} id={styles.only_one_mode}>
           You may only apply to one mode. We will be limiting the number of Emerging hackers to

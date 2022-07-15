@@ -2,72 +2,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
 
 .container {
-    position:fixed;
-    // right: 25vw;
-    top: 6vh;
-    z-index: 100;
-    width: 75vw;
-    .component {
-        font-size:1.5vw;
-        font-family: 'Titilium Web', sans-serif;
-        font-weight: 600;
-        color: white; //temporary change
-    }
-    .component:hover{
-        text-decoration: underline;
-    }
+  position: fixed;
+  top: 6vh;
+  z-index: 100;
+  width: 75vw;
+  .component {
+    font-size: 1.5vw;
+    font-family: "Titilium Web", sans-serif;
+    font-weight: 600;
+    color: white; //temporary change
+  }
+  .component:hover {
+    text-decoration: underline;
+  }
 }
 
 .navbg {
-    -webkit-mask-image: url("/svg/about/navbar_mask.svg");
-    mask-image: url("/svg/about/navbar_mask.svg");
-    -webkit-mask-size: cover;
-    mask-size:cover;
-    z-index: 100;
-    width: 85vw;
-    position:fixed;
-    height: 2vh;
-    left: 6vw;
-    right: 6vw;
-    top: 2.5vh;
-    color: #E277BE;
-    background: #E277BE;
-    border-radius: 32px;
+  -webkit-mask-image: url("/svg/about/navbar_mask.svg");
+  mask-image: url("/svg/about/navbar_mask.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  z-index: 100;
+  width: 85vw;
+  position: fixed;
+  height: 2vh;
+  left: 6vw;
+  right: 6vw;
+  top: 2.5vh;
+  color: #e277be;
+  background: #e277be;
+  border-radius: 32px;
 }
 
-.progressBar{
-    -webkit-mask-image: url("/svg/about/navbar_mask.svg");
-    mask-image: url("/svg/about/navbar_mask.svg");
-    -webkit-mask-size: cover;
-    mask-size: cover;
-    z-index: 120;
-    min-width: 5vw;
-    max-width: 85vw;
-    position: fixed;
-    height: 2vh;
-    left: 6vw;
-    right: 6vw;
-    top: 2.5vh;
-    border-radius: 32px;
-    color: #00DDFF;
-    background-color:#00DDFF;
+.progressBar {
+  -webkit-mask-image: url("/svg/about/navbar_mask.svg");
+  mask-image: url("/svg/about/navbar_mask.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  z-index: 120;
+  min-width: 5vw;
+  max-width: 80vw;
+  position: fixed;
+  height: 2vh;
+  left: 6vw;
+  right: 6vw;
+  top: 2.5vh;
+  border-radius: 32px;
+  color: #00ddff;
+  background-color: #00ddff;
 }
-.menu{
-    visibility: hidden; 
+.menu {
+  visibility: hidden;
 }
 @media screen and (max-width: 750px) {
-    .navbg, .progressBar, .container{
-        visibility: hidden;
-    }
+  .navbg,
+  .progressBar,
+  .container {
+    visibility: hidden;
+  }
 
-    .menu{
-        transition: 0.5s;
-        visibility: visible; 
-    }
-    .menu{
-        z-index: 1000;
-        right: 0vw;
-        position: fixed;
-        top:0vh;
-    }
+  .menu {
+    transition: 0.5s;
+    visibility: visible;
+  }
+  .menu {
+    z-index: 1000;
+    right: 0vw;
+    position: fixed;
+    top: 0vh;
+  }
 }
