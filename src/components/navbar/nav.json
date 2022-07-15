@@ -1,19 +1,19 @@
 {
   "components": [
     {
-      "name": "Home",
+      "name": "HOME",
       "id": "#home"
     },
     {
-      "name": "About",
+      "name": "ABOUT",
       "id": "#about"
     },
     {
-      "name": "Tracks",
+      "name": "MODES",
       "id": "#tracks_and_challenges"
     },
     {
-      "name": "Schedule",
+      "name": "SCHEDULE",
       "id": "#schedule"
     },
     {
@@ -21,7 +21,7 @@
       "id": "#faq"
     },
     {
-      "name": "Sponsors",
+      "name": "SPONSORS",
       "id": "#sponsors"
     }
   ]
