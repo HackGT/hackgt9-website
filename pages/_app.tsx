@@ -1,12 +1,27 @@
 import type { AppProps } from "next/app";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
 import "../styles/globals.scss";
 import "../styles/styles.scss"; // temp, components should have their own scss
 
+const theme = extendTheme({
+  colors: {
+    darkgray: {
+      50: "#5F5E62",
+      100: "#5F5E62",
+      500: "#5F5E62",
+    },
+    customteal: {
+      50: "#20FFF2",
+      100: "#20FFF2",
+      500: "#20FFF2",
+    },
+  },
+});
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <Component {...pageProps} />
     </ChakraProvider>
   );
