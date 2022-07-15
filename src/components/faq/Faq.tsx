@@ -38,7 +38,9 @@ const Faq = () => {
       <VStack spacing={"20px"}>
         {qas.qas.map((entry) =>
           entry.question == "hardware" ? (
-            <HardwareQ />
+            <div key="null">
+              <HardwareQ />
+            </div>
           ) : (
             <QA key={entry.question} question={entry.question} answer={entry.answer} />
           )
