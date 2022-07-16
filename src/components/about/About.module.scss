@@ -88,37 +88,37 @@
     z-index: 30;
   }
 }
-@keyframes starryMotion{
+@keyframes starryMotion {
   0% {
     transform: translateX(0) translateY(0);
   }
-  25%{
+  25% {
     transform: translateX(10%);
   }
-  50%{
+  50% {
     transform: translateY(10%);
   }
-  75%{
+  75% {
     transform: translateX(10%) translateY(10%);
   }
-  100%{
+  100% {
     transform: translateX(0) translateY(0);
   }
 }
-@keyframes starryMotion2{
+@keyframes starryMotion2 {
   0% {
     transform: translateX(0) translateY(0);
   }
-  25%{
+  25% {
     transform: translateY(10%);
   }
-  50%{
+  50% {
     transform: translateX(10%);
   }
-  75%{
+  75% {
     transform: translateX(10%) translateY(10%);
   }
-  100%{
+  100% {
     transform: translateX(0) translateY(0);
   }
 }
@@ -138,29 +138,29 @@
       text-align: center;
       top: 0rem;
     }
-    .tetris {
-      visibility: hidden;
-    }
   }
+}
 
-  @media (max-width: 700px) {
-    .container {
-      .mainBox {
-        width: 65vw;
-        top: 5vh;
-      }
-      .bodyText {
-        top: 25%;
-        font-weight: 400;
-        font-size: 2.9vw;
-      }
-      .title {
-        font-size: 10vw;
-        top: 2vh;
-      }
-      .subtitle {
-        font-size: $subHeaderMobile;
-      }
+@media (max-width: 700px) {
+  .container {
+    .mainBox {
+      width: 65vw;
+      top: 5vh;
+    }
+    .bodyText {
+      top: 25%;
+      font-weight: 400;
+      font-size: 2.9vw;
+    }
+    .title {
+      font-size: 10vw;
+      top: 2vh;
+    }
+    .subtitle {
+      font-size: $subHeaderMobile;
+    }
+    .orange_arc {
+      top: 110vh;
     }
   }
 }

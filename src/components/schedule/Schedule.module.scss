@@ -10,12 +10,14 @@
     left: 10vw;
     top: 30vh;
     z-index: 1;
+    animation: starryMotion 10s ease-in-out infinite;
   }
   #faint_blue_ellipse {
     position: absolute;
     right: 15vw;
     bottom: -6vh;
     z-index: 1;
+    animation: starryMotion2 7s ease-in-out infinite;
   }
   #pink_streak {
     position: absolute;
@@ -86,5 +88,50 @@
   }
   .comingSoonTitle {
     font-size: $subHeaderMobile;
+  }
+  .container {
+    #dark_blue_ellipse {
+      top: 0vh;
+      left: 0vw;
+      animation: none;
+    }
+    #faint_blue_ellipse {
+      animation: none;
+    }
+  }
+}
+
+@keyframes starryMotion {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(10%);
+  }
+  50% {
+    transform: translateY(10%);
+  }
+  75% {
+    transform: translateX(10%) translateY(10%);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+@keyframes starryMotion2 {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateY(10%);
+  }
+  50% {
+    transform: translateX(10%);
+  }
+  75% {
+    transform: translateX(10%) translateY(10%);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
   }
 }
