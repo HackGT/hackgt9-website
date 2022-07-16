@@ -1,4 +1,4 @@
-import { Text, Box, Image, Grid, GridItem, Center, VStack } from "@chakra-ui/react";
+import { Text, Image, Center, VStack } from "@chakra-ui/react";
 import styles from "./About.module.scss";
 const About = () => {
   return (
