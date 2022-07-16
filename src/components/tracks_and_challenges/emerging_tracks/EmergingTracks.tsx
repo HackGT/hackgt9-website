@@ -32,11 +32,12 @@ const EmergingTracks = () => {
               <br />
               <br />
               This year, we plan on placing more emphasis on workshops and allowing all members,
-              experienced and new alike, to participate. Check back for for what workshops {
+              experienced and new alike, to participate. Check back for what workshops {
                 "we'll"
               }{" "}
               feature for HackGT 9!
             </Text>
+            <Text className={styles.subtext}>Click each path to learn more.</Text>
           </VStack>
         </Center>
         <VStack spacing={"20px"}>

@@ -19,7 +19,10 @@ const GeneralTracks = () => {
       />
       <VStack spacing={"2rem"}>
         <Center>
-          <Text className={styles.subheader}>General Tracks</Text>
+          <VStack>
+            <Text className={styles.subheader}>General Tracks</Text>
+            <Text className={styles.subtext}>Click each track to learn more.</Text>
+          </VStack>
         </Center>
         <VStack spacing={"20px"}>
           {gt.general_tracks.map((entry) => (
