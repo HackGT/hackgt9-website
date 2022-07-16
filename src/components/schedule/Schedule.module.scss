@@ -79,3 +79,12 @@
     font-size: $p;
   }
 }
+
+@media (max-width: 600px) {
+  .title {
+    font-size: $headerMobile;
+  }
+  .comingSoonTitle {
+    font-size: $subHeaderMobile;
+  }
+}
