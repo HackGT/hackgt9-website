@@ -2,6 +2,32 @@
 
 .container {
   padding-top: 13vh;
+  padding-bottom: 13vh;
+  position: relative;
+
+  #dark_blue_ellipse {
+    position: absolute;
+    left: 10vw;
+    top: 30vh;
+    z-index: 1;
+  }
+  #faint_blue_ellipse {
+    position: absolute;
+    right: 15vw;
+    bottom: -6vh;
+    z-index: 1;
+  }
+  #pink_streak {
+    position: absolute;
+    right: 0px;
+    z-index: 1;
+  }
+  #red_streak {
+    position: absolute;
+    right: 0px;
+    top: 75vh;
+    z-index: 1;
+  }
 }
 
 .comingSoon {
@@ -9,6 +35,7 @@
   text-align: center;
   padding-top: 10vh;
   padding-bottom: 20vh;
+  z-index: 3;
 }
 
 .comingSoonTitle {
@@ -17,6 +44,7 @@
   color: whitesmoke;
   padding-top: $p1;
   padding-bottom: $p1;
+  z-index: 3;
 }
 
 .title {
@@ -33,10 +61,7 @@
   box-shadow: 0px 4px 10px 4px rgba(255, 255, 255, 0.2), 0px -4px 10px 3px rgba(255, 255, 255, 0.2),
     1px 4px 10px rgba(255, 255, 255, 0.2);
   border-radius: 25px;
-}
-
-.container {
-  padding-bottom: $p2;
+  z-index: 3;
 }
 
 .daySection {

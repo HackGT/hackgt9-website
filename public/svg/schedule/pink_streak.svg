@@ -1,6 +1,8 @@
 <svg width="598" height="812" viewBox="0 0 598 812" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_f_1210_789)">
-<path d="M265.5 309.5C114.3 423.5 65.5 652 60 752C104.167 671.5 121 542.253 314 376.5C611.5 121 790.5 120.833 968 60C796.833 95.6667 416.7 195.5 265.5 309.5Z" fill="#D90D8E" fill-opacity="0.6"/>
+<path d="M265.5 309.5C114.3 423.5 65.5 652 60 752C104.167 671.5 121 542.253 314 376.5C611.5 121 790.5 120.833 968 60C796.833 95.6667 416.7 195.5 265.5 309.5Z" fill="#D90D8E" fill-opacity="0.6">
+<animate attributeName="fill-opacity" values="0.6; 0.3; 0.6" dur="3.2s" fill="remove" repeatCount="indefinite"/>
+</path>
 </g>
 <defs>
 <filter id="filter0_f_1210_789" x="0" y="0" width="1028" height="812" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
