@@ -27,8 +27,10 @@ const Sponsors = () => {
             id={styles.right_button}
           />
         </HStack>
-
-        <Text className={styles.sub_header}>Coming Soon!</Text>
+        {/* <Text className={styles.sub_header}>Coming Soon!</Text> */}
+        <Text className={styles.sub_text}>
+          If you’d like to sponsor our event, please contact sponsorship@hexlabs.org
+        </Text>
         {/* {tiers.map((tier) => (
           <div key={null}>
             <Wrap justify="center">
