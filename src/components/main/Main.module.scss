@@ -30,7 +30,7 @@ $loading-bar-transition: background-position 2s ease;
 .description {
   z-index: 2;
   position: relative;
-  top: -5vh;
+  top: -6vh;
   font-style: normal;
   font-family: "Retronoid";
   font-size: $header;
@@ -190,13 +190,13 @@ $loading-bar-transition: background-position 2s ease;
 /* mold this one to be more similar to the mobile version */
 @media (max-width: 900px) {
   .title_box {
-    padding-top: 12vh;
+    padding-top: 7vh;
   }
   .title {
     font-size: $titleMobile * 1.5;
   }
   .description {
-    font-size: $headerMobile * 1.5;
+    font-size: $headerMobile;
     top: -20px;
   }
   .register_button {
@@ -251,8 +251,8 @@ $loading-bar-transition: background-position 2s ease;
     font-size: $titleMobile;
   }
   .description {
-    font-size: $headerMobile;
-    top: 0vh;
+    font-size: $headerMobile/1.5;
+    top: -1vh;
   }
   .register_button {
     max-width: 255px;

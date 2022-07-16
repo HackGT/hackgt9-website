@@ -19,6 +19,7 @@ $track_width: 60vw;
   padding-bottom: 5vh;
   text-align: center;
   font-family: "Titillium Web";
+  font-size: $description;
   z-index: 2;
 }
 
@@ -32,7 +33,7 @@ $track_width: 60vw;
 
 .description {
   color: whitesmoke;
-  font-size: $pv2;
+  font-size: $description;
   text-align: center;
   font-family: "Titillium Web";
 }
@@ -225,9 +226,21 @@ $track_width: 60vw;
 }
 
 @media (max-width: 480px) {
+  .description {
+    font-size: 14px;
+  }
+  .subtext {
+    font-size: 14px;
+  }
   .td_container {
+    .track {
+      font-size: $track_title/1.1;
+    }
     .arrow {
       display: none;
+    }
+    .description {
+      font-size: 13px;
     }
   }
   .container {

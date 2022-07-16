@@ -43,7 +43,7 @@
     z-index: 2;
     padding: 1.5rem 3rem 0 3rem;
     font-family: "Titillium Web";
-    font-size: 1rem;
+    font-size: 16px;
     text-align: center;
     color: #ffffff;
   }
@@ -85,7 +85,7 @@
     height: auto;
     top: 1000px;
     max-width: 70vw;
-    z-index: 30;
+    z-index: 1;
   }
 }
 @keyframes starryMotion {
@@ -150,7 +150,8 @@
     .bodyText {
       top: 25%;
       font-weight: 400;
-      font-size: 2.9vw;
+      font-size: 12px;
+      padding: 1.5rem 1.2rem 0 1.2rem;
     }
     .title {
       font-size: 10vw;

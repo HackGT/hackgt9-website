@@ -62,10 +62,26 @@
     width: $faq;
     border-radius: 10px;
     text-align: left;
-    padding-left: $p1;
-    padding-top: $p1/3;
-    padding-bottom: $p1/3;
-    padding-right: $p1;
+    padding: $p1/3 $p1 $p1/3 $p1;
     opacity: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq_box {
+    .title {
+      font-size: $headerMobile;
+    }
+  }
+  .qa_shape {
+    .question {
+      font-size: $p/1.1;
+    }
+    .answer {
+      font-size: $p/1.4;
+    }
+    .both {
+      padding-left: 2vw;
+    }
   }
 }
