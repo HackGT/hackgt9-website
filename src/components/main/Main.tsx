@@ -24,8 +24,8 @@ const Main = (mp: MainProps) => {
           className={styles.logo}
           objectFit="contain"
           alt="logo"
-          boxSize={"60vw"}
-          src="/img/sponsors/space_efficient_cat_sponsor.png"
+          boxSize={"50vw"}
+          src="/img/main/logo/logoPurplePink.png"
         />
       </Center>
       <Center>

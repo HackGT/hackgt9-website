@@ -22,26 +22,28 @@ const EmergingTracks = () => {
         src="/svg/emerging_track/yellow_streak.svg"
         id={styles.yellow_streak}
       />
-      <Center>
-        <VStack>
-          <Text className={styles.subheader}>Emerging</Text>
-          <Text className={styles.subtext}>
-            Last year for HackGT 8 we provided learning paths, comprised of workshops and guides,
-            for new hackers to follow. {"Here's"} what was featured last year.
-            <br />
-            <br />
-            This year, we plan on placing more emphasis on workshops and allowing all members,
-            experienced and new alike, to participate. Check back for for what workshops {
-              "we'll"
-            }{" "}
-            feature for HackGT 9!
-          </Text>
+      <VStack spacing={"2rem"}>
+        <Center>
+          <VStack>
+            <Text className={styles.subheader}>Emerging</Text>
+            <Text className={styles.subtext}>
+              Last year for HackGT 8 we provided learning paths, comprised of workshops and guides,
+              for new hackers to follow. {"Here's"} what was featured last year.
+              <br />
+              <br />
+              This year, we plan on placing more emphasis on workshops and allowing all members,
+              experienced and new alike, to participate. Check back for for what workshops {
+                "we'll"
+              }{" "}
+              feature for HackGT 9!
+            </Text>
+          </VStack>
+        </Center>
+        <VStack spacing={"20px"}>
+          {et.emerging_tracks.map((entry) => (
+            <TD key={null} track={entry.name} description={entry.description} />
+          ))}
         </VStack>
-      </Center>
-      <VStack spacing={"20px"}>
-        {et.emerging_tracks.map((entry) => (
-          <TD key={null} track={entry.name} description={entry.description} />
-        ))}
       </VStack>
     </div>
   );

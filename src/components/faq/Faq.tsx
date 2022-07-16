@@ -27,7 +27,7 @@ const Faq = () => {
         <VStack className={styles.faq_box}>
           <Text className={styles.title}>FAQ</Text>
           <Image
-            maxWidth={{ base: "300px", md: "400px", lg: "500px" }}
+            maxWidth={{ base: "250px", md: "400px", lg: "500px" }}
             objectFit="contain"
             id={styles.game_console}
             alt="game console"

@@ -17,16 +17,15 @@ const GeneralTracks = () => {
         src="/svg/general_track/dark_blue_ellipse.svg"
         id={styles.blue_ellipse}
       />
-
-      <Center>
-        <VStack>
+      <VStack spacing={"2rem"}>
+        <Center>
           <Text className={styles.subheader}>General Tracks</Text>
+        </Center>
+        <VStack spacing={"20px"}>
+          {gt.general_tracks.map((entry) => (
+            <TD key={null} track={entry.name} description={entry.description} />
+          ))}
         </VStack>
-      </Center>
-      <VStack spacing={"20px"}>
-        {gt.general_tracks.map((entry) => (
-          <TD key={null} track={entry.name} description={entry.description} />
-        ))}
       </VStack>
     </div>
   );

@@ -27,7 +27,6 @@ $track_width: 60vw;
   font-size: $subt/1.5;
   font-family: "Retronoid";
   text-align: center;
-  padding-bottom: 2rem;
   z-index: 3;
 }
 
@@ -234,6 +233,7 @@ $track_width: 60vw;
   .container {
     #teal_ellipse {
       animation: none;
+      max-width: 240px;
     }
   }
   #general_track_container {
