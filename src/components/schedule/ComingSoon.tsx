@@ -4,7 +4,7 @@ import styles from "./Schedule.module.scss";
 
 const ComingSoon = () => {
   let currentHackGTDate = new Date("2022-10-22");
-  let dayThisWasCreated = new Date("2022-04-18");
+  let dayThisWasCreated = new Date("2022-07-18");
   let currentDate = new Date();
   let day = currentDate.getDate();
   let month = currentDate.getMonth();
