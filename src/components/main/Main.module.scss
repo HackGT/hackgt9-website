@@ -146,7 +146,7 @@ $loading-bar-transition: background-position 2s ease;
 
 @media (max-width: 1200px) {
   .title_box {
-    padding-top: $mid * 1.25;
+    padding-top: 14vh;
   }
   .title {
     font-size: $titleIntermediate;
@@ -190,7 +190,7 @@ $loading-bar-transition: background-position 2s ease;
 /* mold this one to be more similar to the mobile version */
 @media (max-width: 900px) {
   .title_box {
-    padding-top: 7vh;
+    padding-top: 9vh;
   }
   .title {
     font-size: $titleMobile * 1.5;
@@ -298,7 +298,7 @@ $loading-bar-transition: background-position 2s ease;
 
 @media (max-height: 800px) {
   .title_box {
-    padding-top: $mid/1.5;
+    padding-top: 8vh;
   }
 }
 
