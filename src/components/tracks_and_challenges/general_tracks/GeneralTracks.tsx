@@ -21,6 +21,10 @@ const GeneralTracks = () => {
         <Center>
           <VStack>
             <Text className={styles.subheader}>General Tracks</Text>
+            <Text className={styles.subtext}>
+              {"Don't"} know what project to craft? No worries! You can compete for one of our track
+              prizes or create something entirely unique.
+            </Text>
             <Text className={styles.subtext}>Click each track to learn more.</Text>
           </VStack>
         </Center>

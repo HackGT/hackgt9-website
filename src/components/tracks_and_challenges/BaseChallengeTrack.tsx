@@ -40,7 +40,7 @@ const ChallengeTrackBase = () => {
                 <Box
                   className={styles.track_container}
                   width={{ base: "70vw", lg: "500px" }}
-                  minHeight={{ base: "none", md: "380px", lg: "500px" }}
+                  minHeight={{ base: "none", md: "330px" }}
                 >
                   <BaseComponent
                     key={tracks.tracks[0].name}
@@ -65,7 +65,7 @@ const ChallengeTrackBase = () => {
                 <Box
                   className={styles.track_container}
                   width={{ base: "70vw", lg: "500px" }}
-                  minHeight={{ base: "none", md: "470px", lg: "500px" }}
+                  minHeight={{ base: "none", md: "330px" }}
                 >
                   <BaseComponent
                     key={tracks.tracks[1].name}

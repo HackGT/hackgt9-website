@@ -32,13 +32,13 @@ const About = () => {
             </Text>
             <Text className={styles.subtitle}>What is HackGT?</Text>
             <Text className={styles.bodyText}>
-              HackGT is {"HexLabs'"} free, 36-hour, an annual hackathon where students from across
-              the world come together for a weekend in the fall to create innovative projects that
-              show off their creativity and passion for development. You have the freedom to choose
-              any platform, programming language, or format to show how you build solutions.
+              HackGT is {"HexLabs'"} free, 36-hour, annual hackathon where students from across the
+              world come together for a weekend in the fall to create innovative projects that show
+              off their creativity and passion for development. You have the freedom to choose any
+              platform, programming language, or format to show how you build solutions.
               <br />
               <br />
-              Participating in this event will widen your professional network, build your portfolio
+              Participating in this event will widen your professional network, build your portfoli,
               and allow you to put your creativity into production! With tech talks and workshops,
               you will also have the opportunity to talk to and learn from professionals in various
               industries. We encourage everyone to be a part of our hacker community at HackGT 9
