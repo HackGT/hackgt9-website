@@ -44,16 +44,6 @@ const About = () => {
               industries. We encourage everyone to be a part of our hacker community at HackGT 9
               regardless of location, major, or prior hacking experience.
             </Text>
-            <Text className={styles.subtitle}>Can I participate?</Text>
-            <Text className={styles.bodyText}>
-              Any student over the age of 18 enrolled in any college or university is allowed to
-              participate. If you are younger than 18, but a Georgia Tech student, you can still
-              participate.
-              <br />
-              <br />
-              Hacking experience is not required. Hackathons are open creative and learning
-              environments for everyone- stay curious and try your best!
-            </Text>
             <Text className={styles.subtitle}>We {"can't"} wait to meet you in person!</Text>
             <Text className={styles.bodyText}>
               We are planning for HackGT 9 to be an entirely in-person event. We believe hackathons

@@ -8,6 +8,7 @@ const QA = () => {
   return (
     <div className={styles.qa_shape}>
       <Box
+        className={styles.clickable}
         onClick={() => {
           setQuestionClicked(!questionClicked);
         }}

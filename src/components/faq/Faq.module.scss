@@ -20,12 +20,8 @@
     position: absolute;
     right: 0px;
     top: 900px;
-    z-index: 1;
+    z-index: 0;
   }
-}
-
-.clickable {
-  cursor: pointer;
 }
 
 .flip {
@@ -51,15 +47,20 @@
 }
 
 .qa_shape {
-  z-index: 20;
+  position: relative;
+  z-index: 3;
   font-family: "Titillium Web";
   .question {
     font-size: $p;
+  }
+  .clickable {
+    cursor: pointer;
   }
 
   .answer {
     font-size: $p/1.35;
     color: whitesmoke;
+    z-index: 3;
   }
 
   .both {
