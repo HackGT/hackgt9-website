@@ -68,7 +68,6 @@ $loading-bar-transition: background-position 2s ease;
   .register_button_text {
     position: absolute;
     top: 50px;
-    left: 290px;
     font-family: "Titillium Web";
     font-style: normal;
     color: white;
@@ -169,7 +168,6 @@ $loading-bar-transition: background-position 2s ease;
     }
     .register_button_text {
       top: 40px;
-      left: 200px;
     }
   }
   .loading_bar_position {
@@ -213,14 +211,12 @@ $loading-bar-transition: background-position 2s ease;
       left: 10px;
     }
     .register_button_text {
-      font-size: 30px;
-      left: 118px; 
+      font-size: 25px;
       top: 25px;
     }
   }
   .loading_bar_position {
     top: 120px;
-    left: 125px;
   }
   .loading_bar_mask {
     mask-size: 70%;
@@ -266,8 +262,7 @@ $loading-bar-transition: background-position 2s ease;
     }
     .register_button_text {
       top: 25px;
-      left: 70px;
-      font-size: 20px;
+      font-size: 15px;
     }
   }
 

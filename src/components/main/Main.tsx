@@ -34,7 +34,7 @@ const Main = (mp: MainProps) => {
       <Center className={styles.description}>
         <VStack>
           <Text className={styles.motto}>Retro Reset</Text>
-          <Link href="https://www.merriam-webster.com/dictionary/registration" target="_blank">
+          {/* <Link href="https://www.merriam-webster.com/dictionary/registration" target="_blank"> */}
             <Box className={styles.register_button}>
               <div className={styles.register_button_outer} />
               <div className={styles.register_button_inner} />
@@ -43,9 +43,11 @@ const Main = (mp: MainProps) => {
                   <div className={styles.loading_bar} />
                 </div>
               </div>
-              <Text className={styles.register_button_text}>Register now</Text>
+              <Center>
+              <Text className={styles.register_button_text}>Registration Coming Soon</Text>
+              </Center>
             </Box>
-          </Link>
+          {/* </Link> */}
         </VStack>
       </Center>
     </div>
