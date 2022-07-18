@@ -30,7 +30,9 @@ const GeneralTracks = () => {
         </Center>
         <VStack spacing={"20px"}>
           {gt.general_tracks.map((entry) => (
-            <TD key={null} track={entry.name} description={entry.description} />
+            <div key={null} className={styles.clickable}>
+              <TD key={null} track={entry.name} description={entry.description} />
+            </div>
           ))}
         </VStack>
       </VStack>

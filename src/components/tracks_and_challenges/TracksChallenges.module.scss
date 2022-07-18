@@ -38,6 +38,10 @@ $track_width: 60vw;
   font-family: "Titillium Web";
 }
 
+.clickable {
+  cursor: pointer;
+}
+
 .container {
   padding-top: 40vh;
   padding-bottom: $p2;

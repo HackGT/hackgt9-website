@@ -24,6 +24,10 @@
   }
 }
 
+.clickable {
+  cursor: pointer;
+}
+
 .flip {
   transform: rotate(180deg);
 }
@@ -47,7 +51,7 @@
 }
 
 .qa_shape {
-  z-index: 3;
+  z-index: 20;
   font-family: "Titillium Web";
   .question {
     font-size: $p;

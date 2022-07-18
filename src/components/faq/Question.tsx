@@ -12,6 +12,7 @@ const Question = (qp: QuestionProps) => {
 
   return (
     <HStack
+      className={styles.clickable}
       onClick={() => {
         setArrowDirection(!arrowDirection);
       }}

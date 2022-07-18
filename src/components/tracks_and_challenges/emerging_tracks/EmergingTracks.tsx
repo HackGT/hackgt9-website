@@ -42,7 +42,9 @@ const EmergingTracks = () => {
         </Center>
         <VStack spacing={"20px"}>
           {et.emerging_tracks.map((entry) => (
-            <TD key={null} track={entry.name} description={entry.description} />
+            <div key={null} className={styles.clickable}>
+              <TD key={null} track={entry.name} description={entry.description} />
+            </div>
           ))}
         </VStack>
       </VStack>
