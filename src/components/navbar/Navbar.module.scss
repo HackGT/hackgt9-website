@@ -15,13 +15,22 @@
     text-decoration: underline;
   }
 }
+.navbarContainer{
+  position: fixed;
+  z-index: 80;
+  width: 100vw;
+  height: 13vh;
+  opacity: 95%;
+  box-shadow: 0px 0px 70px 15px #2d0e25db;
+  background: linear-gradient(to top right, #2d0e25 5%, #2a2db2 80%, #2d31da 94%);
+}
 
 .navbg {
   -webkit-mask-image: url("/svg/about/navbar_mask.svg");
   mask-image: url("/svg/about/navbar_mask.svg");
   -webkit-mask-size: cover;
   mask-size: cover;
-  z-index: 100;
+  z-index: 120;
   width: 85vw;
   position: fixed;
   height: 2vh;

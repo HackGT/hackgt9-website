@@ -31,6 +31,8 @@ const Navbar = (np: NavProps) => {
 
   return (
     <div>
+      <Box className={styles.navbarContainer}>.
+          </Box>
       <Box className={styles.navbg}>`</Box>
       <Box className={styles.progressBar} id="myBar"></Box>
       <Center>
