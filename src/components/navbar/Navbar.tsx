@@ -7,13 +7,17 @@ import {
   Menu,
   MenuButton,
   MenuItem,
+  Icon,
+  CreateIcon,
   IconButton,
   MenuList,
   Center, 
-  Link
+  Link,
+  IconProps,
+  OmitCommonProps
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
-import { useEffect } from "react";
+import { SVGProps, useEffect } from "react";
 
 interface Anchor {
   name: string;
@@ -45,13 +49,13 @@ const Navbar = (np: NavProps) => {
 
       <div className={styles.menu}>
         <Menu>
-          <MenuButton
-            className={styles.menuButton}
-            as={IconButton}
-            aria-label="Options"
-            icon={<HamburgerIcon />}
-            variant="outline"
-          />
+          <MenuButton>
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M31.5 18.1915H4.5" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M31.5 9H4.5" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M31.5 27.3829H4.5" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          </MenuButton>
           <MenuList>
               <Link href="#home">
                 <MenuItem>Home</MenuItem>
