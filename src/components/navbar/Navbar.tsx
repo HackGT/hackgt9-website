@@ -9,7 +9,8 @@ import {
   MenuItem,
   IconButton,
   MenuList,
-  Center
+  Center, 
+  Link
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { useEffect } from "react";
@@ -52,11 +53,24 @@ const Navbar = (np: NavProps) => {
             variant="outline"
           />
           <MenuList>
-            {np.anchors.map((anchor) => (
-              <MenuItem key={null}>
-                <NavbarComponent key={null} name={anchor.name} anchorLink={anchor.id} />
-              </MenuItem>
-            ))}
+              <Link href="#home">
+                <MenuItem>Home</MenuItem>
+              </Link>
+              <Link href="#about">
+                <MenuItem>About</MenuItem>
+              </Link>
+              <Link href="#tracks_and_challenges">
+                <MenuItem>Modes</MenuItem>
+              </Link>
+              <Link href="#schedule">
+                <MenuItem>Schedule</MenuItem>
+              </Link>
+              <Link href="#faq">
+                <MenuItem>FAQ</MenuItem>
+              </Link>
+              <Link href="#sponsors">
+                <MenuItem>Sponsors</MenuItem>
+              </Link>
           </MenuList>
         </Menu>
       </div>
