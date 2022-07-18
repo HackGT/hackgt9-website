@@ -15,6 +15,7 @@ const Logo = (lp: LogoProps) => {
   return (
     <a href={lp.website} target="_blank" rel="noreferrer">
       <Image
+        draggable="false"
         className={styles.border}
         boxSize={(lp.numTiers - lp.tier) * 175}
         objectFit="contain"

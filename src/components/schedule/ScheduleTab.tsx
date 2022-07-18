@@ -14,17 +14,19 @@ type Props = {
 const ScheduleTab: React.FC<Props> = (props: Props) => (
   <div className={styles.container}>
     <Image
+      draggable="false"
       id={styles.dark_blue_ellipse}
       alt="blue ellipse thingy"
       src="/svg/schedule/dark_blue_ellipse.svg"
     />
     <Image
+      draggable="false"
       id={styles.faint_blue_ellipse}
       alt="faint blue ellipse"
       src="/svg/schedule/faint_blue_ellipse.svg"
     />
-    <Image id={styles.pink_streak} alt="pink thing" src="/svg/schedule/pink_streak.svg" />
-    <Image id={styles.red_streak} alt="red thingy" src="/svg/schedule/red_streak.svg" />
+    <Image draggable="false" id={styles.pink_streak} alt="pink thing" src="/svg/schedule/pink_streak.svg" />
+    <Image draggable="false" id={styles.red_streak} alt="red thingy" src="/svg/schedule/red_streak.svg" />
     <Center>
       <VStack>
         <Text className={styles.title}>Schedule</Text>

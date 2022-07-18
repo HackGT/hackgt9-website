@@ -31,6 +31,7 @@ const ChallengeTrackBase = () => {
             <VStack>
             <Link href={tracks.tracks[0].id}>
               <Image
+                draggable="false"
                 className={styles.not_background}
                 alt="blue console"
                 src="/img/tracks/player_blue.png"
@@ -58,6 +59,7 @@ const ChallengeTrackBase = () => {
             <VStack>
             <Link href={tracks.tracks[1].id}>
               <Image
+                draggable="false"
                 className={styles.not_background}
                 alt="pink console"
                 src="/img/tracks/player_pink.png"

@@ -23,12 +23,14 @@ const TD = (tdp: TDProps) => {
         <Text>{tdp.track}</Text>
         {trackClicked ? (
           <Image
+            draggable="false"
             className={styles.arrow}
             alt="arrow down"
             src="/icon/arrows/akar-icons_chevron-down.png"
           />
         ) : (
           <Image
+            draggable="false"
             className={styles.arrow}
             id={styles.down_arrow}
             alt="arrow up"

@@ -21,6 +21,7 @@ const ComingSoon = () => {
         <Text className={styles.comingSoonTitle}>Coming soon....</Text>
       </Center>
       <Progress
+        draggable="false"
         bgColor={"gray.700"}
         className={styles.progressBar}
         colorScheme="customteal"

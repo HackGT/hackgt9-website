@@ -9,18 +9,21 @@ const Main = (mp: MainProps) => {
   return (
     <div className={styles.title_box}>
       <Image
+        draggable="false"
         id={styles.large_ellipse}
         alt="big big ellipse"
         src="/svg/main_page/main_page_large_ellipse.svg"
       />
       <Image
+        draggable="false"
         id={styles.small_ellipse}
         alt="little ellipse"
         src="/svg/main_page/main_page_small_ellipse.svg"
       />
-      <Image id={styles.arc} alt="arc" src="/svg/main_page/main_page_arc.svg" />
+      <Image draggable="false" id={styles.arc} alt="arc" src="/svg/main_page/main_page_arc.svg" />
       <Center>
         <Image
+          draggable="false"
           className={styles.logo}
           objectFit="contain"
           alt="logo"
