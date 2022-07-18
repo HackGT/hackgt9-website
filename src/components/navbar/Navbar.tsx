@@ -7,17 +7,11 @@ import {
   Menu,
   MenuButton,
   MenuItem,
-  Icon,
-  CreateIcon,
-  IconButton,
   MenuList,
   Center, 
   Link,
-  IconProps,
-  OmitCommonProps
 } from "@chakra-ui/react";
-import { HamburgerIcon } from "@chakra-ui/icons";
-import { SVGProps, useEffect } from "react";
+import { useEffect } from "react";
 
 interface Anchor {
   name: string;
