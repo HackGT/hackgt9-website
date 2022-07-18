@@ -56,19 +56,19 @@ $track_width: 60vw;
     position: absolute;
     top: 1200px;
     left: 10vw;
-    z-index: 1;
+    z-index: 0;
     animation: starryMotion2 8s ease-in-out infinite;
   }
   #faint_blue_ellipse {
     position: absolute;
     right: 0px;
     top: 0px;
-    z-index: 1;
+    z-index: 0;
   }
   #giant_faint_pink_ellipse {
     position: absolute;
     right: 0px;
-    z-index: 1;
+    z-index: 0;
   }
 }
 
@@ -116,13 +116,19 @@ $track_width: 60vw;
 }
 
 #general {
+  position: relative;
   padding-right: 3vw;
   padding-left: 3vw;
 }
 
 #emerging {
+  position: relative;
   padding-left: 3vw;
   padding-right: 3vw;
+
+  #giant_pink_ellipse {
+    position: inherit;
+  }
 }
 
 .td_container {
@@ -161,7 +167,8 @@ $track_width: 60vw;
 }
 
 .not_background {
-  z-index: 2;
+  position: relative;
+  z-index: 10;
 }
 
 .track_container {
