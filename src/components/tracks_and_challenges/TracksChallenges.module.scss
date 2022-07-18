@@ -1,8 +1,8 @@
 @import "../styles/variables.scss";
 
 $track_title: 20px;
-$description: 16px;
-$descriptionMobile: 12px;
+$description: 16  px;
+$descriptionMobile: 16px;
 $track_width: 60vw;
 
 .header {
@@ -212,6 +212,7 @@ $track_width: 60vw;
     top: 0vh;
   }
   .subtext {
+    font-size: $descriptionMobile;
     padding: 0 3rem 0 3rem;
   }
 
@@ -238,7 +239,7 @@ $track_width: 60vw;
 
 @media (max-width: 480px) {
   .description {
-    font-size: 14px;
+    font-size: 16px;
   }
   .subtext {
     font-size: 14px;
