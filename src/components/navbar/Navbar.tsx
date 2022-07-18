@@ -33,9 +33,9 @@ const Navbar = (np: NavProps) => {
     <div>
       <Box className={styles.navbarContainer}>.
           </Box>
+      <Center>
       <Box className={styles.navbg}>`</Box>
       <Box className={styles.progressBar} id="myBar"></Box>
-      <Center>
         <HStack draggable="false" className={styles.container} spacing={"8vw"}>
           {np.anchors.map((anchor) => (
             <NavbarComponent key={null} name={anchor.name} anchorLink={anchor.id} />
