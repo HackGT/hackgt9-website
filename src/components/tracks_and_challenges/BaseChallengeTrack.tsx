@@ -29,6 +29,7 @@ const ChallengeTrackBase = () => {
         <Wrap margin={"0px"} justify={"center"} spacing={{ base: "0px" }}>
           <div id={styles.general}>
             <VStack>
+            <Link href={tracks.tracks[0].id}>
               <Image
                 className={styles.not_background}
                 alt="blue console"
@@ -36,6 +37,7 @@ const ChallengeTrackBase = () => {
                 boxSize={{ base: "60vw", md: "30vw", lg: "25vw" }}
                 objectFit="contain"
               />
+              </Link>
               <Link href={tracks.tracks[0].id} style={{ textDecoration: "none" }}>
                 <Box
                   className={styles.track_container}
@@ -54,6 +56,7 @@ const ChallengeTrackBase = () => {
           </div>
           <div id={styles.emerging}>
             <VStack>
+            <Link href={tracks.tracks[1].id}>
               <Image
                 className={styles.not_background}
                 alt="pink console"
@@ -61,6 +64,7 @@ const ChallengeTrackBase = () => {
                 boxSize={{ base: "60vw", md: "30vw", lg: "25vw" }}
                 objectFit="contain"
               />
+              </Link>
               <Link href={tracks.tracks[1].id} style={{ textDecoration: "none" }}>
                 <Box
                   className={styles.track_container}
