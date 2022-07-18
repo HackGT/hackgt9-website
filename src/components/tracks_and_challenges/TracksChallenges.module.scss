@@ -3,7 +3,7 @@
 $track_title: 20px;
 $description: 16  px;
 $descriptionMobile: 16px;
-$track_width: 60vw;
+$track_width: 70vw;
 
 .header {
   color: whitesmoke;
@@ -117,14 +117,14 @@ $track_width: 60vw;
 
 #general {
   position: relative;
-  padding-right: 3vw;
-  padding-left: 3vw;
+  padding-right: 5vw;
+  padding-left: 5vw;
 }
 
 #emerging {
   position: relative;
-  padding-left: 3vw;
-  padding-right: 3vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
 
   #giant_pink_ellipse {
     position: inherit;
@@ -195,7 +195,9 @@ $track_width: 60vw;
   .track_container {
     padding: 8vw;
   }
-
+  .td_container{
+    width: 75vw;
+  }
   #general_track_container {
     #blue_ellipse {
       left: 0px;
@@ -224,7 +226,7 @@ $track_width: 60vw;
 
     padding: 0;
     padding-bottom: 10vh;
-    max-width: 70vw;
+    max-width: 80vw;
   }
 
   .container {
