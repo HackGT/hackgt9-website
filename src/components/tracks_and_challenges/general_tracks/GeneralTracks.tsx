@@ -8,11 +8,13 @@ const GeneralTracks = () => {
   return (
     <div id={styles.general_track_container}>
       <Image
+        draggable="false"
         alt="faint pink thing"
         src="/svg/general_track/pink_ellipse.svg"
         id={styles.faint_pink_ellipse}
       />
       <Image
+        draggable="false"
         alt="blue 0.0"
         src="/svg/general_track/dark_blue_ellipse.svg"
         id={styles.blue_ellipse}

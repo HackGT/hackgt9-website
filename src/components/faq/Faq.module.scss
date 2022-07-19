@@ -43,6 +43,7 @@
     font-size: $header;
     font-family: "Retronoid";
     z-index: 3;
+    font-weight: bold;
   }
 }
 
@@ -51,14 +52,14 @@
   z-index: 3;
   font-family: "Titillium Web";
   .question {
-    font-size: $p;
+    font-size: 18px;
   }
   .clickable {
     cursor: pointer;
   }
 
   .answer {
-    font-size: $p/1.35;
+    font-size: 18px/1.2;
     color: whitesmoke;
     z-index: 3;
   }
@@ -80,10 +81,10 @@
   }
   .qa_shape {
     .question {
-      font-size: $p/1.1;
+      font-size: $pv2;
     }
     .answer {
-      font-size: $p/1.4;
+      font-size: $pv2/1.2;
     }
     .both {
       padding-left: 2vw;

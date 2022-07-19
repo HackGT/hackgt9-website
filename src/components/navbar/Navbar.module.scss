@@ -6,14 +6,23 @@
   z-index: 100;
   width: 75vw;
   .component {
-    font-size: 1.5vw;
-    font-family: "Titilium Web", sans-serif;
+    font-size: 23px;
+    font-family: 'Titillium Web';
     font-weight: bold;
-    color: white; //temporary change
+    color: white;
   }
   .component:hover {
     text-decoration: underline;
   }
+}
+.navbarContainer{
+  position: fixed;
+  z-index: 80;
+  width: 100vw;
+  height: 13vh;
+  opacity: 85%;
+  box-shadow: 10px 10px 100px 10px #331444;
+  background: #231373d6;
 }
 
 .navbg {
@@ -21,7 +30,7 @@
   mask-image: url("/svg/about/navbar_mask.svg");
   -webkit-mask-size: cover;
   mask-size: cover;
-  z-index: 100;
+  z-index: 120;
   width: 85vw;
   position: fixed;
   height: 2vh;
@@ -54,20 +63,34 @@
 .menu {
   visibility: hidden;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1300px){
+  .container{
+    left: 12vw;
+    .component{
+      font-size: 18px;
+    }
+  }
+}
+@media screen and (max-width: 1000px){
+  .container{
+    left: 9vw;
+    .component{
+      font-size: 16px;
+    }
+  }
+}
+@media screen and (max-width: 820px) {
   .navbg,
   .progressBar,
-  .container {
+  .container, .navbarContainer {
     visibility: hidden;
   }
 
   .menu {
-    transition: 0.5s;
     visibility: visible;
-  }
-  .menu {
-    z-index: 1000;
+    z-index: 100;
     right: 0vw;
+    padding: 2vw;
     position: fixed;
     top: 0vh;
   }

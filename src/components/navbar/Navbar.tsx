@@ -7,12 +7,10 @@ import {
   Menu,
   MenuButton,
   MenuItem,
-  IconButton,
   MenuList,
   Center, 
-  Link
+  Link,
 } from "@chakra-ui/react";
-import { HamburgerIcon } from "@chakra-ui/icons";
 import { useEffect } from "react";
 
 interface Anchor {
@@ -33,10 +31,12 @@ const Navbar = (np: NavProps) => {
 
   return (
     <div>
+      <Box className={styles.navbarContainer}>.
+          </Box>
+      <Center>
       <Box className={styles.navbg}>`</Box>
       <Box className={styles.progressBar} id="myBar"></Box>
-      <Center>
-        <HStack className={styles.container} spacing={"8vw"}>
+        <HStack draggable="false" className={styles.container} spacing={"8vw"}>
           {np.anchors.map((anchor) => (
             <NavbarComponent key={null} name={anchor.name} anchorLink={anchor.id} />
           ))}
@@ -45,13 +45,13 @@ const Navbar = (np: NavProps) => {
 
       <div className={styles.menu}>
         <Menu>
-          <MenuButton
-            className={styles.menuButton}
-            as={IconButton}
-            aria-label="Options"
-            icon={<HamburgerIcon />}
-            variant="outline"
-          />
+          <MenuButton>
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M31.5 18.1915H4.5" stroke="white" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M31.5 9H4.5" stroke="white" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M31.5 27.3829H4.5" stroke="white" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+          </MenuButton>
           <MenuList>
               <Link href="#home">
                 <MenuItem>Home</MenuItem>

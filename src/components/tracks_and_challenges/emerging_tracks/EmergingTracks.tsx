@@ -8,16 +8,19 @@ const EmergingTracks = () => {
   return (
     <div id={styles.emerging_track_container}>
       <Image
+        draggable="false"
         alt="pink circle thingie"
         src="/svg/emerging_track/giant_pink_ellipse.svg"
         id={styles.giant_pink_ellipse}
       />
       <Image
+        draggable="false"
         alt="blue thingie"
         src="/svg/emerging_track/faint_blue_ellipse.svg"
         id={styles.faint_blue_ellipse}
       />
       <Image
+        draggable="false"
         alt="yellow thing"
         src="/svg/emerging_track/yellow_streak.svg"
         id={styles.yellow_streak}
