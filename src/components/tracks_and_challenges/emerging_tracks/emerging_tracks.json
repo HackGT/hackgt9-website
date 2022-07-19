@@ -1,20 +1,24 @@
 {
   "emerging_tracks": [
     {
-      "name": "Design",
-      "description": "Hackers explored the fundamentals of user interface/user experience (UI/UX) design from user research to beautiful mockups and prototypes."
+      "name": "Big Data Big Impact: Data Science",
+      "description": "Learn how to analyze data sets to discover insights about the world."
     },
     {
-      "name": "Data Science",
-      "description": "Hackers were exposed to the process of collecting, cleaning, and analyzing large sets of data."
+      "name": "iOS Club: iOS Development",
+      "description": "Interested in one day publishing an app on Apple PlayStore? Start your journey with the basics of iOS development."
     },
     {
-      "name": "Systems",
-      "description": "Hackers delved into the basics of systems development, from circuitry to embedded systems."
+      "name": "VGDev: Video Games",
+      "description": "Learn more about the process that goes into video games and the tools used to make them."
     },
     {
-      "name": "App & Web Development",
-      "description": "Hackers learned about various frameworks, from React to Flutter, they could use to create the application of their dreams."
+      "name": "GT WebDev: Web Development",
+      "description": "Learn the basics of how to make interactive websites."
+    },
+    {
+      "name": "Design Club: UX Design",
+      "description": "Explore the fundamentals of user interface/user experience (UI/UX) design from user research to beautiful mockups and prototypes."
     }
   ]
 }
