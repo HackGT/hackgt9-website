@@ -4,6 +4,7 @@ import styles from "./Faq.module.scss";
 
 import qas from "./FAQ.json";
 import HardwareQ from "./HardwareQ";
+import AdmissionQ from "./AdmissionQ";
 
 const Faq = () => {
   return (
@@ -41,8 +42,11 @@ const Faq = () => {
       </Center>
       <VStack spacing={"20px"}>
         {qas.qas.map((entry) =>
-          entry.question == "hardware" ? (
+          entry.question == "specialQs" ? (
             <div key="null">
+              {/* look at this great css. there's got to be a way to store links in a uniform data format */}
+              <AdmissionQ />
+              <div id={styles.space} />
               <HardwareQ />
             </div>
           ) : (

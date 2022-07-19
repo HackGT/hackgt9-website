@@ -17,12 +17,8 @@
       "answer": "YES! Once you're on GT's campus, HackGT 9 is completely free to participants and mentors thanks to our sponsors. Free food, free swag, free vibes. 😇\nIf you will be traveling from afar, we offer reimbursements to GT, but transportation will be your only cost otherwise."
     },
     {
-      "question": "How does the admissions process work?",
-      "answer": "That's a secret :)"
-    },
-    {
-      "question": "hardware",
-      "answer": ""
+      "question": "specialQs",
+      "answer": "cause json is so restricting and our use case is too expansive"
     },
     {
       "question": "What do I need for the event?",
