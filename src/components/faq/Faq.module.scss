@@ -1,5 +1,7 @@
 @import "../styles/variables.scss";
 
+$faqWidth: 70vw;
+
 .container {
   color: whitesmoke;
   padding-bottom: $p3/2;
@@ -25,6 +27,8 @@
 }
 
 .arrow {
+  position: absolute;
+  right: 0rem;
   width: 30px;
 }
 
@@ -55,8 +59,13 @@
   position: relative;
   z-index: 3;
   font-family: "Titillium Web";
+  text-align: left;
+  width: $faqWidth;
+
   .question {
     font-size: 18px;
+    text-align: left;
+    padding: 0.5rem 0 0.5rem 0;
   }
   .clickable {
     cursor: pointer;
@@ -66,14 +75,7 @@
     font-size: 18px/1.2;
     color: whitesmoke;
     z-index: 3;
-  }
-
-  .both {
-    width: $faq;
-    border-radius: 10px;
-    text-align: left;
-    padding: $p1/3 $p1 $p1/3 $p1;
-    opacity: 90%;
+    padding: 0.5rem 0 0.5rem 0;
   }
 }
 
