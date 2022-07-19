@@ -29,7 +29,7 @@ const ChallengeTrackBase = () => {
         <Wrap margin={"0px"} justify={"center"} spacing={{ base: "0px" }}>
           <div id={styles.general}>
             <VStack>
-              <Link href={tracks.tracks[0].id}>
+              <Link className="noSelect" href={tracks.tracks[0].id}>
                 <Image
                   draggable="false"
                   className={styles.not_background}
@@ -39,7 +39,11 @@ const ChallengeTrackBase = () => {
                   objectFit="contain"
                 />
               </Link>
-              <Link href={tracks.tracks[0].id} style={{ textDecoration: "none" }}>
+              <Link
+                className="noSelect"
+                href={tracks.tracks[0].id}
+                style={{ textDecoration: "none" }}
+              >
                 <Box
                   className={styles.track_container}
                   width={{ base: "70vw", lg: "500px" }}
@@ -57,7 +61,7 @@ const ChallengeTrackBase = () => {
           </div>
           <div id={styles.emerging}>
             <VStack>
-              <Link href={tracks.tracks[1].id}>
+              <Link className="noSelect" href={tracks.tracks[1].id}>
                 <Image
                   draggable="false"
                   className={styles.not_background}
@@ -67,7 +71,11 @@ const ChallengeTrackBase = () => {
                   objectFit="contain"
                 />
               </Link>
-              <Link href={tracks.tracks[1].id} style={{ textDecoration: "none" }}>
+              <Link
+                className="noSelect"
+                href={tracks.tracks[1].id}
+                style={{ textDecoration: "none" }}
+              >
                 <Box
                   className={styles.track_container}
                   width={{ base: "70vw", lg: "500px" }}

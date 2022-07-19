@@ -3,3 +3,16 @@
 .main {
   background: linear-gradient(to top right, #2d0e25 23.88%, #2a2db2 89.37%, #2d31da 96.14%);
 }
+
+.noSelect {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.noSelect:focus {
+  outline: none !important;
+}
