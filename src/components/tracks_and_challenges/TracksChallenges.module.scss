@@ -1,7 +1,7 @@
 @import "../styles/variables.scss";
 
 $track_title: 20px;
-$description: 16  px;
+$description: 16 px;
 $descriptionMobile: 16px;
 $track_width: 70vw;
 
@@ -20,6 +20,14 @@ $track_width: 70vw;
   text-align: center;
   font-family: "Titillium Web";
   font-size: $description;
+  z-index: 2;
+}
+.subtextQuestion {
+  color: whitesmoke;
+  font-family: "TItillium Web";
+  font-size: $track_title;
+  text-align: center;
+  padding-bottom: 2rem;
   z-index: 2;
 }
 
@@ -195,7 +203,7 @@ $track_width: 70vw;
   .track_container {
     padding: 8vw;
   }
-  .td_container{
+  .td_container {
     width: 75vw;
   }
   #general_track_container {

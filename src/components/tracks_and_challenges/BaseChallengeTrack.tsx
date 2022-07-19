@@ -29,15 +29,15 @@ const ChallengeTrackBase = () => {
         <Wrap margin={"0px"} justify={"center"} spacing={{ base: "0px" }}>
           <div id={styles.general}>
             <VStack>
-            <Link href={tracks.tracks[0].id}>
-              <Image
-                draggable="false"
-                className={styles.not_background}
-                alt="blue console"
-                src="/img/tracks/player_blue.png"
-                boxSize={{ base: "60vw", md: "30vw", lg: "25vw" }}
-                objectFit="contain"
-              />
+              <Link href={tracks.tracks[0].id}>
+                <Image
+                  draggable="false"
+                  className={styles.not_background}
+                  alt="blue console"
+                  src="/img/tracks/player_blue.png"
+                  boxSize={{ base: "60vw", md: "30vw", lg: "25vw" }}
+                  objectFit="contain"
+                />
               </Link>
               <Link href={tracks.tracks[0].id} style={{ textDecoration: "none" }}>
                 <Box
@@ -57,15 +57,15 @@ const ChallengeTrackBase = () => {
           </div>
           <div id={styles.emerging}>
             <VStack>
-            <Link href={tracks.tracks[1].id}>
-              <Image
-                draggable="false"
-                className={styles.not_background}
-                alt="pink console"
-                src="/img/tracks/player_pink.png"
-                boxSize={{ base: "60vw", md: "30vw", lg: "25vw" }}
-                objectFit="contain"
-              />
+              <Link href={tracks.tracks[1].id}>
+                <Image
+                  draggable="false"
+                  className={styles.not_background}
+                  alt="pink console"
+                  src="/img/tracks/player_pink.png"
+                  boxSize={{ base: "60vw", md: "30vw", lg: "25vw" }}
+                  objectFit="contain"
+                />
               </Link>
               <Link href={tracks.tracks[1].id} style={{ textDecoration: "none" }}>
                 <Box
@@ -84,11 +84,26 @@ const ChallengeTrackBase = () => {
             </VStack>
           </div>
         </Wrap>
-        <Text className={styles.subtext} id={styles.only_one_mode}>
-          You may only apply to one mode. We will be limiting the number of Emerging hackers to
-          ensure we have enough resources to offer all participants a great experience. We recommend
-          you apply to the one that suits you the most!
-        </Text>
+        <div id={styles.only_one_mode}>
+          <Text className={styles.subtextQuestion}>Which mode should I apply to?</Text>
+          <Text className={styles.subtext}>
+            You may only apply to one mode. We will be limiting the number of Emerging hackers to
+            ensure we have enough resources to offer all participants a great experience. We
+            recommend you apply to the one that suits you the most!
+            <br />
+            <br />
+            You are eligible to apply to Emerging if you meet these criteria:
+            <br />
+            <br />
+            1st or 2nd year in college
+            <br />
+            <br />
+            Have attended 0 or 1 hackathon before
+            <br />
+            <br />
+            Have little to no previous technical experience
+          </Text>
+        </div>
       </VStack>
     </Center>
   );
