@@ -18,13 +18,13 @@ const QA = () => {
             How does the admissions process work?
           </Text>
           {questionClicked ? (
-            <Image alt="arrow down" src="/icon/arrows/akar-icons_chevron-down.png" />
-          ) : (
             <Image
-              className={styles.flip}
-              alt="arrow up"
-              src="/icon/arrows/akar-icons_chevron-down.png"
+            className={styles.arrow}
+            alt="arrow up"
+            src="svg/faq/up_arrow.svg"
             />
+            ) : (
+            <Image alt="arrow down" className={styles.arrow} src="/svg/faq/down_arrow.svg" />
           )}
         </HStack>
       </Box>

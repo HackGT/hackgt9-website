@@ -19,12 +19,17 @@ const Question = (qp: QuestionProps) => {
     >
       <Text className={`${styles.question} ${styles.both}`}>{qp.question}</Text>
       {arrowDirection ? (
-        <Image alt="arrow down" src="/icon/arrows/akar-icons_chevron-down.png" />
-      ) : (
         <Image
-          className={styles.flip}
-          alt="arrow up"
-          src="/icon/arrows/akar-icons_chevron-down.png"
+        className={styles.arrow}
+        alt="arrow up"
+        fontStyle="bold"
+        src="/svg/faq/up_arrow.svg"
+        />
+        ) : (
+        <Image 
+        className={styles.arrow}
+        alt="arrow down" 
+        src="/svg/faq/down_arrow.svg"
         />
       )}
     </HStack>
