@@ -116,7 +116,7 @@ $loading-bar-transition: background-position 2s ease;
 #large_ellipse {
   position: absolute;
   z-index: 1;
-  animation: starryMotion2 10s ease-in-out infinite;
+  // animation: starryMotion2 10s ease-in-out infinite;
 }
 
 #small_ellipse {
@@ -124,7 +124,7 @@ $loading-bar-transition: background-position 2s ease;
   z-index: 1;
   right: 5vw;
   top: 500px;
-  animation: starryMotion 12s ease-in-out infinite;
+  // animation: starryMotion 12s ease-in-out infinite;
 }
 
 #arc {
