@@ -98,13 +98,13 @@ const ChallengeTrackBase = () => {
             You may only apply to one mode. We will be limiting the number of Emerging hackers to
             ensure we have enough resources to offer all participants a great experience. We
             recommend you apply to the one that suits you the most!
-            <div className={styles.eligibility_spacer} />
+          </Text>
+          <Text className={styles.eligibility}>
             You are eligible to apply to Emerging if you meet these criteria:
-            <div className={styles.criteria_spacer} />
-            👾 1st or 2nd year in college 👾
-            <div className={styles.criteria_spacer} />
-            🕹️ Have attended 0 or 1 hackathon before 🕹️
-            <div className={styles.criteria_spacer} />
+          </Text>
+          <Text className={styles.eligibility}>👾 1st or 2nd year in college 👾</Text>
+          <Text className={styles.eligibility}>🕹️ Have attended 0 or 1 hackathon before 🕹️</Text>
+          <Text className={styles.eligibility}>
             🎮 Have little to no previous technical experience 🎮
           </Text>
         </div>

@@ -22,6 +22,17 @@ $track_width: 70vw;
   font-size: $description;
   z-index: 2;
 }
+.eligibility {
+  color: whitesmoke;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-family: "Titillium Web";
+  font-size: $description;
+  z-index: 2;
+}
+
 .subtextQuestion {
   color: whitesmoke;
   font-family: "TItillium Web";
@@ -197,14 +208,6 @@ $track_width: 70vw;
   padding-right: 50px;
   max-width: 50vw;
   z-index: 2;
-}
-
-.criteria_spacer {
-  height: 10px;
-}
-
-.eligibility_spacer {
-  height: 2.5rem;
 }
 
 @media (max-width: 900px) {
