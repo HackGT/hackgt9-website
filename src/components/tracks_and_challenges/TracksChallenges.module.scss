@@ -199,6 +199,14 @@ $track_width: 70vw;
   z-index: 2;
 }
 
+.criteria_spacer {
+  height: 10px;
+}
+
+.eligibility_spacer {
+  height: 2.5rem;
+}
+
 @media (max-width: 900px) {
   .track_container {
     padding: 8vw;
