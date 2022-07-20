@@ -18,7 +18,7 @@ const Faq = () => {
             objectFit="contain"
             id={styles.game_console}
             alt="game console"
-            src="/svg/faq/updated_game_console.svg"
+            src="/img/faq/game_console.png"
           />
         </VStack>
       </Center>
