@@ -9,6 +9,7 @@
   position: absolute;
   left: 0px;
   z-index: 1;
+  animation: starryMotion 15s infinite;
 }
 
 #main_small_ellipse {
@@ -16,6 +17,7 @@
   z-index: 1;
   right: 5vw;
   top: 500px;
+  animation: starryMotion2 15s infinite;
 }
 
 #main_arc {
@@ -32,6 +34,7 @@
   top: 1000px;
   width: 20vw;
   height: auto;
+  animation: starryMotion 15s infinite;
 }
 #about_purple_radgrad{
   position: absolute;
@@ -39,6 +42,7 @@
   top: 1700px;
   width: 25vw;
   height: auto;
+  animation: starryMotion2 15s infinite;
 }
 #about_purple_orange_radgrad{
   position: absolute;
@@ -46,6 +50,7 @@
   top: 1900px;
   width: 16vw;
   height: auto;
+  animation: starryMotion 15s infinite;
 }
 #about_small_blue_radgrad{
   position: absolute;
@@ -53,15 +58,9 @@
   top: 1400px;
   width: 10vw;
   height: auto;
-  // animation: animate 2s infinite;
+  animation: starryMotion2 15s infinite;
+  // animation: glow 2s infinite;
 }
-// @keyframes animate {
-//   0%{ opacity:100%}
-//   25%{ opacity: 75%}
-//   50%{ opacity: 50%}
-//   75%{ opacity:75%}
-//   100%{opacity: 100%}
-// }
 #about_orange_arc{
   position: absolute;
   height: auto;
@@ -76,12 +75,14 @@
   width: 50vw;
   left: 20vw;
   z-index: 1;
+  animation: starryMotion 15s infinite;
 }
 #tracks_teal_ellipse {
   position: absolute;
   top: 3200px;
   left: 10vw;
   z-index: 0;
+  animation: starryMotion2 15s infinite;
 }
 #tracks_blue_ellipse {
   position: absolute;
@@ -105,12 +106,14 @@
   top: 4200px;
   width: 20vw;;
   left: 12vw;
+  animation: starryMotion 15s infinite;
 }
 #emerging_faint_blue_ellipse {
   position: absolute;
   right: 150px;
   top: 5130px;
   z-index: 1;
+  animation: starryMotion2 15s infinite;
 }
 
 #emerging_giant_pink_ellipse {
@@ -118,13 +121,6 @@
   top: 5500px;
   right: 0px;
   z-index: 0;
-}
-
-#emerging_pink_ellipse {
-  position: absolute;
-  right: 0px;
-  top: 200px;
-  z-index: 1;
 }
 
 #emerging_yellow_streak {
@@ -146,6 +142,7 @@
   left: 100px;
   top: 6300px;
   z-index: 1;
+  animation: starryMotion 15s infinite;
 }
 
 #schedule_faint_blue_ellipse {
@@ -153,6 +150,7 @@
   right: 100px;
   top: 6800px;
   z-index: 1;
+  animation: starryMotion2 15s infinite;
 }
 
 #schedule_pink_streak {
@@ -252,3 +250,51 @@
     animation: none;
   }
 }
+  // Animations
+  @keyframes starryMotion {
+    0% {
+      transform: translateX(0) translateY(0);
+    }
+    25% {
+      transform: translateX(10%);
+    }
+    50% {
+      transform: translateY(10%);
+    }
+    75% {
+      transform: translateX(10%) translateY(10%);
+    }
+    100% {
+      transform: translateX(0) translateY(0);
+    }
+  }
+  @keyframes starryMotion2 {
+    0% {
+      transform: translateX(0) translateY(0);
+    }
+    25% {
+      transform: translateY(10%);
+    }
+    50% {
+      transform: translateX(10%);
+    }
+    75% {
+      transform: translateX(10%) translateY(10%);
+    }
+    100% {
+      transform: translateX(0) translateY(0);
+    }
+  }
+  // @keyframes glow {
+  //   0%{ opacity: 100%;}
+  //   10%{ opacity: 90%;}
+  //   20%{ opacity: 80%;}
+  //   30%{ opacity: 70%}
+  //   40%{ opacity: 60%;}
+  //   50%{ opacity: 50%}
+  //   60%{ opacity: 60%;}
+  //   70%{ opacity: 70%}
+  //   80%{ opacity: 80%;}
+  //   90%{ opacity: 90%;}
+  //   100%{opacity: 100%}
+  // }
