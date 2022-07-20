@@ -14,7 +14,7 @@ const Main = (mp: MainProps) => {
           className={styles.logo}
           objectFit="contain"
           alt="logo"
-          boxSize={"50vw"}
+          boxSize={"60vw"}
           src="/img/main/logo/hackgt9logo.png"
         />
       </Center>
