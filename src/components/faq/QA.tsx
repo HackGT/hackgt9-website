@@ -22,9 +22,7 @@ const QA = (qap: QAProps) => {
       >
         <Question open={questionClicked} question={qap.question} />
       </Box>
-      <Collapse in={questionClicked} animateOpacity>
-        <Answer answer={qap.answer} />
-      </Collapse>
+      {questionClicked ? <Answer answer={qap.answer} /> : <div />}
     </div>
   );
 };
