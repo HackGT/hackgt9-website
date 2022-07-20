@@ -1,7 +1,30 @@
 @import "variables.scss";
 
 .main {
+  position: relative;
   background: linear-gradient(to top right, #2d0e25 23.88%, #2a2db2 89.37%, #2d31da 96.14%);
+}
+
+#main_large_ellipse {
+  position: absolute;
+  left: 0px;
+  z-index: 1;
+}
+
+#main_small_ellipse {
+  position: absolute;
+  z-index: 1;
+  right: 5vw;
+  top: 500px;
+}
+
+#main_arc {
+  position: absolute;
+  z-index: 1;
+  top: 200px;
+  left: 25vw;
+  max-width: 80vw;
+  max-height: 80vh;
 }
 
 .noSelect {
@@ -15,4 +38,38 @@
 }
 .noSelect:focus {
   outline: none !important;
+}
+
+@media (max-width: 1200px) {
+  #main_large_ellipse {
+    top: 150px;
+  }
+  #main_arc {
+    top: 180px;
+    left: 150px;
+  }
+}
+
+@media (max-width: 900px) {
+  #main_large_ellipse {
+    top: 50px;
+  }
+  #main_arc {
+    top: 200px;
+    left: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  #main_arc {
+    top: 300px;
+    left: 50px;
+  }
+  #main_large_ellipse {
+    animation: none;
+  }
+  #main_small_ellipse {
+    top: 60vh;
+    animation: none;
+  }
 }

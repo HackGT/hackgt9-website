@@ -8,19 +8,6 @@ interface MainProps {
 const Main = (mp: MainProps) => {
   return (
     <div className={styles.title_box}>
-      <Image
-        draggable="false"
-        id={styles.large_ellipse}
-        alt="big big ellipse"
-        src="/svg/main_page/main_page_large_ellipse.svg"
-      />
-      <Image
-        draggable="false"
-        id={styles.small_ellipse}
-        alt="little ellipse"
-        src="/svg/main_page/main_page_small_ellipse.svg"
-      />
-      <Image draggable="false" id={styles.arc} alt="arc" src="/svg/main_page/main_page_arc.svg" />
       <Center>
         <Image
           draggable="false"
@@ -28,7 +15,7 @@ const Main = (mp: MainProps) => {
           objectFit="contain"
           alt="logo"
           boxSize={"50vw"}
-          src="/img/main/logo/logoPurplePink.png"
+          src="/icon/logo/simpleTransparent.png"
         />
       </Center>
       <Center>
@@ -38,18 +25,18 @@ const Main = (mp: MainProps) => {
         <VStack>
           <Text className={styles.motto}>Retro Reset</Text>
           {/* <Link href="https://www.merriam-webster.com/dictionary/registration" target="_blank"> */}
-            <Box className={styles.register_button}>
-              <div className={styles.register_button_outer} />
-              <div className={styles.register_button_inner} />
-              <div className={styles.loading_bar_position}>
-                <div className={styles.loading_bar_mask}>
-                  <div className={styles.loading_bar} />
-                </div>
+          <Box className={styles.register_button}>
+            <div className={styles.register_button_outer} />
+            <div className={styles.register_button_inner} />
+            <div className={styles.loading_bar_position}>
+              <div className={styles.loading_bar_mask}>
+                <div className={styles.loading_bar} />
               </div>
-              <Center>
+            </div>
+            <Center>
               <Text className={styles.register_button_text}>Registration Coming Soon</Text>
-              </Center>
-            </Box>
+            </Center>
+          </Box>
           {/* </Link> */}
         </VStack>
       </Center>

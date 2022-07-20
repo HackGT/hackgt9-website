@@ -12,6 +12,9 @@ import ScheduleTab from "../src/components/schedule/ScheduleTab";
 import Footer from "../src/components/footer/Footer";
 import GeneralTracks from "../src/components/tracks_and_challenges/general_tracks/GeneralTracks";
 import EmergingTracks from "../src/components/tracks_and_challenges/emerging_tracks/EmergingTracks";
+import ImageWrapper from "../src/components/image/ImageWrapper";
+
+// import Image from "@chakra-ui/react";
 
 const Home: NextPage = (props) => {
   return (
@@ -22,7 +25,19 @@ const Home: NextPage = (props) => {
         <link rel="icon" type="image/png" href="/icon/logo/hackgt9_logo.png" />
       </Head>
       <Navbar anchors={links.components} />
+
       <section id="home">
+        <ImageWrapper
+          alt="big big ellipse"
+          src="/img/main/main_page_large_ellipse.png"
+          id="main_large_ellipse"
+        />
+        <ImageWrapper
+          id="main_small_ellipse"
+          alt="little ellipse"
+          src="/img/main/main_page_small_ellipse.png"
+        />
+        <ImageWrapper id="main_arc" alt="arc" src="/img/main/main_page_arc.png" />
         <Main toJump="#registration" />
       </section>
       <section id="about">
