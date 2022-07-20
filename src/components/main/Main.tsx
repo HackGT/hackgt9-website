@@ -15,7 +15,7 @@ const Main = (mp: MainProps) => {
           objectFit="contain"
           alt="logo"
           boxSize={"50vw"}
-          src="/icon/logo/simpleTransparent.png"
+          src="/img/main/logo/hackgt9logo.png"
         />
       </Center>
       <Center>

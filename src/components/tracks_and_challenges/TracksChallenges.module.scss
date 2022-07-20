@@ -110,25 +110,6 @@ $track_width: 70vw;
 #emerging_track_container {
   padding: 12vh 0 12vh 0;
   position: relative;
-
-  #giant_pink_ellipse {
-    position: absolute;
-    top: -200px;
-    left: 0px;
-    z-index: 1;
-  }
-  #faint_blue_ellipse {
-    position: absolute;
-    right: 0px;
-    top: 200px;
-    z-index: 1;
-  }
-  #yellow_streak {
-    position: absolute;
-    top: 600px;
-    right: 100px;
-    z-index: 1;
-  }
 }
 
 #only_one_mode {
@@ -145,10 +126,6 @@ $track_width: 70vw;
   position: relative;
   padding-left: 5vw;
   padding-right: 5vw;
-
-  #giant_pink_ellipse {
-    position: inherit;
-  }
 }
 
 .td {

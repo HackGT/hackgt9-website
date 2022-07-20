@@ -50,9 +50,39 @@ const Home: NextPage = (props) => {
         <GeneralTracks />
       </section>
       <section id="emerging_tracks">
+        <ImageWrapper
+          alt="pink circle thingie"
+          src="/img/emerging/giant_pink_ellipse.png"
+          id="emerging_giant_pink_ellipse"
+        />
+        <ImageWrapper
+          alt="blue thingie"
+          src="/img/emerging/faint_blue_ellipse.png"
+          id="emerging_faint_blue_ellipse"
+        />
+        <ImageWrapper
+          alt="yellow thing"
+          src="/img/emerging/yellow_streak.png"
+          id="emerging_yellow_streak"
+        />
         <EmergingTracks />
       </section>
       <section id="schedule">
+        <ImageWrapper
+          id="schedule_dark_blue_ellipse"
+          alt="blue ellipse thingy"
+          src="/img/schedule/dark_blue_ellipse.png"
+        />
+        <ImageWrapper
+          id="schedule_faint_blue_ellipse"
+          alt="faint blue ellipse"
+          src="/img/schedule/faint_blue_ellipse.png"
+        />
+        <ImageWrapper
+          id="schedule_pink_streak"
+          alt="pink thing"
+          src="/img/schedule/pink_streak.png"
+        />
         <ScheduleTab virtual={false} />
       </section>
       <section id="faq">

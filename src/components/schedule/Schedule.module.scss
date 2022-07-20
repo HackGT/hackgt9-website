@@ -4,32 +4,6 @@
   padding-top: 13vh;
   padding-bottom: 13vh;
   position: relative;
-
-  #dark_blue_ellipse {
-    position: absolute;
-    left: 10vw;
-    top: 30vh;
-    z-index: 1;
-    // animation: starryMotion 10s ease-in-out infinite;
-  }
-  #faint_blue_ellipse {
-    position: absolute;
-    right: 15vw;
-    bottom: -6vh;
-    z-index: 1;
-    // animation: starryMotion2 7s ease-in-out infinite;
-  }
-  #pink_streak {
-    position: absolute;
-    right: 0px;
-    z-index: 1;
-  }
-  #red_streak {
-    position: absolute;
-    right: 0px;
-    top: 75vh;
-    z-index: 1;
-  }
 }
 
 .comingSoon {
@@ -88,16 +62,6 @@
   }
   .comingSoonTitle {
     font-size: $subHeaderMobile;
-  }
-  .container {
-    #dark_blue_ellipse {
-      top: 0vh;
-      left: 0vw;
-      animation: none;
-    }
-    #faint_blue_ellipse {
-      animation: none;
-    }
   }
 }
 
