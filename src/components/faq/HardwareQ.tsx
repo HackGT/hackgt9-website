@@ -16,17 +16,13 @@ const QA = () => {
         <HStack>
           <Text className={`${styles.question} ${styles.both}`}>Will hardware be provided?</Text>
           {questionClicked ? (
-            <Image
-            className={styles.arrow}
-            alt="arrow up"
-            src="/svg/faq/up_arrow.svg"
-            />
-            ) : (
+            <Image className={styles.arrow} alt="arrow up" src="/svg/faq/up_arrow.svg" />
+          ) : (
             <Image alt="arrow down" className={styles.arrow} src="/svg/faq/down_arrow.svg" />
           )}
         </HStack>
       </Box>
-      <Collapse in={questionClicked} animateOpacity>
+      {questionClicked ? (
         <Text className={`${styles.answer} ${styles.both}`}>
           We will provide hardware to any participant needing it for their project at our hardware
           desk! If {"you'd"} like to have a say in what type of hardware will be provided at the
@@ -41,7 +37,9 @@ const QA = () => {
           </a>{" "}
           so our team knows what {"you're"} interested in.
         </Text>
-      </Collapse>
+      ) : (
+        <div />
+      )}
     </div>
   );
 };

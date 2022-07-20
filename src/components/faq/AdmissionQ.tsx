@@ -18,17 +18,13 @@ const QA = () => {
             How does the admissions process work?
           </Text>
           {questionClicked ? (
-            <Image
-            className={styles.arrow}
-            alt="arrow up"
-            src="svg/faq/up_arrow.svg"
-            />
-            ) : (
+            <Image className={styles.arrow} alt="arrow up" src="svg/faq/up_arrow.svg" />
+          ) : (
             <Image alt="arrow down" className={styles.arrow} src="/svg/faq/down_arrow.svg" />
           )}
         </HStack>
       </Box>
-      <Collapse in={questionClicked} animateOpacity>
+      {questionClicked ? (
         <Text className={`${styles.answer} ${styles.both}`}>
           If {"you're"} interested in our admissions process you can read more{" "}
           <a
@@ -41,7 +37,9 @@ const QA = () => {
           </a>{" "}
           !
         </Text>
-      </Collapse>
+      ) : (
+        <div />
+      )}
     </div>
   );
 };
