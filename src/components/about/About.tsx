@@ -3,20 +3,7 @@ import styles from "./About.module.scss";
 const About = () => {
   return (
     <div className={styles.container}>
-      <Image
-        draggable="false"
-        src="/svg/about/faint_blue_radgrad.svg"
-        alt="faint blue radius gradient"
-        className={styles.radgrad1}
-      />
-      <Image
-        draggable="false"
-        src="/svg/about/faint_purple_radgrad.svg"
-        alt="faint purple radius gradient"
-        className={styles.radgrad2}
-      />
       <Center>
-        <Image draggable="false" src="/svg/about/orange_arc.svg" alt="orange arc" className={styles.orange_arc} />
         <Center className={styles.mainBox}>
           <Image
             draggable="false"
@@ -62,18 +49,6 @@ const About = () => {
           </VStack>
         </Center>
       </Center>
-      <Image
-        draggable="false"
-        src="/svg/about/small_faint_blue_radgrad.svg"
-        alt="radius gradient"
-        className={styles.radgrad4}
-      ></Image>
-      <Image
-        draggable="false"
-        src="/svg/about/purple_orange_radgrad.svg"
-        alt="radius gradient"
-        className={styles.radgrad3}
-      ></Image>
     </div>
   );
 };

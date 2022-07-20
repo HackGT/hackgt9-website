@@ -9,24 +9,6 @@ import AdmissionQ from "./AdmissionQ";
 const Faq = () => {
   return (
     <div className={styles.container}>
-      <Image
-        draggable="false"
-        id={styles.large_blue_ellipse}
-        alt="giant blue ellipse"
-        src="/svg/faq/large_blue_ellipse.svg"
-      />
-      <Image
-        draggable="false"
-        id={styles.giant_faint_pink_ellipse}
-        alt="giant pink ellipse"
-        src="/svg/tracks/giant_faint_pink_ellipse.svg"
-      />
-      <Image
-        draggable="false"
-        id={styles.giant_red_streak}
-        alt="giant red streak"
-        src="/svg/faq/giant_red_streak.svg"
-      />
       <Center>
         <VStack className={styles.faq_box}>
           <Text className={styles.title}>FAQ</Text>

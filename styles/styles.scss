@@ -26,7 +26,86 @@
   max-width: 80vw;
   max-height: 80vh;
 }
-
+#about_blue_radgrad{
+  position: absolute;
+  left: 5vw;
+  top: 1000px;
+  width: 20vw;
+  height: auto;
+}
+#about_purple_radgrad{
+  position: absolute;
+  left: 10vw;
+  top: 1700px;
+  width: 25vw;
+  height: auto;
+}
+#about_purple_orange_radgrad{
+  position: absolute;
+  left: 75vw;
+  top: 1900px;
+  width: 16vw;
+  height: auto;
+}
+#about_small_blue_radgrad{
+  position: absolute;
+  left: 70vw;
+  top: 1400px;
+  width: 10vw;
+  height: auto;
+  // animation: animate 2s infinite;
+}
+// @keyframes animate {
+//   0%{ opacity:100%}
+//   25%{ opacity: 75%}
+//   50%{ opacity: 50%}
+//   75%{ opacity:75%}
+//   100%{opacity: 100%}
+// }
+#about_orange_arc{
+  position: absolute;
+  height: auto;
+  top: 800px;
+  left: 30vw;
+  max-width: 70vw;
+  z-index: 1;
+}
+#tracks_giant_pink_ellipse {
+  position: absolute;
+  top: 2150px;
+  width: 50vw;
+  left: 20vw;
+  z-index: 1;
+}
+#tracks_teal_ellipse {
+  position: absolute;
+  top: 3200px;
+  left: 10vw;
+  z-index: 0;
+}
+#tracks_blue_ellipse {
+  position: absolute;
+  right: 0px;
+  top: 2300px;
+  z-index: 0;
+}
+#tracks_pink_ellipse {
+  position: absolute;
+  top: 2700px;
+  right: 0vw;
+  z-index: 0;
+}
+#general_pink_ellipse{
+  position: absolute;
+  right: 0px;
+  width: 30vw;
+}
+#general_dark_blue_ellipse{
+  position: absolute;
+  top: 4200px;
+  width: 20vw;;
+  left: 12vw;
+}
 #emerging_faint_blue_ellipse {
   position: absolute;
   right: 150px;
@@ -54,6 +133,13 @@
   right: 200px;
   z-index: 1;
 }
+#emerging_pink_ellipse{
+  position: absolute;
+  left: 0px;
+  width: 30vw;
+  top: 4700px;
+  z-index: 1;
+}
 
 #schedule_dark_blue_ellipse {
   position: absolute;
@@ -75,7 +161,44 @@
   top: 6150px;
   z-index: 0;
 }
-
+#faq_blue_ellipse{
+  position: absolute;
+  bottom: 1400px;
+  width: 30vw;
+  z-index: 1;
+}
+#faq_red_streak{
+  position: absolute;
+  right: 0px;
+  width: 50vw;
+  bottom: 700px;
+  z-index: 0;
+}
+#sponsors_purple_blob{
+  position: absolute;
+  width: 30vw;
+  right: 70vw;
+  bottom: 600px;
+}
+#sponsors_pink_ellipse{
+  position: absolute;
+  width: 20vw;
+  left: 0vw;
+  bottom: 150px;
+}
+#sponsors_blue_blob{
+  position: absolute;
+  width: 20vw;
+  right: 0vw;
+  bottom: 100px;
+}
+#sponsors_pink_arc{
+  position: absolute;
+  width: 70vw;
+  height: 70vh;
+  right: 0vw;
+  bottom: 200px;
+}
 .noSelect {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;

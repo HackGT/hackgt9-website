@@ -47,46 +47,6 @@
     text-align: center;
     color: #ffffff;
   }
-
-  .radgrad1 {
-    position: absolute;
-    left: 5vw;
-    top: 150vh;
-    width: 20vw;
-    height: auto;
-    // animation: starryMotion 10s ease-in-out infinite;
-  }
-  .radgrad2 {
-    position: absolute;
-    left: 10vw;
-    top: 240vh;
-    width: 25vw;
-    height: auto;
-    // animation: starryMotion2 10s ease-in-out infinite;
-  }
-  .radgrad3 {
-    position: absolute;
-    left: 75vw;
-    top: 280vh;
-    width: 16vw;
-    height: auto;
-    // animation: starryMotion2 10s ease-in-out infinite;
-  }
-  .radgrad4 {
-    position: absolute;
-    left: 70vw;
-    top: 190vh;
-    width: 10vw;
-    height: auto;
-    // animation: starryMotion 10s ease-in-out infinite;
-  }
-  .orange_arc {
-    position: absolute;
-    height: auto;
-    top: 1000px;
-    max-width: 70vw;
-    z-index: 1;
-  }
 }
 @keyframes starryMotion {
   0% {
@@ -160,9 +120,6 @@
     }
     .subtitle {
       font-size: $subHeaderMobile;
-    }
-    .orange_arc {
-      top: 110vh;
     }
   }
 }

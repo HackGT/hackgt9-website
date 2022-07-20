@@ -8,18 +8,6 @@ import tracks from "./tracks.json";
 const ChallengeTrackBase = () => {
   return (
     <Center className={styles.container}>
-      <Image id={styles.pink_ellipse} alt="pink ellipse" src="/svg/tracks/pink_ellipse.svg" />
-      <Image id={styles.teal_ellipse} alt="teal ellipse" src="/svg/tracks/teal_ellipse.svg" />
-      <Image
-        id={styles.faint_blue_ellipse}
-        alt="faint blue ellipse"
-        src="/svg/tracks/faint_blue_ellipse.svg"
-      />
-      <Image
-        id={styles.giant_faint_pink_ellipse}
-        alt="giant pink ellipse"
-        src="/svg/tracks/giant_faint_pink_ellipse.svg"
-      />
       <VStack>
         <Text className={styles.header}>Modes</Text>
         <Text className={styles.subtext}>

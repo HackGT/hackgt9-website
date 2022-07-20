@@ -12,7 +12,6 @@ const Sponsors = () => {
   return (
     <Center className={styles.container}>
       <VStack>
-          <Image draggable="false" src='/svg/sponsors/purple_blob.svg' alt="purple blob" className={styles.purple_blob}></Image>
         <HStack>
           <Image
             draggable="false"
@@ -34,9 +33,6 @@ const Sponsors = () => {
         <Text className={styles.sub_text}>
           If {"you'd"} like to sponsor our event, please contact sponsorship@hexlabs.org
         </Text>
-        <Image draggable="false" src='/svg/sponsors/pink_arc.svg' alt="pink arc" className={styles.pink_arc}></Image>
-        <Image draggable="false" src='/svg/sponsors/pink_ellipse.svg' alt="pink ellipse" className={styles.pink_ellipse}></Image>
-        <Image draggable="false" src="/svg/sponsors/light_blue_blob.svg" alt="light blue blob" className={styles.light_blue_blob}></Image>
         {/* {tiers.map((tier) => (
           <div key={null}>
             <Wrap justify="center">

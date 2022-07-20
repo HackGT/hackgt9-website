@@ -5,23 +5,6 @@
   padding-bottom: $p3/2;
   padding-top: $p3/1.2;
   position: relative;
-
-  #large_blue_ellipse {
-    position: absolute;
-    z-index: 1;
-  }
-  #giant_faint_pink_ellipse {
-    position: absolute;
-    right: 0px;
-    top: 600px;
-    z-index: 1;
-  }
-  #giant_red_streak {
-    position: absolute;
-    right: 0px;
-    top: 900px;
-    z-index: 0;
-  }
 }
 
 .arrow {
