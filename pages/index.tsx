@@ -20,7 +20,7 @@ const Home: NextPage = (props) => {
       <Head>
         <title>HackGT 9: Retro Reset</title>
         <meta name="description" content="Time for a blast to the past" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" href="/icon/logo/simpleTransparent.png" />
       </Head>
       <Navbar anchors={links.components} />
       <section id="home">
