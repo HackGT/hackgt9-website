@@ -113,29 +113,6 @@ $loading-bar-transition: background-position 2s ease;
   }
 }
 
-#large_ellipse {
-  position: absolute;
-  z-index: 1;
-  // animation: starryMotion2 10s ease-in-out infinite;
-}
-
-#small_ellipse {
-  position: absolute;
-  z-index: 1;
-  right: 5vw;
-  top: 500px;
-  // animation: starryMotion 12s ease-in-out infinite;
-}
-
-#arc {
-  position: absolute;
-  z-index: 1;
-  top: 200px;
-  left: 25vw;
-  max-width: 80vw;
-  max-height: 80vh;
-}
-
 @media (min-width: 900px) {
   .loading_bar:hover {
     background-position: left bottom;
@@ -175,13 +152,6 @@ $loading-bar-transition: background-position 2s ease;
   }
   .loading_bar_mask {
     mask-size: 55%;
-  }
-  #large_ellipse {
-    top: 150px;
-  }
-  #arc {
-    top: 180px;
-    left: 150px;
   }
 }
 
@@ -229,13 +199,6 @@ $loading-bar-transition: background-position 2s ease;
     background-position: left bottom;
     transition: $loading-bar-transition;
   }
-  #large_ellipse {
-    top: 50px;
-  }
-  #arc {
-    top: 200px;
-    left: 80px;
-  }
 }
 
 /* add some intermediaries */
@@ -277,17 +240,6 @@ $loading-bar-transition: background-position 2s ease;
       width: $mask-base-width * 0.55;
       height: $mask-base-height * 2.4;
     }
-  }
-  #arc {
-    top: 300px;
-    left: 50px;
-  }
-  #large_ellipse {
-    animation: none;
-  }
-  #small_ellipse {
-    top: 60vh;
-    animation: none;
   }
 }
 
