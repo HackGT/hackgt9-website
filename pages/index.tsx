@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { useState } from "react";
 import About from "../src/components/about/About";
 import Faq from "../src/components/faq/Faq";
 import Main from "../src/components/main/Main";
@@ -20,7 +19,7 @@ const Home: NextPage = (props) => {
       <Head>
         <title>HackGT 9: Retro Reset</title>
         <meta name="description" content="Time for a blast to the past" />
-        <link rel="icon" type="image/png" href="/icon/logo/simpleTransparent.png" />
+        <link rel="icon" type="image/png" href="/icon/logo/hackgt9_logo.png" />
       </Head>
       <Navbar anchors={links.components} />
       <section id="home">
