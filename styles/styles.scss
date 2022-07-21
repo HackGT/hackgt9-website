@@ -27,7 +27,7 @@
   left: 25vw;
   max-width: 80vw;
   max-height: 80vh;
-  animation: glow 3s ease-in-out infinite;
+  animation: glow2 3s ease-in-out infinite;
 }
 #about_blue_radgrad{
   position: absolute;
@@ -60,7 +60,7 @@
   width: 10vw;
   height: auto;
   animation: starryMotion2 10s infinite;
-  animation: glow 2s infinite;
+  animation: glow2 2s infinite;
 }
 #about_orange_arc{
   position: absolute;
@@ -91,7 +91,7 @@
   right: 0px;
   top: 2300px;
   z-index: 0;
-  animation: glow 3s ease-in-out infinite;
+  animation: glow2 3s ease-in-out infinite;
 }
 #tracks_pink_ellipse {
   position: absolute;
@@ -104,7 +104,7 @@
   position: absolute;
   right: 0px;
   width: 30vw;
-  animation: glow 3s ease-in-out infinite;
+  animation: glow2 3s ease-in-out infinite;
 }
 #general_dark_blue_ellipse{
   position: absolute;
@@ -134,7 +134,7 @@
   top: 5700px;
   right: 200px;
   z-index: 1;
-  animation: glow 3s ease-in-out infinite;
+  animation: glow2 3s ease-in-out infinite;
 }
 #emerging_pink_ellipse{
   position: absolute;
@@ -166,7 +166,7 @@
   right: 0px;
   top: 6150px;
   z-index: 0;
-  animation: glow 3s ease-in-out infinite;
+  animation: glow2 3s ease-in-out infinite;
 }
 #faq_blue_ellipse{
   position: absolute;
@@ -181,7 +181,7 @@
   width: 50vw;
   bottom: 700px;
   z-index: 0;
-  animation: glow 3s ease-in-out infinite;
+  animation: glow2 3s ease-in-out infinite;
 }
 #sponsors_purple_blob{
   position: absolute;
@@ -195,7 +195,7 @@
   width: 20vw;
   left: 0vw;
   bottom: 150px;
-  animation: glow 3s ease-in-out infinite;
+  animation: glow2 3s ease-in-out infinite;
 }
 #sponsors_blue_blob{
   position: absolute;
@@ -210,7 +210,7 @@
   height: 70vh;
   right: 0vw;
   bottom: 200px;
-  animation: glow 3s ease-in-out infinite;
+  animation: glow2 3s ease-in-out infinite;
 }
 .noSelect {
   -webkit-tap-highlight-color: transparent;
@@ -312,4 +312,17 @@
     80%{ opacity: 80%;}
     90%{ opacity: 90%;}
     100%{opacity: 100%}
+  }
+  @keyframes glow2 {
+    0%{ opacity: 50%;}
+    10%{ opacity: 60%;}
+    20%{ opacity: 70%;}
+    30%{ opacity: 80%}
+    40%{ opacity: 90%;}
+    50%{ opacity: 100%}
+    60%{ opacity: 90%;}
+    70%{ opacity: 80%}
+    80%{ opacity: 70%;}
+    90%{ opacity: 60%;}
+    100%{opacity: 50%}
   }
