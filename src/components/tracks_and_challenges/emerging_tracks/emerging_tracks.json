@@ -1,23 +1,23 @@
 {
   "emerging_tracks": [
     {
-      "name": "Big Data Big Impact: Data Science",
+      "name": "Data Science",
       "description": "Learn how to analyze data sets to discover insights about the world."
     },
     {
-      "name": "iOS Club: iOS Development",
+      "name": "iOS Development",
       "description": "Interested in one day publishing an app on Apple PlayStore? Start your journey with the basics of iOS development."
     },
     {
-      "name": "VGDev: Video Games",
+      "name": "Video Games",
       "description": "Learn more about the process that goes into video games and the tools used to make them."
     },
     {
-      "name": "GT WebDev: Web Development",
+      "name": "Web Development",
       "description": "Learn the basics of how to make interactive websites."
     },
     {
-      "name": "Design Club: UX Design",
+      "name": "UX Design",
       "description": "Explore the fundamentals of user interface/user experience (UI/UX) design from user research to beautiful mockups and prototypes."
     }
   ]
