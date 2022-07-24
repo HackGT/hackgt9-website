@@ -149,8 +149,8 @@ const Home: NextPage = (props) => {
           src="/img/faq/giant_blue_ellipse.png"
         />
         <ImageWrapper id="faq_red_streak" alt="red streak" src="/img/faq/red_streak.png" />
-        <Reimbursement />
         <Faq />
+        <Reimbursement />
       </section>
       <section id="sponsors">
         <ImageWrapper
