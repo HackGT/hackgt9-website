@@ -94,9 +94,15 @@ $track_width: 70vw;
   padding-right: 5vw;
 }
 
+#reimbursement {
+  position: relative;
+  z-index: 4;
+}
+
 .td {
   position: relative;
   height: auto;
+  z-index: 3;
 
   .td_question {
     z-index: 4;
