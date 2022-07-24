@@ -96,7 +96,7 @@ const Home: NextPage = (props) => {
         />
         <ImageWrapper
           id="general_dark_blue_ellipse"
-          alt="dark blue ellpise"
+          alt="dark blue ellipse"
           src="img/general/dark_blue_ellipse.png"
         />
         <GeneralTracks />

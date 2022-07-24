@@ -11,7 +11,7 @@ interface Props {
 
 const BaseComponent = (p: Props) => {
   return (
-    <div>
+    <div id={styles.track_base}>
       <Text className={styles.subheader}>{p.name}</Text>
       <div className={styles.description}>
         <Text>{p.description}</Text>

@@ -52,10 +52,12 @@ $track_width: 70vw;
 }
 
 .description {
+  position: relative;
   color: whitesmoke;
   font-size: $description;
   text-align: center;
   font-family: "Titillium Web";
+  z-index: 3;
 }
 
 .clickable {
@@ -97,6 +99,10 @@ $track_width: 70vw;
 #reimbursement {
   position: relative;
   z-index: 4;
+}
+
+#track_base {
+  position: relative;
 }
 
 .td {
@@ -164,6 +170,7 @@ $track_width: 70vw;
 }
 
 .track_container {
+  position: relative;
   margin: auto;
   box-shadow: inset 2px 2px 15px rgba(255, 255, 255, 0.7), inset -2px -2px 10px #07081d;
   background: linear-gradient(
@@ -180,7 +187,7 @@ $track_width: 70vw;
   padding-left: 50px;
   padding-right: 50px;
   max-width: 50vw;
-  z-index: 2;
+  z-index: 3;
 }
 
 @media (max-width: 900px) {
