@@ -14,7 +14,7 @@ const Reimbursement = () => {
       </Text>
       <Text className={styles.subtext} paddingBottom="30px">
         All students seeking travel reimbursement or bus spots must register before August 22nd We
-        {"don't"} want anything to stop our hackers from being able to experience HackGT 9,
+        {" don't"} want anything to stop our hackers from being able to experience HackGT 9,
         including transportation! This year we will be bringing back travel aid in 2 ways: buses and
         reimbursements.
       </Text>
@@ -22,7 +22,7 @@ const Reimbursement = () => {
         <VStack spacing={"0px"} className={styles.td}>
           <div className={styles.td_question}>
             <HStack
-              className={styles.track}
+              className={`${styles.track} ${styles.clickable}`}
               onClick={() => {
                 setBuses(!buses);
               }}
@@ -68,7 +68,7 @@ const Reimbursement = () => {
         <VStack spacing={"0px"} className={styles.td}>
           <div className={styles.td_question}>
             <HStack
-              className={styles.track}
+              className={`${styles.track} ${styles.clickable}`}
               onClick={() => {
                 setReimbursements(!reimbursements);
               }}
@@ -95,9 +95,9 @@ const Reimbursement = () => {
           {reimbursements ? (
             <Text className={styles.td_answer}>
               If a bus is not coming to a university near you, you may be eligible for a flight or
-              gas reimbursement. We have have a limited number of spots for reimbursements which
-              will be given on a first-come-first-served basis. Please register before August 22nd
-              and indicate your reimbursement interest.
+              gas reimbursement. We have a limited number of spots for reimbursements which will be
+              given on a first-come-first-served basis. Please register before August 22nd and
+              indicate your reimbursement interest.
             </Text>
           ) : (
             <div />
