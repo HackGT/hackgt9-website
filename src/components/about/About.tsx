@@ -28,7 +28,7 @@ const About = () => {
               platform, programming language, or format to show how you build solutions.
               <br />
               <br />
-              Participating in this event will widen your professional network, build your portfoli,
+              Participating in this event will widen your professional network, build your portfolio,
               and allow you to put your creativity into production! With tech talks and workshops,
               you will also have the opportunity to talk to and learn from professionals in various
               industries. We encourage everyone to be a part of our hacker community at HackGT 9
