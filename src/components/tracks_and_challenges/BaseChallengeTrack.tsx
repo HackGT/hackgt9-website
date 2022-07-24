@@ -4,6 +4,7 @@ import BaseComponent from "./BaseComponent";
 import styles from "./TracksChallenges.module.scss";
 
 import tracks from "./tracks.json";
+import Reimbursement from "./reimbursement/Reimbursement";
 
 const ChallengeTrackBase = () => {
   return (
