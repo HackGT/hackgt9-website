@@ -1,4 +1,4 @@
-import { Center, VStack, Text, Link, Image, Box } from "@chakra-ui/react";
+import { Center, VStack, Text, Link, HStack, Image, Box } from "@chakra-ui/react";
 import styles from "./Main.module.scss";
 
 interface MainProps {
@@ -18,28 +18,43 @@ const Main = (mp: MainProps) => {
           src="/img/main/logo/hackgt9logo.png"
         />
       </Center>
-      <Center>
-        <Text className={styles.title}>HackGT 9</Text>
-      </Center>
-      <Center className={styles.description}>
-        <VStack>
-          <Text className={styles.motto}>Retro Reset</Text>
-          {/* <Link href="https://www.merriam-webster.com/dictionary/registration" target="_blank"> */}
-          <Box className={styles.register_button}>
-            <div className={styles.register_button_outer} />
-            <div className={styles.register_button_inner} />
-            <div className={styles.loading_bar_position}>
-              <div className={styles.loading_bar_mask}>
-                <div className={styles.loading_bar} />
-              </div>
-            </div>
-            <Center>
-              <Text className={styles.register_button_text}>Registration Coming Soon</Text>
+      <HStack>
+        <Image
+          draggable="false"
+          className={styles.logoBig}
+          objectFit="contain"
+          alt="logo"
+          boxSize={"45vw"}
+          zIndex="1"
+          src="/img/main/logo/hackgt9logo.png"
+          />
+        <Center>
+        <VStack className={styles.title_stack} >
+          <Text className={styles.title}>HackGT 9</Text>
+          <Box>
+          <Center className={styles.description}>
+            <Text className={styles.motto}>Retro Reset</Text>
             </Center>
           </Box>
-          {/* </Link> */}
+          <Center>
+            {/* <Link href="https://www.merriam-webster.com/dictionary/registration" target="_blank"> */}
+            <Box className={styles.register_button}>
+              <div className={styles.register_button_outer} />
+              <div className={styles.register_button_inner} />
+              <div className={styles.loading_bar_position}>
+                <div className={styles.loading_bar_mask}>
+                  <div className={styles.loading_bar} />
+                </div>
+              </div>
+              <Center>
+                <Text className={styles.register_button_text}>Registration Coming Soon</Text>
+              </Center>
+            </Box>
+            {/* </Link> */}
+          </Center>
         </VStack>
       </Center>
+        </HStack>
     </div>
   );
 };

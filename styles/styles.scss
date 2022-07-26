@@ -8,13 +8,13 @@
 #main_large_ellipse {
   position: absolute;
   left: 0px;
-  z-index: 1;
+  z-index: 0;
   animation: starryMotion 10s infinite;
 }
 
 #main_small_ellipse {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   right: 5vw;
   top: 500px;
   animation: starryMotion2 10s infinite;

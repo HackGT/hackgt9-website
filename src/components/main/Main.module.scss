@@ -12,10 +12,12 @@ $loading-bar-transition: background-position 2s ease;
   padding-bottom: $mid;
   overflow: hidden;
 }
-
+.title_stack{
+  padding-right: 30px;
+}
 .title {
   z-index: 2;
-  font-size: $title;
+  font-size: 10vw;
   font-family: "Retronoid";
   font-style: italic;
   color: #d90d8e;
@@ -33,7 +35,7 @@ $loading-bar-transition: background-position 2s ease;
   top: -6vh;
   font-style: normal;
   font-family: "Retronoid";
-  font-size: $header;
+  font-size: 5vw;
   text-align: center;
   .motto {
     color: #eae5e5;
@@ -125,7 +127,7 @@ $loading-bar-transition: background-position 2s ease;
     padding-top: 14vh;
   }
   .title {
-    font-size: $titleIntermediate;
+    font-size: 10vw;
   }
   .description {
     font-size: $headerIntermediate;
@@ -162,6 +164,10 @@ $loading-bar-transition: background-position 2s ease;
   }
   .title {
     font-size: $titleMobile * 1.5;
+  }
+  .title_stack{
+   margin-left: 8vw;
+   margin-right: 8vw;
   }
   .description {
     font-size: $headerMobile;
@@ -200,17 +206,25 @@ $loading-bar-transition: background-position 2s ease;
     transition: $loading-bar-transition;
   }
 }
-
+@media (max-width: 700px){
+  .title_stack{
+    margin-left: 1vw;
+    margin-right: 8vw;
+  }
+}
 /* add some intermediaries */
 @media (max-width: 480px) {
   .title_box {
     padding-top: 20vh;
   }
   .title {
-    font-size: $titleMobile;
+    font-size: 14vw;
   }
+  .title_stack{
+    margin: 0vw;
+   }
   .description {
-    font-size: $headerMobile/1.5;
+    font-size: 8vw;
     top: -1vh;
   }
   .register_button {
@@ -252,6 +266,14 @@ $loading-bar-transition: background-position 2s ease;
 @media (max-aspect-ratio: "54/55") {
   .logo {
     display: inline;
+  }
+  .logoBig{
+    display: none;
+  }
+  .title_stack{
+    left: 20vw;
+    right: 0vw;
+    padding: 15vw;
   }
 }
 
