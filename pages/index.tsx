@@ -124,6 +124,16 @@ const Home: NextPage = (props) => {
         />
         <EmergingTracks />
       </section>
+      <section id="faq">
+        <ImageWrapper
+          id="faq_blue_ellipse"
+          alt="blue ellipse"
+          src="/img/faq/giant_blue_ellipse.png"
+        />
+        <ImageWrapper id="faq_red_streak" alt="red streak" src="/img/faq/red_streak.png" />
+        <Faq />
+        <Reimbursement />
+      </section>
       <section id="schedule">
         <ImageWrapper
           id="schedule_dark_blue_ellipse"
@@ -141,16 +151,6 @@ const Home: NextPage = (props) => {
           src="/img/schedule/pink_streak.png"
         />
         <ScheduleTab virtual={false} />
-      </section>
-      <section id="faq">
-        <ImageWrapper
-          id="faq_blue_ellipse"
-          alt="blue ellipse"
-          src="/img/faq/giant_blue_ellipse.png"
-        />
-        <ImageWrapper id="faq_red_streak" alt="red streak" src="/img/faq/red_streak.png" />
-        <Faq />
-        <Reimbursement />
       </section>
       <section id="sponsors">
         <ImageWrapper
