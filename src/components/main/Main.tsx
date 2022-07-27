@@ -47,7 +47,7 @@ const Main = (mp: MainProps) => {
                 </div>
               </div>
               <Center>
-                <Text className={styles.register_button_text}>Register now</Text>
+                <Text className={styles.register_button_text}>Register Now!</Text>
               </Center>
             </Box>
             </Link>
