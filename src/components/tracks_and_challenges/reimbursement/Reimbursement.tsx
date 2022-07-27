@@ -53,12 +53,15 @@ const Reimbursement = () => {
               on the number of applications we receive from schools nationwide.
               <ul>
                 <li>University of Georgia</li>
+                <li>University of Illinois at Urbana-Champaign</li>
+                <li>Vanderbilt University</li>
                 <li>University of Florida</li>
                 <li>University of Central Florida</li>
                 <li>University of South Florida</li>
                 <li>Florida International University</li>
-                <li>University of Illinois at Urbana-Champaign</li>
-                <li>Vanderbilt University</li>
+                <li>University of North Carolina at Chapel Hill</li>
+                <li>Purdue University</li>
+                <li>Duke University</li>
               </ul>
             </Text>
           ) : (
