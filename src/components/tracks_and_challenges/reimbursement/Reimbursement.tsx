@@ -52,12 +52,15 @@ const Reimbursement = () => {
               schools we hope to send buses to. However, these schools are subject to change based
               on the number of applications we receive from schools nationwide.
               <ul>
-                <li>University of Florida</li>
+                <li>Georgia State University</li>
+                <li>Emory University</li>
+                <li>Kennesaw University</li>
                 <li>University of Georgia</li>
+                <li>University of Florida</li>
                 <li>University of Central Florida</li>
+                <li>University of South Florida</li>
                 <li>Florida International University</li>
                 <li>University of Illinois at Urbana-Champaign</li>
-                <li>University of South Florida</li>
                 <li>Vanderbilt University</li>
               </ul>
             </Text>
