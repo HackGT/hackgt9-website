@@ -16,7 +16,17 @@ const Reimbursement = () => {
         All students seeking travel reimbursement or bus spots must register before August 22nd. We
         {" don't"} want anything to stop our hackers from being able to experience HackGT 9,
         including transportation! This year we will be bringing back travel aid in 2 ways: buses and
-        reimbursements.
+        reimbursements. Check out this{" "}
+        <b>
+          <a
+            href="https://www.notion.so/hexlabs/HackGT-9-Travel-Assistance-7ec31612f80846189600028761147390"
+            target="_blank"
+            rel="noreferrer"
+          >
+            page
+          </a>
+        </b>{" "}
+        for more information.
       </Text>
       <VStack spacing={"20px"}>
         <VStack spacing={"0px"} className={styles.td}>
