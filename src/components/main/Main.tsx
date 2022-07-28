@@ -37,7 +37,7 @@ const Main = (mp: MainProps) => {
             </Center>
           </Box>
           <Center>
-            {/* <Link href="https://www.merriam-webster.com/dictionary/registration" target="_blank"> */}
+            <Link href="https://registration.hexlabs.org" target="_blank">
             <Box className={styles.register_button}>
               <div className={styles.register_button_outer} />
               <div className={styles.register_button_inner} />
@@ -47,10 +47,10 @@ const Main = (mp: MainProps) => {
                 </div>
               </div>
               <Center>
-                <Text className={styles.register_button_text}>Registration Coming Soon</Text>
+                <Text className={styles.register_button_text}>Register Now!</Text>
               </Center>
             </Box>
-            {/* </Link> */}
+            </Link>
           </Center>
         </VStack>
       </Center>
