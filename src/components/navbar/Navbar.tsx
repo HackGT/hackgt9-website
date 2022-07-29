@@ -79,11 +79,11 @@ const Navbar = (np: NavProps) => {
             <Link href="#faq">
               <MenuItem>FAQ</MenuItem>
             </Link>
-            <Link href="#sponsors">
-              <MenuItem>Sponsors</MenuItem>
-            </Link>
             <Link href="#schedule">
               <MenuItem>Schedule</MenuItem>
+            </Link>
+            <Link href="#sponsors">
+              <MenuItem>Sponsors</MenuItem>
             </Link>
           </MenuList>
         </Menu>

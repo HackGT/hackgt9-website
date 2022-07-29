@@ -43,83 +43,50 @@ $loading-bar-transition: background-position 2s ease;
     -webkit-text-stroke: 2px solid #ffffff;
   }
 }
-
-.register_button {
-  max-width: 795px;
-  background-color: transparent;
-  text-align: center;
+@media(min-width: 1600px){
+  #register_stack{
+    padding-top: -6vh;
+  }
+  #register_button_text{
+    padding-top: 0vh;
+  }
+  #loading_bar{
+    padding-top: 7vh;
+  }
+}
+#register_stack{
   position: relative;
-  .register_button_outer {
+  width: 40vw;
+  top: -5vh;
+}
+#register_button {
+  padding: 10vh;
+}
+  #register_button_outer {
     position: absolute;
-    width: 790px;
-    height: 238px;
-    background: linear-gradient(180deg, rgba(217, 217, 217, 0.5) 0%, rgba(217, 217, 217, 0.2) 100%);
-    box-shadow: inset 4px 4px 20px #07081d, inset -2px -2px 8px 1px rgba(255, 255, 255, 0.2);
-    border-radius: 25px;
+    width: 40vw;
+    height: auto;
+    z-index: 2;
   }
-  .register_button_inner {
+  #register_button_inner {
+    z-index: 3;
     position: absolute;
-    bottom: 15px;
-    left: 7px;
-    width: 775px;
-    height: 213px;
-    background: #131d25;
-    box-shadow: inset 4px 4px 20px #07081d, inset -2px -2px 8px 1px rgba(255, 255, 255, 0.2);
-    border-radius: 25px;
+    width: 39vw;
+    height: auto;
   }
-  .register_button_text {
+  #register_button_text {
     position: absolute;
-    top: 50px;
+    z-index: 5;
     font-family: "Titillium Web";
     font-style: normal;
     color: white;
-    font-size: 37.7px;
+    font-size: 2.5vw;
   }
-}
-
-.loading_bar_position {
-  position: relative;
-  top: 130px;
-  left: 122px;
-}
-
-.loading_bar_mask {
-  -webkit-mask-image: url("/svg/main_page/loading_bar_mask.svg");
-  mask-image: url("/svg/main_page/loading_bar_mask.svg");
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  object-fit: fill;
-  mask-size: 70%;
-  mask-position: center;
-
-  position: relative;
-  top: -110px;
-  left: -127px;
-
-  .loading_bar {
-    position: relative;
-    top: -35px;
-    left: -10px;
-    width: $mask-base-width * 1.65;
-    height: $mask-base-height * 6;
-
-    background: linear-gradient(
-      90deg,
-      rgba(148, 2, 94, 1) 0%,
-      rgba(255, 35, 176, 0.5) 50%,
-      rgba(253, 144, 216, 1) 100%
-    );
-    background-size: 400% 100%;
-    background-position: right bottom;
-    transition: $loading-bar-transition;
-  }
-}
-
-@media (min-width: 900px) {
-  .loading_bar:hover {
-    background-position: left bottom;
-    transition: $loading-bar-transition;
-  }
+#loading_bar {
+  position: absolute;
+  z-index: 4;
+  padding-top: 2vh;
+  width: 30vw;
 }
 
 @media (max-width: 1200px) {
@@ -133,83 +100,62 @@ $loading-bar-transition: background-position 2s ease;
     font-size: $headerIntermediate;
     top: -3vh;
   }
-  .register_button {
-    max-width: 605px;
-    max-height: 190px;
-    .register_button_outer {
-      width: 600px;
-      height: 188px;
-    }
-    .register_button_inner {
-      width: 588px;
-      height: 176px;
-      top: 5px;
-    }
-    .register_button_text {
-      top: 40px;
-    }
+  #register_button {
+    padding: 8vw;
   }
-  .loading_bar_position {
-    top: 110px;
+  #register_stack{
+    top: -5vh;
   }
-  .loading_bar_mask {
-    mask-size: 55%;
+    #register_button_text {
+      padding-top: 2vh;
+      font-size: 25px;
+    }
+  #loading_bar {
+    padding-top: 2vh ;
   }
 }
 
 /* mold this one to be more similar to the mobile version */
-@media (max-width: 900px) {
+@media (max-width: 830px) {
+  .logo {
+    display: inline;
+  }
+  .logoBig{
+    display: none;
+  }
   .title_box {
-    padding-top: 9vh;
+    padding-top: 5vh;
   }
   .title {
-    font-size: $titleMobile * 1.5;
+    font-size: 11vw;
   }
   .title_stack{
-   margin-left: 8vw;
-   margin-right: 8vw;
+    margin-top: 10vh;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    left: 20vw;
+    right: 0vw;
+    padding: 15vw;
+  }
+  .logoBig{
+    margin-top: 10vh;
+    width: 20vw;
   }
   .description {
-    font-size: $headerMobile;
+    font-size: 6vw;
     top: -20px;
   }
-  .register_button {
-    max-width: 405px;
-    max-height: 145px;
-    .register_button_outer {
-      width: 400px;
-      height: 140px;
-    }
-    .register_button_inner {
-      width: 384px;
-      height: 125px;
-      top: 7px;
-      left: 10px;
-    }
-    .register_button_text {
+    #register_button_text {
       font-size: 25px;
-      top: 25px;
     }
-  }
-  .loading_bar_position {
-    top: 120px;
-  }
-  .loading_bar_mask {
-    mask-size: 70%;
-    .loading_bar {
-      width: $mask-base-width * 0.9;
-      height: $mask-base-height * 3.8;
+    #register_stack{
+      padding-top: 1vh;
     }
-  }
-  .loading_bar:active {
-    background-position: left bottom;
-    transition: $loading-bar-transition;
-  }
 }
 @media (max-width: 700px){
-  .title_stack{
-    margin-left: 1vw;
-    margin-right: 8vw;
+  #register_button_text{
+    font-size: 20px;
+    padding-top: 2.5vh;
   }
 }
 /* add some intermediaries */
@@ -227,53 +173,31 @@ $loading-bar-transition: background-position 2s ease;
     font-size: 8vw;
     top: -1vh;
   }
-  .register_button {
-    max-width: 255px;
-    .register_button_outer {
-      width: 250px;
-      height: 100px;
-    }
-    .register_button_inner {
-      width: 235px;
-      height: 87px;
-    }
-    .register_button_text {
-      top: 25px;
-      font-size: 15px;
-    }
+  #register_stack{
+    padding-top: 3vh;
   }
-
-  .loading_bar_position {
-    top: 126px;
-    left: 0px;
+  #register_button_text{
+    font-size: 3.5vw;
+    padding-top: 2vh;
   }
-  .loading_bar_mask {
-    mask-size: 70%;
-    left: 0px;
-    .loading_bar {
-      width: $mask-base-width * 0.55;
-      height: $mask-base-height * 2.4;
-    }
+  #loading_bar{
+    padding-top: 1vh;
   }
 }
-
+@media(max-width: 420px){
+  #register_stack{
+    padding-top:4vh;
+  }
+  #register_button_text{
+    padding-top: 1.5vh;
+  }
+  #loading_bar{
+    padding-top: 0.5vh;
+  }
+}
 @media (max-height: 800px) {
   .title_box {
     padding-top: 8vh;
-  }
-}
-
-@media (max-aspect-ratio: "54/55") {
-  .logo {
-    display: inline;
-  }
-  .logoBig{
-    display: none;
-  }
-  .title_stack{
-    left: 20vw;
-    right: 0vw;
-    padding: 15vw;
   }
 }
 
