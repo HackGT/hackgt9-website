@@ -52,12 +52,13 @@ const Main = (mp: MainProps) => {
               </Center>
             </Box> */}
             <Center id={styles.register_button}>
-            <ImageWrapper id={styles.register_button_outer} src="/img/main/blackBoxShadow.png" alt="register box shadow"></ImageWrapper>
+            {/* <ImageWrapper id={styles.register_button_outer} src="/img/main/blackBoxShadow.png" alt="register box shadow"></ImageWrapper>
             <ImageWrapper id={styles.register_button_inner} src="/img/main/blackBox.png" alt="register box"></ImageWrapper>
-            <VStack spacing={10} id={styles.register_stack}>
+            <VStack  id={styles.register_stack}>
             <Text id={styles.register_button_text}>Register Now</Text>
             <ImageWrapper id={styles.loading_bar} src="/img/main/registerBar.png" alt="register bar"></ImageWrapper>
-            </VStack>
+            </VStack> */}
+            <ImageWrapper id={styles.registerNow} alt="register now button" src="/img/main/registerNow.png"></ImageWrapper>
             </Center>
             </Link>
           </Center>

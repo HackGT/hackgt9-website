@@ -28,6 +28,10 @@ $loading-bar-transition: background-position 2s ease;
   z-index: 2;
   display: none;
 }
+#registerNow{
+  width: 40vw;
+  z-index: 4;
+}
 
 .description {
   z-index: 2;
@@ -55,12 +59,27 @@ $loading-bar-transition: background-position 2s ease;
   }
 }
 #register_stack{
-  position: relative;
+  position:static;
   width: 40vw;
-  top: -5vh;
+  top: 5vh;
+  #register_button_text {
+    position: absolute;
+    z-index: 5;
+    font-family: "Titillium Web";
+    font-style: normal;
+    color: white;
+    font-size: 2.5vw;
+  }
+  #loading_bar {
+  position: absolute;
+  z-index: 4;
+  padding-top: 2vh;
+  width: 30vw;
+  height: 100px;
+  }
 }
 #register_button {
-  padding: 10vh;
+  // padding: 10vh;
 }
   #register_button_outer {
     position: absolute;
@@ -74,20 +93,6 @@ $loading-bar-transition: background-position 2s ease;
     width: 39vw;
     height: auto;
   }
-  #register_button_text {
-    position: absolute;
-    z-index: 5;
-    font-family: "Titillium Web";
-    font-style: normal;
-    color: white;
-    font-size: 2.5vw;
-  }
-#loading_bar {
-  position: absolute;
-  z-index: 4;
-  padding-top: 2vh;
-  width: 30vw;
-}
 
 @media (max-width: 1200px) {
   .title_box {
@@ -151,6 +156,9 @@ $loading-bar-transition: background-position 2s ease;
     #register_stack{
       padding-top: 1vh;
     }
+  #registerNow{
+    width: 60vw;
+  }
 }
 @media (max-width: 700px){
   #register_button_text{
