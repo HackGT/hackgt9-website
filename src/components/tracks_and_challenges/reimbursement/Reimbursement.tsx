@@ -109,7 +109,7 @@ const Reimbursement = () => {
             <Text className={styles.td_answer}>
               If a bus is not coming to a university near you, you may be eligible for a flight or
               gas reimbursement. We have a limited number of spots for reimbursements which will be
-              given on a first-come-first-served basis. Please register before August 22nd and
+              given on a first-come-first-served basis. Please register before August 27nd and
               indicate your reimbursement interest.
             </Text>
           ) : (
