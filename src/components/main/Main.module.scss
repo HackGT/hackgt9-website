@@ -12,7 +12,7 @@ $loading-bar-transition: background-position 2s ease;
   padding-bottom: $mid;
   overflow: hidden;
 }
-.title_stack{
+.title_stack {
   padding-right: 30px;
 }
 .title {
@@ -73,7 +73,7 @@ $loading-bar-transition: background-position 2s ease;
     font-family: "Titillium Web";
     font-style: normal;
     color: white;
-    font-size: 37.7px;
+    font-size: 30px;
   }
 }
 
@@ -165,9 +165,9 @@ $loading-bar-transition: background-position 2s ease;
   .title {
     font-size: $titleMobile * 1.5;
   }
-  .title_stack{
-   margin-left: 8vw;
-   margin-right: 8vw;
+  .title_stack {
+    margin-left: 8vw;
+    margin-right: 8vw;
   }
   .description {
     font-size: $headerMobile;
@@ -187,8 +187,8 @@ $loading-bar-transition: background-position 2s ease;
       left: 10px;
     }
     .register_button_text {
-      font-size: 25px;
-      top: 25px;
+      font-size: 20px;
+      top: 30px;
     }
   }
   .loading_bar_position {
@@ -206,8 +206,8 @@ $loading-bar-transition: background-position 2s ease;
     transition: $loading-bar-transition;
   }
 }
-@media (max-width: 700px){
-  .title_stack{
+@media (max-width: 700px) {
+  .title_stack {
     margin-left: 1vw;
     margin-right: 8vw;
   }
@@ -220,9 +220,9 @@ $loading-bar-transition: background-position 2s ease;
   .title {
     font-size: 14vw;
   }
-  .title_stack{
+  .title_stack {
     margin: 0vw;
-   }
+  }
   .description {
     font-size: 8vw;
     top: -1vh;
@@ -239,7 +239,7 @@ $loading-bar-transition: background-position 2s ease;
     }
     .register_button_text {
       top: 25px;
-      font-size: 15px;
+      font-size: 13px;
     }
   }
 
@@ -267,10 +267,10 @@ $loading-bar-transition: background-position 2s ease;
   .logo {
     display: inline;
   }
-  .logoBig{
+  .logoBig {
     display: none;
   }
-  .title_stack{
+  .title_stack {
     left: 20vw;
     right: 0vw;
     padding: 15vw;

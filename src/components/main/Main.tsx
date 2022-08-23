@@ -27,34 +27,36 @@ const Main = (mp: MainProps) => {
           boxSize={"45vw"}
           zIndex="1"
           src="/img/main/logo/hackgt9logo.png"
-          />
+        />
         <Center>
-        <VStack className={styles.title_stack} >
-          <Text className={styles.title}>HackGT 9</Text>
-          <Box>
-          <Center className={styles.description}>
-            <Text className={styles.motto}>Retro Reset</Text>
-            </Center>
-          </Box>
-          <Center>
-            <Link href="https://registration.hexlabs.org" target="_blank">
-            <Box className={styles.register_button}>
-              <div className={styles.register_button_outer} />
-              <div className={styles.register_button_inner} />
-              <div className={styles.loading_bar_position}>
-                <div className={styles.loading_bar_mask}>
-                  <div className={styles.loading_bar} />
-                </div>
-              </div>
-              <Center>
-                <Text className={styles.register_button_text}>Register Now!</Text>
+          <VStack className={styles.title_stack}>
+            <Text className={styles.title}>HackGT 9</Text>
+            <Box>
+              <Center className={styles.description}>
+                <Text className={styles.motto}>Retro Reset</Text>
               </Center>
             </Box>
-            </Link>
-          </Center>
-        </VStack>
-      </Center>
-        </HStack>
+            <Center>
+              <Link href="https://registration.hexlabs.org" target="_blank">
+                <Box className={styles.register_button}>
+                  <div className={styles.register_button_outer} />
+                  <div className={styles.register_button_inner} />
+                  <div className={styles.loading_bar_position}>
+                    <div className={styles.loading_bar_mask}>
+                      <div className={styles.loading_bar} />
+                    </div>
+                  </div>
+                  <Center>
+                    <Text className={styles.register_button_text}>
+                      Apply Now! Open Until Sept. 16th.
+                    </Text>
+                  </Center>
+                </Box>
+              </Link>
+            </Center>
+          </VStack>
+        </Center>
+      </HStack>
     </div>
   );
 };
