@@ -13,7 +13,7 @@ const Reimbursement = () => {
         Travel Reimbursement
       </Text>
       <Text className={styles.subtext} paddingBottom="30px">
-        All students seeking travel reimbursement or bus spots must register before August 22nd. We
+        All students seeking travel reimbursement or bus spots must register before August 27th. We
         {" don't"} want anything to stop our hackers from being able to experience HackGT 9,
         including transportation! This year we will be bringing back travel aid in 2 ways: buses and
         reimbursements. Check out this{" "}
