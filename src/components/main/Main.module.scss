@@ -135,12 +135,13 @@ $loading-bar-transition: background-position 2s ease;
     font-size: 11vw;
   }
   .title_stack{
-    margin-top: 10vh;
+    // margin-top: 10vh;
     margin-left: 8vw;
     margin-right: 8vw;
     left: 20vw;
     right: 0vw;
-    padding: 5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
   .logoBig{
     margin-top: 10vh;
