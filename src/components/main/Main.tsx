@@ -58,7 +58,7 @@ const Main = (mp: MainProps) => {
             <Text id={styles.register_button_text}>Register Now</Text>
             <ImageWrapper id={styles.loading_bar} src="/img/main/registerBar.png" alt="register bar"></ImageWrapper>
             </VStack> */}
-            <ImageWrapper id={styles.registerNow} alt="register now button" src="/img/main/registerNow.png"></ImageWrapper>
+            <ImageWrapper id={styles.registerNow} alt="register now button" src="/img/main/registerButtonSep16.png"></ImageWrapper>
             </Center>
             </Link>
           </Center>
