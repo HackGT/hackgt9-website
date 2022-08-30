@@ -28,7 +28,7 @@ const Main = (mp: MainProps) => {
           boxSize={"45vw"}
           zIndex="1"
           src="/img/main/logo/hackgt9logo.png"
-          />
+        />
         <Center>
         <VStack className={styles.title_stack} >
           <Text className={styles.title}>HackGT 9</Text>
