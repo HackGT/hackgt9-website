@@ -89,7 +89,7 @@ const ChallengeTrackBase = () => {
             recommend you apply to the one that suits you the most!
           </Text>
           <Text className={styles.eligibility}>
-            You are eligible to apply to Emerging if you meet these criteria:
+            You are eligible to apply to Emerging if you meet ONE of these criteria:
           </Text>
           <Text className={styles.eligibility}>👾 1st or 2nd year in college 👾</Text>
           <Text className={styles.eligibility}>🕹️ Have attended 0 or 1 hackathon before 🕹️</Text>
