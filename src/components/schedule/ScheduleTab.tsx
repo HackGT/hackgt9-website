@@ -15,6 +15,7 @@ const ScheduleTab: React.FC<Props> = (props: Props) => (
   <div className={styles.container}>
     <VStack>
       <Text className={styles.title}>Schedule</Text>
+      <Text className={styles.subtext}>*Schedule not final. Subject to change.</Text>
       <Schedule tableLength={Infinity} homepage={false} virtual={props.virtual} />
     </VStack>
   </div>
