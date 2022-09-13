@@ -13,12 +13,10 @@ type Props = {
 
 const ScheduleTab: React.FC<Props> = (props: Props) => (
   <div className={styles.container}>
-    <Center>
-      <VStack>
-        <Text className={styles.title}>Schedule</Text>
-        <Schedule tableLength={Infinity} homepage={false} virtual={props.virtual} />
-      </VStack>
-    </Center>
+    <VStack>
+      <Text className={styles.title}>Schedule</Text>
+      <Schedule tableLength={Infinity} homepage={false} virtual={props.virtual} />
+    </VStack>
   </div>
 );
 export default ScheduleTab;
