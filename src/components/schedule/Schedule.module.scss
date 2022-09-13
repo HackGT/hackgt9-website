@@ -1,8 +1,8 @@
 @import "../styles/variables.scss";
 
 .container {
-  padding-top: 13vh;
-  padding-bottom: 13vh;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
   position: relative;
 }
 
@@ -29,6 +29,9 @@
   font-family: "Retronoid";
   z-index: 2;
 }
+.subtext {
+  color: whitesmoke;
+}
 
 .progressBar {
   min-width: 70vw;
@@ -38,6 +41,26 @@
     1px 4px 10px rgba(255, 255, 255, 0.2);
   border-radius: 25px;
   z-index: 3;
+}
+
+.event_row {
+  color: white;
+  padding-top: 7px;
+  font-family: "Titillium Web";
+  padding-bottom: 7px;
+  text-align: left !important;
+  font-size: $p * 0.9;
+}
+
+.day_header {
+  color: white;
+  font-size: $h1;
+  padding-bottom: 20px;
+  font-family: "Titillium Web";
+}
+
+.event_time {
+  font-weight: bold;
 }
 
 .daySection {
@@ -62,6 +85,9 @@
   }
   .comingSoonTitle {
     font-size: $subHeaderMobile;
+  }
+  .day_header {
+    font-size: $subHeaderMobile * 1.2;
   }
 }
 
