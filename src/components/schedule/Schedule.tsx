@@ -52,7 +52,9 @@ const Schedule: React.FC<Props> = (props: Props) => {
       <VStack align="stretch" spacing={"20px"}>
         {events.map((chunk: any, index: any, arr: any) => (
           <Box className={styles.daySection} key={chunk[0].startDate}>
-            <Box className={styles.header}>{`${getDayFromDate(chunk[index].startDate)}`}</Box>
+            <Center>
+              <Box className={styles.day_header}>{`${getDayFromDate(chunk[index].startDate)}`}</Box>
+            </Center>
             {events[index].map((row: any) => (
               <EventRow key={null} row={row} />
             ))}
