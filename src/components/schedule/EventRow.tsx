@@ -11,7 +11,7 @@ export const EventRow = (props: any) => {
   return (
     <Box key={props.row.id} className={styles.event_row}>
       <HStack>
-        <Box>
+        <Box className={styles.event_time}>
           {/* <TimeIcon fontSize="16px" marginRight="15px" /> */}
           {/* {`${formatDateString(props.row.startDate)} - ${formatDateString(props.row.endDate)}`} */}
           {`${formatDateString(props.row.startDate)}`}
