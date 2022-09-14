@@ -13,8 +13,8 @@ const Reimbursement = () => {
         Travel Reimbursement
       </Text>
       <Text className={styles.subtext} paddingBottom="30px">
-        All students seeking travel reimbursement or bus spots must register before August 27th. We
-        {" don't"} want anything to stop our hackers from being able to experience HackGT 9,
+        All students seeking gas reimbursement or bus spots must register before September 16th. We{" "}
+        {"don't"} want anything to stop our hackers from being able to experience HackGT 9,
         including transportation! This year we will be bringing back travel aid in 2 ways: buses and
         reimbursements. Check out this{" "}
         <b>
@@ -107,10 +107,11 @@ const Reimbursement = () => {
           </div>
           {reimbursements ? (
             <Text className={styles.td_answer}>
-              If a bus is not coming to a university near you, you may be eligible for a flight or
-              gas reimbursement. We have a limited number of spots for reimbursements which will be
-              given on a first-come-first-served basis. Please register before August 27nd and
-              indicate your reimbursement interest.
+              If a bus is not coming to a university near you, you may be eligible for gas
+              reimbursement. We will no longer be considering flight reimbursements. We have a
+              limited number of spots for reimbursements which will be given on a
+              first-come-first-served basis. Please register before September 16th and indicate your
+              reimbursement interest.
             </Text>
           ) : (
             <div />
