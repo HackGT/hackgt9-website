@@ -61,7 +61,7 @@ const Main = (mp: MainProps) => {
                   <ImageWrapper
                     id={styles.registerNow}
                     alt="register now button"
-                    src="/img/main/sept21.png"
+                    src="/img/main/sept22.png"
                   ></ImageWrapper>
                 </Center>
               </Link>
