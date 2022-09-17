@@ -13,7 +13,7 @@ const Reimbursement = () => {
         Travel Reimbursement
       </Text>
       <Text className={styles.subtext} paddingBottom="30px">
-        All students seeking gas reimbursement or bus spots must register before September 16th. We{" "}
+        All students seeking gas reimbursement or bus spots must register before September 21st. We{" "}
         {"don't"} want anything to stop our hackers from being able to experience HackGT 9,
         including transportation! This year we will be bringing back travel aid in 2 ways: buses and
         reimbursements. Check out this{" "}
@@ -63,14 +63,11 @@ const Reimbursement = () => {
               on the number of applications we receive from schools nationwide.
               <ul>
                 <li>University of Georgia</li>
-                <li>University of Illinois at Urbana-Champaign</li>
-                <li>Vanderbilt University</li>
                 <li>University of Florida</li>
                 <li>University of Central Florida</li>
                 <li>University of South Florida</li>
                 <li>Florida International University</li>
                 <li>University of North Carolina at Chapel Hill</li>
-                <li>Purdue University</li>
                 <li>Duke University</li>
               </ul>
             </Text>
@@ -110,7 +107,7 @@ const Reimbursement = () => {
               If a bus is not coming to a university near you, you may be eligible for gas
               reimbursement. We will no longer be considering flight reimbursements. We have a
               limited number of spots for reimbursements which will be given on a
-              first-come-first-served basis. Please register before September 16th and indicate your
+              first-come-first-served basis. Please register before September 21st and indicate your
               reimbursement interest.
             </Text>
           ) : (
