@@ -59,8 +59,7 @@ const Reimbursement = () => {
           {buses ? (
             <Text className={styles.td_answer}>
               Buses help our players get to the arcade safely and at NO COST. Below is a list of
-              schools we hope to send buses to. However, these schools are subject to change based
-              on the number of applications we receive from schools nationwide.
+              schools we hope to send buses to:
               <ul>
                 <li>University of Georgia</li>
                 <li>University of Florida</li>
