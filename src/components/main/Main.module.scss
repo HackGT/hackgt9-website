@@ -13,10 +13,10 @@ $loading-bar-transition: background-position 2s ease;
   overflow: hidden;
 }
 .title_stack {
-  padding-right: 30px;
+  padding-right: 25px;
 }
 .title {
-  z-index: 2;
+  z-index: 5;
   font-size: 10vw;
   font-family: "Retronoid";
   font-style: italic;
@@ -174,10 +174,10 @@ $loading-bar-transition: background-position 2s ease;
     padding-top: 20vh;
   }
   .title {
-    font-size: 14vw;
+    font-size: 13.5vw;
   }
   .title_stack{
-    padding: 15vw;
+    padding: 12vw;
     margin: 0vw;
   }
   .description {
