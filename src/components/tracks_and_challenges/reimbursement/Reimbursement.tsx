@@ -61,13 +61,9 @@ const Reimbursement = () => {
               Buses help our players get to the arcade safely and at NO COST. Below is a list of
               schools we will be sending buses to:
               <ul>
-                <li>University of Georgia</li>
                 <li>University of Florida</li>
                 <li>University of Central Florida</li>
                 <li>University of South Florida</li>
-                <li>Florida International University</li>
-                <li>University of North Carolina at Chapel Hill</li>
-                <li>Duke University</li>
               </ul>
             </Text>
           ) : (
