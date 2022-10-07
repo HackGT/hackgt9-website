@@ -5,6 +5,9 @@
   padding-bottom: $p2;
   padding-right: $p2;
   padding-left: $p2;
+  position: relative;
+
+  z-index: 100;
 
   font-family: "Retronoid";
   color: whitesmoke;
@@ -23,6 +26,9 @@
     text-align: center;
     font-family: "Titillium Web";
     font-size: $subHeaderMobile/1.3;
+  }
+  .logos {
+    position: relative;
   }
 }
 
