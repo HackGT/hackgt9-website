@@ -31,7 +31,7 @@ const QA = () => {
             className={styles.link}
             target="_blank"
             rel="noreferrer"
-            href="https://medium.com/thehackgt/hackgt-6-admissions-6d66f7d1c22c"
+            href="https://medium.com/@thehexlabs/hackgt-9-admissions-9129effe4467"
           >
             here
           </a>{" "}
