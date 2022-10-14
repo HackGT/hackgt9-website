@@ -30,9 +30,14 @@ const Sponsors = () => {
           />
         </HStack>
         {/* <Text className={styles.sub_header}>Coming Soon!</Text> */}
-        <Text className={styles.sub_text}>
-          If {"you'd"} like to sponsor our event, please contact sponsorship@hexlabs.org
-        </Text>
+        <Image
+          draggable="false"
+          boxSize={"70vw"}
+          objectFit="contain"
+          alt="sponsors wooo!"
+          src="/img/sponsors/logos.png"
+          id={styles.logos}
+        />
         {/* {tiers.map((tier) => (
           <div key={null}>
             <Wrap justify="center">
